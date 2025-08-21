@@ -1,10 +1,11 @@
-import Layout from "./layout/Layout";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <Layout>
-      <main className="flex-1 overflow-y-auto p-6"></main>
-    </Layout>
+    <>
+      <Navigation />
+      <main></main>
+    </>
   );
 }
 
