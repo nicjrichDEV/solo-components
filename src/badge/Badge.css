@@ -9,6 +9,10 @@
   font-weight: 500;
 }
 
+.badge-p {
+  text-box: trim-both cap alphabetic;
+}
+
 /* Colors */
 .badge-gray {
   background-color: #f3f4f6;

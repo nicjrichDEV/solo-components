@@ -1,27 +1,10 @@
+@import "tailwindcss";
+
 /* Simple CSS Reset */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-body {
-  display: flex;
-  min-height: 100dvh;
-  justify-content: center;
-  font-family: system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Reset typography margins */
@@ -78,4 +61,8 @@ button {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@theme {
+  --default-font-family: "Inter", "sans-serif";
 }

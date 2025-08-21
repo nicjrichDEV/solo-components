@@ -16,7 +16,7 @@ export default function Badge({
 
   return (
     <div className={allClasses} {...rest}>
-      {children}
+      <p className="badge-p">{children}</p>
     </div>
   );
 }
