@@ -42,13 +42,16 @@ export default function Navigation() {
         </div>
 
         <div className="flex h-10 w-10 items-center justify-center justify-self-end border-l border-l-neutral-200">
-          <a href="">
+          <a
+            href="https://github.com/nicjrichDEV/solo-components"
+            target="_blank"
+          >
             <Github size={"20px"} />
           </a>
         </div>
       </div>
       <div
-        className={`${open ? "max-h-80 border-b shadow-sm" : "max-h-0"} fixed top-10 right-0 left-0 z-50 flex w-full flex-col items-center overflow-hidden border-b-0 border-b-neutral-200 bg-white transition-all duration-300 ease-out`}
+        className={`${open ? "max-h-80 border-b shadow-sm" : "max-h-0"} fixed top-10 right-0 left-0 z-50 flex w-full flex-col items-center overflow-hidden border-b-0 border-b-neutral-200 bg-white transition-all duration-300 lg:top-0 lg:left-0 lg:h-dvh lg:max-h-none lg:w-64 lg:transition-none`}
       >
         {componentNames.map((comp, i) => {
           return (
