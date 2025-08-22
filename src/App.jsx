@@ -6,7 +6,9 @@ function App() {
     <>
       <Layout>
         {componentNames.map((comp) => (
-          <div className="h-80 w-full bg-amber-100">{comp}</div>
+          <section id={`${comp}`} className="h-80 w-full bg-amber-100">
+            {comp}
+          </section>
         ))}
       </Layout>
     </>

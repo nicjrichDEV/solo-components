@@ -9,7 +9,11 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     function handleOutOfBounds(event) {
-      if (!mobileNavRef.current.contains(event.target)) toggleMobile();
+      if (
+        !mobileNavRef.current.contains(event.target) ||
+        event.target.tagName === "A"
+      )
+        toggleMobile();
     }
 
     if (mobileOpen) document.addEventListener("click", handleOutOfBounds);
@@ -49,7 +53,7 @@ export default function Layout({ children }) {
             <Github size={"20px"} />
           </a>
           <div className="flex items-center justify-center">
-            <h2 className="text-lg font-medium text-neutral-800">UI Next</h2>
+            <h2 className="font-medium text-neutral-800">UI Next</h2>
           </div>
           <button
             onClick={toggleMobile}
@@ -60,7 +64,7 @@ export default function Layout({ children }) {
         </div>
         {/* Mobile Expand Down */}
         <div
-          className={`${mobileOpen ? "h-60" : "h-0"} fixed right-0 bottom-10 left-0 flex flex-col-reverse overflow-hidden overflow-y-auto bg-white transition-all duration-300`}
+          className={`${mobileOpen ? "h-60 border-t shadow-inner" : "h-0 border-t-0"} fixed right-0 bottom-10 left-0 flex flex-col-reverse overflow-hidden overflow-y-auto border-t-neutral-200 bg-white transition-all duration-300`}
         >
           {navLinks}
         </div>
