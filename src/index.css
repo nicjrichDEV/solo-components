@@ -11,10 +11,6 @@
   --default-font-family: "Switzer", "sans-serif";
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overscroll-behavior: none;
 }
