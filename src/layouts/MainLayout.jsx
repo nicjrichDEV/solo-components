@@ -3,7 +3,7 @@ import MobileNavExpanded from "../components/nav/MobileNavExpanded";
 import MobileNav from "../components/nav/MobileNav";
 import SideNav from "../components/nav/SideNav";
 
-export default function Layout({ children }) {
+export default function MainLayout({ children }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const mobileNavRef = useRef();
 
