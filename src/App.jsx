@@ -1,5 +1,4 @@
 import MainLayout from "./layouts/MainLayout";
-import Badge from "./badge/Badge";
 import Badges from "./demos/Badges";
 
 function App() {

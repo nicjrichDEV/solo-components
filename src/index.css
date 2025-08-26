@@ -12,6 +12,24 @@ body {
   overscroll-behavior: none;
 }
 
+/* 
+  Naming grammar to keep you sane
+
+--[ns]-[category]-[context?]-[emphasis/state?]
+	•	ns (optional): --pmi-
+	•	category: text, icon, border
+	•	context (optional): inverse, on-brand, on-success, on-media
+	•	emphasis/state: primary|secondary|tertiary or link|muted
+
+  Examples:
+    •	--pmi-text-primary
+    •	--pmi-text-inverse-primary
+    •	--pmi-text-on-warning
+    •	--pmi-text-link-hover
+
+
+*/
+
 /* Baseline variables */
 @theme inline {
   /* General Levers */
@@ -30,18 +48,79 @@ body {
   /* Size controls - Helper tokens to keep input height uniform */
 
   /* Colors */
+  /* General color emphasis levels */
+  --text-primary: var(--_text-primary, #fff);
+  --text-secondary: var(--_text-secondary, #fff);
+  --text-tertiary: var(--_text-tertiary, #fff);
+  --text-quaternary: var(--_text-quaternary, #fff);
+
+  /* Utility */
+  --text-disabled: var(--_text-disabled, #fff);
+  --text-placeholder: var(--_text-placeholder, #fff);
+
+  /* Links */
+  --text-link: var(--_text-link, #fff);
+  --text-link-hover: var(--_text-link-hover, #fff);
+  --text-link-active: var(--_text-link-active, #fff);
+  --text-link-visited: var(--_text-link-visited, #fff);
+  --text-interactive: var(--_text-interactive, #fff); /* Maybe */
+  --text-interactive-hover: var(--_text-interactive-hover, #fff); /* Maybe */
+  --text-interactive-muted: var(--_text-interactive-muted, #fff); /* Maybe */
+
+  /* Brand */
+  --text-brand-primary: var(--_text-brand-primary, #fff);
+  --text-brand-secondary: var(--_text-brand-secondary, #fff);
+  --text-brand-tertiary: var(--_text-brand-tertiary, #fff);
+  --text-brand-quaternary: var(--_text-brand-quaternary, #fff);
+
+  /* Status */
+  --text-info-primary: var(--_text-info-primary, #fff);
+  --text-info-secondary: var(--_text-info-secondary, #fff);
+  --text-success-primary: var(--_text-success-primary, #fff);
+  --text-success-secondary: var(--_text-success-secondary, #fff);
+  --text-warning-primary: var(--_text-warning-primary, #fff);
+  --text-warning-secondary: var(--_text-warning-secondary, #fff);
+  --text-error-primary: var(--_text-error-primary, #fff);
+  --text-error-secondary: var(--_text-error-secondary, #fff);
+
+  /* Context Aware */
+  --text-on-brand-primary: var(--_text-on-brand-primary, #fff);
+  --text-on-brand-secondary: var(--_text-on-brand-secondary, #fff);
+  --text-on-info-primary: var(--_text-on-info-primary, #fff);
+  --text-on-info-secondary: var(--_text-on-info-secondary, #fff);
+  --text-on-success-primary: var(--_text-on-success-primary, #fff);
+  --text-on-success-secondary: var(--_text-on-success-secondary, #fff);
+  --text-on-warning-primary: var(--_text-on-warning-primary, #fff);
+  --text-on-warning-secondary: var(--_text-on-warning-secondary, #fff);
+  --text-on-error-primary: var(--_text-on-error-primary, #fff);
+  --text-on-error-secondary: var(--_text-on-error-secondary, #fff);
+
+  /* Inverse */
+  --text-inverse-primary: var(--_text-inverse-primary, #fff);
+  --text-inverse-secondary: var(--_text-inverse-secondary, #fff);
+  --text-inverse-tertiary: var(--_text-inverse-tertiary, #fff);
+  --text-inverse-quaternary: var(--_text-inverse-quaternary, #fff);
+  --text-inverse-disabled: var(--_text-inverse-disabled, #fff);
+  --text-inverse-placeholder: var(--_text-inverse-placeholder, #fff);
+  --text-inverse-link: var(--_text-inverse-link, #fff);
+  --text-inverse-link-hover: var(--_text-inverse-link-hover, #fff);
+  --text-inverse-link-active: var(--_text-inverse-link-active, #fff);
+  --text-inverse-link-visited: var(--_text-inverse-link-visited, #fff);
+  --text-inverse-interactive: var(--_text-inverse-interactive, #fff);
+  --text-inverse-interactive-hover: var(
+    --_text-inverse-interactive-hover,
+    #fff
+  );
+  --text-inverse-interactive-muted: var(
+    --_text-inverse-interactive-muted,
+    #fff
+  );
+
+  /* On Media */
+  --text-on-media-primary: var(--_text-on-media-primary, #fff);
+  --text-on-media-secondary: var(--_text-on-media-secondary, #fff);
 
   /* Radius */
-
-  /* Semantic tokens Tailwind exposes as utilities */
-  --color-surface: var(
-    --_surface,
-    oklch(0.99 0 0)
-  ); /* fallback if alias missing */
-  --color-foreground: var(--_foreground, oklch(0.22 0.02 255));
-  --color-brand:                            
-;
-
   /* PMI Custom Colors */
   /* PMI Violet */
   --color-pmi-violet-50: #efedf3;
@@ -83,9 +162,43 @@ body {
   --color-pmi-tangerine-950: #1a0503;
 
   /* PMI Off Black */
-  /* TODO: PMI Off Black */
-  /* TODO: PMI Neutral */
-  /* TODO: PMI Saddle */
+  --color-pmi-off-black-50: #dad6e1;
+  --color-pmi-off-black-100: #c0b8cc;
+  --color-pmi-off-black-200: #9b92a9;
+  --color-pmi-off-black-300: #796f89;
+  --color-pmi-off-black-400: #5d5171;
+  --color-pmi-off-black-500: #413358;
+  --color-pmi-off-black-600: #37284f;
+  --color-pmi-off-black-700: #2b1b45;
+  --color-pmi-off-black-800: #200f3b;
+  --color-pmi-off-black-900: #170a2a;
+  --color-pmi-off-black-950: #10081e;
+
+  /* PMI Neutral */
+  --color-pmi-neutral-50: #f7f4ef;
+  --color-pmi-neutral-100: #e7e4dc;
+  --color-pmi-neutral-200: #cfcbc2;
+  --color-pmi-neutral-300: #a8a6a1;
+  --color-pmi-neutral-400: #737373;
+  --color-pmi-neutral-500: #666666;
+  --color-pmi-neutral-600: #4d4d4d;
+  --color-pmi-neutral-700: #333333;
+  --color-pmi-neutral-800: #2c2c2c;
+  --color-pmi-neutral-900: #232323;
+  --color-pmi-neutral-950: #1a1a1a;
+
+  /* PMI Saddle */
+  --color-pmi-saddle-50: #fff2e8;
+  --color-pmi-saddle-100: #f4e5db;
+  --color-pmi-saddle-200: #e0cec1;
+  --color-pmi-saddle-300: #ceb7a6;
+  --color-pmi-saddle-400: #d3ad90;
+  --color-pmi-saddle-500: #be9577;
+  --color-pmi-saddle-600: #a4724d;
+  --color-pmi-saddle-700: #804f29;
+  --color-pmi-saddle-800: #4a2d17;
+  --color-pmi-saddle-900: #2e1c0f;
+  --color-pmi-saddle-950: #1b0e04;
 }
 
 :where([data-brand="pmi"]) {
@@ -106,11 +219,40 @@ body {
 
 /* 3) Map brand + mode → current selection (what the utilities actually use) */
 :where([data-brand="pmi"][data-mode="light"]) {
-  --_surface: var(--pmi-surface-light);
-  --_foreground: var(--pmi-foreground-light);
-  --_muted: var(--pmi-muted-light);
-  --_border: var(--pmi-border-light);
-  --_brand: var(--pmi-brand-light);
+  /* Text */
+  --_text-primary: var();
+  --_text-secondary: var();
+  --_text-tertiary: var();
+  --_text-quaternary: var();
+
+  /* Utilities */
+  --_text-disabled: var();
+  --_text-placeholder: var();
+
+  /* Links */
+  --_text-link: var();
+  --_text-link-hover: var();
+  --_text-link-active: var();
+  --_text-link-visited: var();
+  --_text-interactive: var();
+  --_text-interactive-hover: var();
+  --_text-interactive-muted: var();
+
+  /* Brand */
+  --_text-brand-primary: var();
+  --_text-brand-secondary: var();
+  --_text-brand-tertiary: var();
+  --_text-brand-quaternary: var();
+
+  /* Status */
+  --_text-info-primary: var();
+  --_text-info-secondary: var();
+  --_text-success-primary: var();
+  --_text-success-secondary: var();
+  --_text-warning-primary: var();
+  --_text-warning-secondary: var();
+  --_text-error-primary: var();
+  --_text-error-secondary: var();
 }
 
 :where([data-brand="pmi"][data-mode="dark"]) {
