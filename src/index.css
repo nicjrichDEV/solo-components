@@ -7,10 +7,135 @@
   box-sizing: border-box;
 }
 
-@theme {
-  --default-font-family: "Switzer", "sans-serif";
-}
-
+/* Prevent Safari rubber banding weird stuff */
 body {
   overscroll-behavior: none;
+}
+
+/* Baseline variables */
+@theme inline {
+  /* General Levers */
+  --unit: 0.25rem; /* 4px base */
+  --scale: 1; /* Think overall size of elements size, icon size, general proportions */
+  --density: 1; /* Think overall spacing between elements padding, gaps, margin, line-heights */
+
+  /* Typefaces */
+  --font-display: "Aeonik", sans-serif;
+  --font-body: "Aeonik", sans-serif;
+
+  /* Type Scale */
+
+  /* Spacing Scale */
+
+  /* Size controls - Helper tokens to keep input height uniform */
+
+  /* Colors */
+
+  /* Radius */
+
+  /* Semantic tokens Tailwind exposes as utilities */
+  --color-surface: var(
+    --_surface,
+    oklch(0.99 0 0)
+  ); /* fallback if alias missing */
+  --color-foreground: var(--_foreground, oklch(0.22 0.02 255));
+  --color-brand:                           
+;
+
+  /* PMI Custom Colors */
+  /* PMI Violet */
+  --color-pmi-violet-50: #efedf3;
+  --color-pmi-violet-100: #e0c8f9;
+  --color-pmi-violet-200: #cc9bfc;
+  --color-pmi-violet-300: #b465ff;
+  --color-pmi-violet-400: #8243d6;
+  --color-pmi-violet-500: #4f17a8;
+  --color-pmi-violet-600: #371075;
+  --color-pmi-violet-700: #2a0c5a;
+  --color-pmi-violet-800: #230a49;
+  --color-pmi-violet-900: #1a0837;
+  --color-pmi-violet-950: #100522;
+
+  /* PMI Aqua */
+  --color-pmi-aqua-50: #eefafa;
+  --color-pmi-aqua-100: #c8f0f9;
+  --color-pmi-aqua-200: #68d8ed;
+  --color-pmi-aqua-300: #05bfe0;
+  --color-pmi-aqua-400: #0890ba;
+  --color-pmi-aqua-500: #00799e;
+  --color-pmi-aqua-600: #005c77;
+  --color-pmi-aqua-700: #004154;
+  --color-pmi-aqua-800: #023041;
+  --color-pmi-aqua-900: #03202f;
+  --color-pmi-aqua-950: #030d19;
+
+  /* PMI Tangerine */
+  --color-pmi-tangerine-50: #fef7f3;
+  --color-pmi-tangerine-100: #fddece;
+  --color-pmi-tangerine-200: #ffbc9c;
+  --color-pmi-tangerine-300: #ff630f;
+  --color-pmi-tangerine-400: #eb4d0a;
+  --color-pmi-tangerine-500: #d5340b;
+  --color-pmi-tangerine-600: #a12608;
+  --color-pmi-tangerine-700: #741c06;
+  --color-pmi-tangerine-800: #451409;
+  --color-pmi-tangerine-900: #290906;
+  --color-pmi-tangerine-950: #1a0503;
+
+  /* PMI Off Black */
+}
+
+:where([data-brand="pmi"]) {
+  /* Light */
+  --pmi-surface-light: oklch(0.99 0 0);
+  --pmi-foreground-light: oklch(0.22 0.02 255);
+  --pmi-muted-light: oklch(0.96 0.02 255);
+  --pmi-border-light: oklch(0.9 0.02 255);
+  --pmi-brand-light: oklch(0.62 0.15 260);
+
+  /* Dark */
+  --pmi-surface-dark: oklch(0.21 0.01 255);
+  --pmi-foreground-dark: oklch(0.95 0.02 255);
+  --pmi-muted-dark: oklch(0.28 0.01 255);
+  --pmi-border-dark: oklch(0.32 0.01 255);
+  --pmi-brand-dark: oklch(0.7 0.2 260);
+}
+
+/* 3) Map brand + mode → current selection (what the utilities actually use) */
+:where([data-brand="pmi"][data-mode="light"]) {
+  --_surface: var(--pmi-surface-light);
+  --_foreground: var(--pmi-foreground-light);
+  --_muted: var(--pmi-muted-light);
+  --_border: var(--pmi-border-light);
+  --_brand: var(--pmi-brand-light);
+}
+
+:where([data-brand="pmi"][data-mode="dark"]) {
+  --_surface: var(--pmi-surface-dark);
+  --_foreground: var(--pmi-foreground-dark);
+  --_muted: var(--pmi-muted-dark);
+  --_border: var(--pmi-border-dark);
+  --_brand: var(--pmi-brand-dark);
+}
+
+/* (Optional) If marketing needs a slightly different neutral on light */
+:where([data-brand="pmi"][data-mode="light"][data-experience="marketing"]) {
+  --_surface: oklch(0.985 0.01 250); /* subtle tint just for marketing */
+}
+
+/* Defining specific areas that will manipulate the scale of elements */
+:where([data-experience="marketing"]) {
+}
+:where([data-experience="product"]) {
+}
+
+/* Density - Spacing between elements */
+:where([data-density="compact"]) {
+  --density: 0.92;
+}
+:where([data-density="cozy"]) {
+  --density: 1;
+}
+:where([data-density="comfortable"]) {
+  --density: 1.08;
 }
