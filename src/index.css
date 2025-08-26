@@ -201,6 +201,7 @@ body {
   --color-pmi-saddle-950: #1b0e04;
 }
 
+/* Define all PMI Theme colors */
 :where([data-brand="pmi"]) {
   /* Light */
   --pmi-surface-light: oklch(0.99 0 0);
@@ -256,22 +257,18 @@ body {
 }
 
 :where([data-brand="pmi"][data-mode="dark"]) {
-  --_surface: var(--pmi-surface-dark);
-  --_foreground: var(--pmi-foreground-dark);
-  --_muted: var(--pmi-muted-dark);
-  --_border: var(--pmi-border-dark);
-  --_brand: var(--pmi-brand-dark);
 }
 
 /* (Optional) If marketing needs a slightly different neutral on light */
 :where([data-brand="pmi"][data-mode="light"][data-experience="marketing"]) {
-  --_surface: oklch(0.985 0.01 250); /* subtle tint just for marketing */
 }
 
 /* Defining specific areas that will manipulate the scale of elements */
 :where([data-experience="marketing"]) {
+  --scale: 1.5;
 }
 :where([data-experience="product"]) {
+  --scale: 1;
 }
 
 /* Density - Spacing between elements */
