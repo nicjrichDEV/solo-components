@@ -39,7 +39,7 @@ body {
     oklch(0.99 0 0)
   ); /* fallback if alias missing */
   --color-foreground: var(--_foreground, oklch(0.22 0.02 255));
-  --color-brand:                           
+  --color-brand:                            
 ;
 
   /* PMI Custom Colors */
@@ -83,6 +83,9 @@ body {
   --color-pmi-tangerine-950: #1a0503;
 
   /* PMI Off Black */
+  /* TODO: PMI Off Black */
+  /* TODO: PMI Neutral */
+  /* TODO: PMI Saddle */
 }
 
 :where([data-brand="pmi"]) {
