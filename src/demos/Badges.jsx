@@ -1,4 +1,4 @@
-import Badge from "../badge/Badge";
+import Badge from "../badge/badge";
 
 export default function Badges() {
   return (
@@ -6,7 +6,7 @@ export default function Badges() {
       id="badge"
       className="flex flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-2 lg:p-6"
     >
-      <h3 className="text-xl font-medium">Badge</h3>
+      <h3 className="text-xl font-medium text-text-primary">Badge</h3>
       <div className="flex flex-wrap gap-2">
         <Badge color="red">Badge</Badge>
         <Badge color="orange">Badge</Badge>

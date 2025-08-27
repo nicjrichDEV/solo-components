@@ -31,7 +31,7 @@ body {
 */
 
 /* Baseline variables */
-@theme inline {
+@theme {
   /* General Levers */
   --unit: 0.25rem; /* 4px base */
   --scale: 1; /* Think overall size of elements size, icon size, general proportions */
@@ -48,9 +48,9 @@ body {
   /* Size controls - Helper tokens to keep input height uniform */
 
   /* Colors */
-  /* General color emphasis levels */
-  --text-primary: var(--_text-primary, #fff);
-  --text-secondary: var(--_text-secondary, #fff);
+
+  /* --text-primary: var(--_text-primary, #fff); */
+  /* --text-secondary: var(--_text-secondary, #fff); */
   --text-tertiary: var(--_text-tertiary, #fff);
   --text-quaternary: var(--_text-quaternary, #fff);
 
@@ -201,30 +201,86 @@ body {
   --color-pmi-saddle-950: #1b0e04;
 }
 
+@utility text-primary {
+  color: var(--_text-primary);
+}
+@utility text-secondary {
+  color: var(--_text-secondary);
+}
+
 /* Define all PMI Theme colors */
 :where([data-brand="pmi"]) {
   /* Light */
-  --pmi-surface-light: oklch(0.99 0 0);
-  --pmi-foreground-light: oklch(0.22 0.02 255);
-  --pmi-muted-light: oklch(0.96 0.02 255);
-  --pmi-border-light: oklch(0.9 0.02 255);
-  --pmi-brand-light: oklch(0.62 0.15 260);
 
-  /* Dark */
-  --pmi-surface-dark: oklch(0.21 0.01 255);
-  --pmi-foreground-dark: oklch(0.95 0.02 255);
-  --pmi-muted-dark: oklch(0.28 0.01 255);
-  --pmi-border-dark: oklch(0.32 0.01 255);
-  --pmi-brand-dark: oklch(0.7 0.2 260);
+  /* Text */
+  --pmi-text-primary-light: var(--color-pmi-off-black-800);
+  --pmi-text-secondary-light: var(--color-pmi-off-black-600);
+  --pmi-text-tertiary-light: var(--color-pmi-off-black-400);
+  --pmi-text-quaternary-light: var(--color-pmi-off-black-200);
+
+  /* Text - Utilities */
+  --pmi-text-disabled-light: var(--color-pmi-off-black-400);
+  --pmi-text-placeholder-light: var(--color-pmi-neutral-500);
+
+  /* Text - Links */
+  --pmi-text-link-light: var(--color-pmi-violet-500);
+  --pmi-text-link-hover-light: var(--color-pmi-violet-700);
+  --pmi-text-link-active-light: var(--color-pmi-violet-500);
+  --pmi-text-link-visited-light: var(--color-pmi-violet-300);
+  /* --pmi-text-interactive-light: var(); */
+  /* --pmi-text-interactive-hover-light: var(); */
+  /* --pmi-text-interactive-muted-light: var(); */
+
+  /* Text - Brand */
+  --pmi-text-brand-primary-light: var(--color-pmi-violet-500);
+  --pmi-text-brand-secondary-light: var(--color-pmi-violet-400);
+  --pmi-text-brand-tertiary-light: var(--color-pmi-violet-300);
+  --pmi-text-brand-quaternary-light: var(--color-pmi-violet-200);
+
+  /* Text - Status */
+  --pmi-info-primary-light: var(--color-pmi-aqua-500);
+  --pmi-info-secondary-light: var(--color-pmi-aqua-300);
+  --pmi-success-primary-light: var(--color-emerald-600);
+  --pmi-success-secondary-light: var(--color-emerald-300);
+  --pmi-warning-primary-light: var(--color-yellow-600);
+  --pmi-warning-secondary-light: var(--color-yellow-300);
+  --pmi-error-primary-light: var(--color-red-600);
+  --pmi-error-secondary-light: var(--color-red-300);
+
+  /* Text - Context Aware */
+  --pmi-on-brand-primary-light: var(--color-white);
+  --pmi-on-brand-secondary-light: var(--color-pmi-off-black-200);
+  --pmi-on-info-primary-light: var(--color-white);
+  --pmi-on-info-secondary-light: var(--color-pmi-aqua-200);
+  --pmi-on-success-primary-light: var(--color-white);
+  --pmi-on-success-secondary-light: var(--color-emerald-200);
+  --pmi-on-warning-primary-light: var(--color-white);
+  --pmi-on-warning-secondary-light: var(--color-yellow-200);
+  --pmi-on-error-primary-light: var(--color-white);
+  --pmi-on-error-secondary-light: var(--color-red-200);
+
+  /* Text - Inverse */
+  --pmi-inverse-primary-light: var(--color-white);
+  --pmi-inverse-secondary-light: var(--color-pmi-off-black-200);
+  --pmi-inverse-tertiary-light: var(--color-pmi-off-black-400);
+  --pmi-inverse-quaternary-light: var(--color-pmi-off-black-600);
+  --pmi-inverse-disabled-light: var(--color-pmi-neutral-500);
+  --pmi-inverse-placeholder-light: var(--color-pmi-neutral-500);
+  --pmi-inverse-link-light: var(--color-pmi-violet-500);
+  --pmi-inverse-link-hover-light: var(--color-pmi-violet-200);
+  --pmi-inverse-link-active-light: var(--color-pmi-violet-500);
+  --pmi-inverse-link-visited-light: var(--color-pmi-violet-300);
+  /* --pmi-inverse-interactive-light: var(); */
+  /* --pmi-inverse-interactive-hover-light: var(); */
 }
 
 /* 3) Map brand + mode → current selection (what the utilities actually use) */
 :where([data-brand="pmi"][data-mode="light"]) {
   /* Text */
-  --_text-primary: var();
-  --_text-secondary: var();
-  --_text-tertiary: var();
-  --_text-quaternary: var();
+  --_text-primary: var(--pmi-text-primary-light);
+  --_text-secondary: var(--pmi-text-secondary-light);
+  --_text-tertiary: var(--pmi-text-tertiary-light);
+  --_text-quaternary: var(--pmi-text-quaternary-light);
 
   /* Utilities */
   --_text-disabled: var();
@@ -235,9 +291,10 @@ body {
   --_text-link-hover: var();
   --_text-link-active: var();
   --_text-link-visited: var();
-  --_text-interactive: var();
-  --_text-interactive-hover: var();
-  --_text-interactive-muted: var();
+  /* --_text-interactive: var(); */
+  /* --_text-interactive-hover: var(); */
+  /* --_text-interactive-muted: var(); */
+  /* TODO: Consider Monochrome link */
 
   /* Brand */
   --_text-brand-primary: var();
@@ -254,6 +311,32 @@ body {
   --_text-warning-secondary: var();
   --_text-error-primary: var();
   --_text-error-secondary: var();
+
+  /* Context Aware */
+  --_text-on-brand-primary: var();
+  --_text-on-brand-secondary: var();
+  --_text-on-info-primary: var();
+  --_text-on-info-secondary: var();
+  --_text-on-success-primary: var();
+  --_text-on-success-secondary: var();
+  --_text-on-warning-primary: var();
+  --_text-on-warning-secondary: var();
+  --_text-on-error-primary: var();
+  --_text-on-error-secondary: var();
+
+  /* Inverse */
+  --_text-inverse-primary: var();
+  --_text-inverse-secondary: var();
+  --_text-inverse-tertiary: var();
+  --_text-inverse-quaternary: var();
+  --_text-inverse-disabled: var();
+  --_text-inverse-placeholder: var();
+  --_text-inverse-link: var();
+  --_text-inverse-link-hover: var();
+  --_text-inverse-link-active: var();
+  --_text-inverse-link-visited: var();
+  /* --_text-inverse-interactive: var(); */
+  /* --_text-inverse-interactive-hover: var(); */
 }
 
 :where([data-brand="pmi"][data-mode="dark"]) {

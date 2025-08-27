@@ -11,7 +11,7 @@ export default function MobileNav({ toggleMobile }) {
         <Github size={"20px"} />
       </a>
       <div className="flex items-center justify-center">
-        <h2 className="font-medium text-neutral-800">UI Next</h2>
+        <h2 className="text-primary font-medium">UI Next</h2>
       </div>
       <button
         onClick={toggleMobile}
