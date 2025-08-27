@@ -1,11 +1,4 @@
-import {
-  createContext,
-  use,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 const ThemeContext = createContext(null);
 
@@ -30,6 +23,7 @@ export function ThemeProvider({ initial = {}, children }) {
       experience,
       density,
       setBrand,
+      setMode,
       setExperience,
       setDensity,
     }),

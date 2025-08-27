@@ -8,7 +8,7 @@ export default function SideNav() {
       <a
         href={`#${comp}`}
         key={index}
-        className="text-text-secondary flex h-8 min-h-8 items-center justify-items-start border-b border-b-neutral-200 px-2 font-body text-sm font-medium transition-colors duration-150 ease-in hover:bg-neutral-200"
+        className="text-text-secondary font-body flex h-8 min-h-8 items-center justify-items-start border-b border-b-neutral-200 px-2 text-sm font-medium transition-colors duration-150 ease-in hover:bg-neutral-200"
       >
         {comp[0].toUpperCase() + comp.slice(1)}
       </a>
@@ -18,7 +18,7 @@ export default function SideNav() {
   return (
     <aside className="hidden lg:flex lg:flex-col lg:border-r lg:border-r-neutral-200 lg:bg-white">
       <div className="flex h-10 items-center justify-between border-b border-b-neutral-200 pl-2">
-        <h2 className="font-display font-medium text-primary">UI Next</h2>
+        <h2 className="font-display text-primary font-medium">UI Next</h2>
         <a
           className="flex h-full w-10 items-center justify-center border-l border-l-neutral-200 transition-colors duration-150 ease-in hover:bg-neutral-200 active:shadow-inner"
           href={CONSTANTS.GITHUB}
