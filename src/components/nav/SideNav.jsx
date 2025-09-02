@@ -1,6 +1,7 @@
 import componentNames from "../../utils/componentNames";
 import CONSTANTS from "../../utils/constants";
 import { Github } from "lucide-react";
+import "./SideNav.css";
 
 export default function SideNav() {
   const navLinks = componentNames.map((comp, index) => {
@@ -16,7 +17,7 @@ export default function SideNav() {
   });
 
   return (
-    <aside className="hidden lg:flex lg:flex-col lg:border-r lg:border-r-neutral-200 lg:bg-white">
+    <aside className="aside-root">
       <div className="flex h-10 items-center justify-between border-b border-b-neutral-200 pl-2">
         <h2 className="font-display text-primary font-medium">UI Next</h2>
         <a
