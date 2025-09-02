@@ -1,9 +1,15 @@
 @layer components {
   .aside-root {
-    background-color: var(--bg-surface-primary);
-    border-right: 1px solid var(--border-secondary);
-    width: 256px;
-    height: 100vh;
-    padding: 1rem;
+    display: none;
+  }
+  @container (min-width: 640px) {
+    .aside-root {
+      display: block;
+      background-color: var(--bg-surface-primary);
+      border-right: 1px solid var(--border-primary);
+      width: 256px;
+      height: 100vh;
+      padding: 1rem;
+    }
   }
 }

@@ -1,4 +1,5 @@
 import componentNames from "../../utils/componentNames";
+import "./MobileNavExpanded.css";
 
 export default function MobileExpanded({ mobileOpen }) {
   const navLinks = componentNames.map((comp, index) => {

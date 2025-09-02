@@ -1,0 +1,35 @@
+.mobile-nav-root {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-surface-primary);
+  height: 40px;
+  border-top: 1px solid var(--border-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-container,
+.end-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  path {
+    stroke: var(--icon-primary);
+  }
+}
+
+.start-container {
+  border-right: 1px solid var(--border-primary);
+}
+
+.end-container {
+  border: none;
+  border-left: 1px solid var(--border-primary);
+  background-color: unset;
+}

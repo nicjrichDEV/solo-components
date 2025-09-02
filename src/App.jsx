@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <MainLayout>
-        <div className="">stuff</div>
+        <div className=""></div>
       </MainLayout>
     </>
   );

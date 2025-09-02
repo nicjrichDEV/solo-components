@@ -13,6 +13,7 @@
     padding: 0;
     overscroll-behavior: none;
     background-color: var(--color-neutral-50);
+    color: var(--text-primary)
   }
 }
 
@@ -136,13 +137,17 @@
     /* Desktop: 1025px+ (no upper limit needed) */
 
     /* Alternative naming for framework compatibility */
-    --breakpoint-sm: 640px;          /* Mobile breakpoint */
-    --breakpoint-lg: 1024px;         /* Desktop breakpoint */
+     /* --breakpoint-sm: 640px;          /* Mobile breakpoint */
+     /* --breakpoint-lg: 1024px;         /* Desktop breakpoint */
 
     /* Container Max Widths */
-    --container-mobile: 100%;        /* Full width on mobile */
-    --container-tablet: 640px;       /* Constrained width on tablet */
-    --container-desktop: 1024px;     /* Constrained width on desktop */
+     /* --container-mobile: 100%;        /* Full width on mobile */
+     /* --container-tablet: 640px;       /* Constrained width on tablet */
+     /* --container-desktop: 1024px;     /* Constrained width on desktop */
+
+    /* Container Query Breakpoints */
+    --container-mobile-size: 640px;  /* Container queries for mobile */
+    --container-tablet-size: 1024px; /* Container queries for tablet */
 
     /* Common Layout Values */
     --sidebar-width: 256px;          /* Matches your current SideNav width */
@@ -241,8 +246,8 @@
      * ================================ */
     
     /* General Borders - Content separation and structure */
-    --border-primary: var(--color-neutral-200);           /* Standard borders, card outlines */
-    --border-secondary: var(--color-neutral-100);         /* Subtle dividers, table borders */
+    --border-primary: var(--color-neutral-100);           /* Standard borders, card outlines */
+    --border-secondary: var(--color-neutral-200);         /* Additional emphasis */
     --border-tertiary: var(--color-neutral-400);          /* Emphasized borders, section dividers */
     --border-quaternary: var(--color-neutral-500);        /* Strong borders, highlighted containers */
 

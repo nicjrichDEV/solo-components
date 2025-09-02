@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import MobileNavExpanded from "../components/nav/MobileNavExpanded";
 import MobileNav from "../components/nav/MobileNav";
 import SideNav from "../components/nav/SideNav";
+import "./MainLayout.css";
 
 export default function MainLayout({ children }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,12 +27,12 @@ export default function MainLayout({ children }) {
   }
 
   return (
-    <div className="flex h-screen max-h-screen min-h-screen flex-col overflow-hidden lg:grid lg:grid-cols-[256px_1fr]">
+    <div className="app-shell">
       {/* Desktop Sidebar */}
       <SideNav />
 
       {/* Mobile */}
-      <nav className="lg:hidden" ref={mobileNavRef}>
+      <nav className="mobile-nav-container" ref={mobileNavRef}>
         {/* Fixed top bar */}
         <MobileNav toggleMobile={toggleMobile} />
         {/* Mobile Expand Down */}
