@@ -1,0 +1,103 @@
+@layer reset, base, themes, components, utilities;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+  }
+}
+
+@layer base {
+  :root {
+    /* Violet - Perceptually uniform OKLCH ramp */
+    --color-violet-50: oklch(96% 0.02 290);
+    --color-violet-100: oklch(91% 0.04 290);
+    --color-violet-200: oklch(83% 0.09 290);
+    --color-violet-300: oklch(74% 0.15 290);
+    --color-violet-400: oklch(62% 0.19 290);
+    --color-violet-500: oklch(48% 0.22 290);
+    --color-violet-600: oklch(36% 0.18 290);
+    --color-violet-700: oklch(26% 0.14 290);
+    --color-violet-800: oklch(19% 0.09 290);
+    --color-violet-900: oklch(13% 0.06 290);
+    --color-violet-950: oklch(9% 0.03 290);
+
+    /* Aqua - Perceptually uniform OKLCH ramp */
+    --color-aqua-50: oklch(97% 0.01 195);
+    --color-aqua-100: oklch(93% 0.03 195);
+    --color-aqua-200: oklch(82% 0.08 195);
+    --color-aqua-300: oklch(71% 0.13 195);
+    --color-aqua-400: oklch(58% 0.16 195);
+    --color-aqua-500: oklch(47% 0.18 195);
+    --color-aqua-600: oklch(35% 0.14 195);
+    --color-aqua-700: oklch(25% 0.1 195);
+    --color-aqua-800: oklch(18% 0.06 195);
+    --color-aqua-900: oklch(13% 0.04 195);
+    --color-aqua-950: oklch(9% 0.02 195);
+
+    /* Tangerine - Perceptually uniform OKLCH ramp */
+    --color-tangerine-50: oklch(97% 0.02 35);
+    --color-tangerine-100: oklch(92% 0.04 35);
+    --color-tangerine-200: oklch(84% 0.09 35);
+    --color-tangerine-300: oklch(72% 0.18 35);
+    --color-tangerine-400: oklch(62% 0.2 35);
+    --color-tangerine-500: oklch(54% 0.19 35);
+    --color-tangerine-600: oklch(42% 0.15 35);
+    --color-tangerine-700: oklch(31% 0.11 35);
+    --color-tangerine-800: oklch(22% 0.07 35);
+    --color-tangerine-900: oklch(15% 0.04 35);
+    --color-tangerine-950: oklch(10% 0.02 35);
+
+    /* Off Black - Perceptually uniform OKLCH ramp */
+    --color-off-black-50: oklch(91% 0.02 280);
+    --color-off-black-100: oklch(83% 0.04 280);
+    --color-off-black-200: oklch(71% 0.08 280);
+    --color-off-black-300: oklch(58% 0.12 280);
+    --color-off-black-400: oklch(45% 0.14 280);
+    --color-off-black-500: oklch(33% 0.12 280);
+    --color-off-black-600: oklch(25% 0.09 280);
+    --color-off-black-700: oklch(19% 0.07 280);
+    --color-off-black-800: oklch(14% 0.05 280);
+    --color-off-black-900: oklch(10% 0.03 280);
+    --color-off-black-950: oklch(7% 0.02 280);
+
+    /* Neutral - Perceptually uniform OKLCH ramp (achromatic) */
+    --color-neutral-50: oklch(96% 0 0);
+    --color-neutral-100: oklch(90% 0 0);
+    --color-neutral-200: oklch(81% 0 0);
+    --color-neutral-300: oklch(69% 0 0);
+    --color-neutral-400: oklch(56% 0 0);
+    --color-neutral-500: oklch(44% 0 0);
+    --color-neutral-600: oklch(33% 0 0);
+    --color-neutral-700: oklch(24% 0 0);
+    --color-neutral-800: oklch(18% 0 0);
+    --color-neutral-900: oklch(13% 0 0);
+    --color-neutral-950: oklch(9% 0 0);
+
+    /* Saddle - Perceptually uniform OKLCH ramp */
+    --color-saddle-50: oklch(96% 0.02 60);
+    --color-saddle-100: oklch(91% 0.04 60);
+    --color-saddle-200: oklch(83% 0.07 60);
+    --color-saddle-300: oklch(74% 0.1 60);
+    --color-saddle-400: oklch(67% 0.12 60);
+    --color-saddle-500: oklch(59% 0.13 60);
+    --color-saddle-600: oklch(47% 0.11 60);
+    --color-saddle-700: oklch(35% 0.08 60);
+    --color-saddle-800: oklch(22% 0.05 60);
+    --color-saddle-900: oklch(15% 0.03 60);
+    --color-saddle-950: oklch(10% 0.02 60);
+  }
+}
+
+@layer themes {
+  :where([data-theme="dark"]) {
+    --color-background: var(--color-Ink-900);
+  }
+}
