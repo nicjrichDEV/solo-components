@@ -18,109 +18,146 @@
 
 @layer base {
   :root {
-    /* Violet - Perceptually uniform OKLCH ramp */
-    --color-violet-50: oklch(96% 0.02 290);
-    --color-violet-100: oklch(91% 0.04 290);
-    --color-violet-200: oklch(83% 0.09 290);
-    --color-violet-300: oklch(74% 0.15 290);
-    --color-violet-400: oklch(62% 0.19 290);
-    --color-violet-500: oklch(48% 0.22 290);
-    --color-violet-600: oklch(36% 0.18 290);
-    --color-violet-700: oklch(26% 0.14 290);
-    --color-violet-800: oklch(19% 0.09 290);
-    --color-violet-900: oklch(13% 0.06 290);
-    --color-violet-950: oklch(9% 0.03 290);
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    /* Violet - Original brand colors */
+    --color-violet-50: #EFEDF3;
+    --color-violet-100: #E0C8F9;
+    --color-violet-200: #CC9BFC;
+    --color-violet-300: #B465FF;
+    --color-violet-400: #8243D6;
+    --color-violet-500: #4F17A8;
+    --color-violet-600: #371075;
+    --color-violet-700: #2A0C5A;
+    --color-violet-800: #230A49;
+    --color-violet-900: #1A0837;
+    --color-violet-950: #100522;
 
-    /* Aqua - Perceptually uniform OKLCH ramp */
-    --color-aqua-50: oklch(97% 0.01 195);
-    --color-aqua-100: oklch(93% 0.03 195);
-    --color-aqua-200: oklch(82% 0.08 195);
-    --color-aqua-300: oklch(71% 0.13 195);
-    --color-aqua-400: oklch(58% 0.16 195);
-    --color-aqua-500: oklch(47% 0.18 195);
-    --color-aqua-600: oklch(35% 0.14 195);
-    --color-aqua-700: oklch(25% 0.1 195);
-    --color-aqua-800: oklch(18% 0.06 195);
-    --color-aqua-900: oklch(13% 0.04 195);
-    --color-aqua-950: oklch(9% 0.02 195);
+    /* Aqua - Original brand colors */
+    --color-aqua-50: #EEFAFA;
+    --color-aqua-100: #C8F0F9;
+    --color-aqua-200: #68D8ED;
+    --color-aqua-300: #05BFE0;
+    --color-aqua-400: #0890BA;
+    --color-aqua-500: #00799E;
+    --color-aqua-600: #005C77;
+    --color-aqua-700: #004154;
+    --color-aqua-800: #023041;
+    --color-aqua-900: #03202F;
+    --color-aqua-950: #030D19;
 
-    /* Tangerine - Perceptually uniform OKLCH ramp */
-    --color-tangerine-50: oklch(97% 0.02 35);
-    --color-tangerine-100: oklch(92% 0.04 35);
-    --color-tangerine-200: oklch(84% 0.09 35);
-    --color-tangerine-300: oklch(72% 0.18 35);
-    --color-tangerine-400: oklch(62% 0.2 35);
-    --color-tangerine-500: oklch(54% 0.19 35);
-    --color-tangerine-600: oklch(42% 0.15 35);
-    --color-tangerine-700: oklch(31% 0.11 35);
-    --color-tangerine-800: oklch(22% 0.07 35);
-    --color-tangerine-900: oklch(15% 0.04 35);
-    --color-tangerine-950: oklch(10% 0.02 35);
+    /* Tangerine - Original brand colors */
+    --color-tangerine-50: #FEF7F3;
+    --color-tangerine-100: #FDDECE;
+    --color-tangerine-200: #FFBC9C;
+    --color-tangerine-300: #FF630F;
+    --color-tangerine-400: #EB4D0A;
+    --color-tangerine-500: #D5340B;
+    --color-tangerine-600: #A12608;
+    --color-tangerine-700: #741C06;
+    --color-tangerine-800: #451409;
+    --color-tangerine-900: #290906;
+    --color-tangerine-950: #1A0503;
 
-    /* Off Black - Perceptually uniform OKLCH ramp */
-    --color-off-black-50: oklch(91% 0.02 280);
-    --color-off-black-100: oklch(83% 0.04 280);
-    --color-off-black-200: oklch(71% 0.08 280);
-    --color-off-black-300: oklch(58% 0.12 280);
-    --color-off-black-400: oklch(45% 0.14 280);
-    --color-off-black-500: oklch(33% 0.12 280);
-    --color-off-black-600: oklch(25% 0.09 280);
-    --color-off-black-700: oklch(19% 0.07 280);
-    --color-off-black-800: oklch(14% 0.05 280);
-    --color-off-black-900: oklch(10% 0.03 280);
-    --color-off-black-950: oklch(7% 0.02 280);
+    /* Off Black - Original brand colors */
+    --color-off-black-50: #DAD6E1;
+    --color-off-black-100: #C0B8CC;
+    --color-off-black-200: #9B92A9;
+    --color-off-black-300: #796F89;
+    --color-off-black-400: #5D5171;
+    --color-off-black-500: #413358;
+    --color-off-black-600: #37284F;
+    --color-off-black-700: #2B1B45;
+    --color-off-black-800: #200F3B;
+    --color-off-black-900: #170A2A;
+    --color-off-black-950: #10081E;
 
-    /* Neutral - Perceptually uniform OKLCH ramp (achromatic) */
-    --color-neutral-50: oklch(96% 0 0);
-    --color-neutral-100: oklch(90% 0 0);
-    --color-neutral-200: oklch(81% 0 0);
-    --color-neutral-300: oklch(69% 0 0);
-    --color-neutral-400: oklch(56% 0 0);
-    --color-neutral-500: oklch(44% 0 0);
-    --color-neutral-600: oklch(33% 0 0);
-    --color-neutral-700: oklch(24% 0 0);
-    --color-neutral-800: oklch(18% 0 0);
-    --color-neutral-900: oklch(13% 0 0);
-    --color-neutral-950: oklch(9% 0 0);
+    /* Neutral - Original brand colors with warm beige undertones */
+    --color-neutral-50: #F7F4EF;
+    --color-neutral-100: #E7E4DC;
+    --color-neutral-200: #CFCBC2;
+    --color-neutral-300: #A8A6A1;
+    --color-neutral-400: #737373;
+    --color-neutral-500: #666666;
+    --color-neutral-600: #4D4D4D;
+    --color-neutral-700: #333333;
+    --color-neutral-800: #2C2C2C;
+    --color-neutral-900: #232323;
+    --color-neutral-950: #1A1A1A;
 
-    /* Saddle - Perceptually uniform OKLCH ramp */
-    --color-saddle-50: oklch(96% 0.02 60);
-    --color-saddle-100: oklch(91% 0.04 60);
-    --color-saddle-200: oklch(83% 0.07 60);
-    --color-saddle-300: oklch(74% 0.1 60);
-    --color-saddle-400: oklch(67% 0.12 60);
-    --color-saddle-500: oklch(59% 0.13 60);
-    --color-saddle-600: oklch(47% 0.11 60);
-    --color-saddle-700: oklch(35% 0.08 60);
-    --color-saddle-800: oklch(22% 0.05 60);
-    --color-saddle-900: oklch(15% 0.03 60);
-    --color-saddle-950: oklch(10% 0.02 60);
+    /* Saddle - Original brand colors */
+    --color-saddle-50: #FFF2E8;
+    --color-saddle-100: #F4E5DB;
+    --color-saddle-200: #E0CEC1;
+    --color-saddle-300: #CEB7A6;
+    --color-saddle-400: #D3AD90;
+    --color-saddle-500: #BE9577;
+    --color-saddle-600: #A4724D;
+    --color-saddle-700: #804F29;
+    --color-saddle-800: #4A2D17;
+    --color-saddle-900: #2E1C0F;
+    --color-saddle-950: #1B0E04;
 
-    /* Emerald - Perceptually uniform OKLCH ramp (Hue: 160°) */
-    --color-emerald-50: oklch(96% 0.02 160);
-    --color-emerald-100: oklch(91% 0.04 160);
-    --color-emerald-200: oklch(84% 0.08 160);
-    --color-emerald-300: oklch(76% 0.14 160);
-    --color-emerald-400: oklch(66% 0.18 160);
-    --color-emerald-500: oklch(55% 0.2 160);
-    --color-emerald-600: oklch(44% 0.16 160);
-    --color-emerald-700: oklch(34% 0.12 160);
-    --color-emerald-800: oklch(26% 0.08 160);
-    --color-emerald-900: oklch(18% 0.05 160);
-    --color-emerald-950: oklch(11% 0.03 160);
+    /* Emerald - Tailwind v3 colors */
+    --color-emerald-50: #ecfdf5;
+    --color-emerald-100: #d1fae5;
+    --color-emerald-200: #a7f3d0;
+    --color-emerald-300: #6ee7b7;
+    --color-emerald-400: #34d399;
+    --color-emerald-500: #10b981;
+    --color-emerald-600: #059669;
+    --color-emerald-700: #047857;
+    --color-emerald-800: #065f46;
+    --color-emerald-900: #064e3b;
+    --color-emerald-950: #022c22;
 
-    /* Red - Perceptually uniform OKLCH ramp (Hue: 25°) */
-    --color-red-50: oklch(96% 0.02 25);
-    --color-red-100: oklch(91% 0.04 25);
-    --color-red-200: oklch(84% 0.09 25);
-    --color-red-300: oklch(75% 0.16 25);
-    --color-red-400: oklch(64% 0.2 25);
-    --color-red-500: oklch(52% 0.22 25);
-    --color-red-600: oklch(41% 0.18 25);
-    --color-red-700: oklch(31% 0.14 25);
-    --color-red-800: oklch(23% 0.09 25);
-    --color-red-900: oklch(16% 0.06 25);
-    --color-red-950: oklch(10% 0.03 25);
+    /* Red - Tailwind v3 colors */
+    --color-red-50: #fef2f2;
+    --color-red-100: #fee2e2;
+    --color-red-200: #fecaca;
+    --color-red-300: #fca5a5;
+    --color-red-400: #f87171;
+    --color-red-500: #ef4444;
+    --color-red-600: #dc2626;
+    --color-red-700: #b91c1c;
+    --color-red-800: #991b1b;
+    --color-red-900: #7f1d1d;
+    --color-red-950: #450a0a;
+
+    /* ================================
+     * BREAKPOINTS & LAYOUT TOKENS
+     * ================================
+     * Consistent responsive design breakpoints and spacing
+     */
+
+    /* Breakpoints - PMI's three-tier responsive system */
+    --breakpoint-mobile: 640px;      /* Mobile: 0-640px */
+    --breakpoint-tablet: 1024px;     /* Tablet: 641px-1024px */
+    /* Desktop: 1025px+ (no upper limit needed) */
+
+    /* Alternative naming for framework compatibility */
+    --breakpoint-sm: 640px;          /* Mobile breakpoint */
+    --breakpoint-lg: 1024px;         /* Desktop breakpoint */
+
+    /* Container Max Widths */
+    --container-mobile: 100%;        /* Full width on mobile */
+    --container-tablet: 640px;       /* Constrained width on tablet */
+    --container-desktop: 1024px;     /* Constrained width on desktop */
+
+    /* Common Layout Values */
+    --sidebar-width: 256px;          /* Matches your current SideNav width */
+    --sidebar-width-collapsed: 64px;  /* For collapsed sidebar state */
+    --mobile-nav-height: 56px;       /* Mobile navigation height */
+
+    /* Border Radius Scale */
+    --radius-none: 0;
+    --radius-sm: 0.125rem;   /* 2px */
+    --radius-base: 0.25rem;  /* 4px */
+    --radius-md: 0.375rem;   /* 6px */
+    --radius-lg: 0.5rem;     /* 8px */
+    --radius-xl: 0.75rem;    /* 12px */
+    --radius-2xl: 1rem;      /* 16px */
+    --radius-full: 9999px;   /* Fully rounded */
 
     /* ================================
      * SEMANTIC DESIGN TOKENS
@@ -204,8 +241,8 @@
      * ================================ */
     
     /* General Borders - Content separation and structure */
-    --border-primary: var(--color-neutral-300);           /* Standard borders, card outlines */
-    --border-secondary: var(--color-neutral-200);         /* Subtle dividers, table borders */
+    --border-primary: var(--color-neutral-200);           /* Standard borders, card outlines */
+    --border-secondary: var(--color-neutral-100);         /* Subtle dividers, table borders */
     --border-tertiary: var(--color-neutral-400);          /* Emphasized borders, section dividers */
     --border-quaternary: var(--color-neutral-500);        /* Strong borders, highlighted containers */
 
@@ -458,331 +495,5 @@
 }
 
 @layer themes {
-  :where([data-theme="dark"]) {
-    /* TEXT COLORS - DARK THEME OVERRIDES
-     * High contrast text on dark backgrounds
-     * ================================ */
-    
-    /* General Text Emphasis - Light text on dark backgrounds */
-    --text-primary: var(--color-neutral-100);               /* Main body text, headings on dark */
-    --text-secondary: var(--color-neutral-300);             /* Supporting text, captions on dark */
-    --text-tertiary: var(--color-neutral-500);              /* Subtle text, placeholders on dark */
-    --text-quaternary: var(--color-neutral-600);            /* Minimal emphasis, disabled text on dark */
 
-    /* Brand Text - Lighter brand colors for dark backgrounds */
-    --text-brand-primary: var(--color-violet-300);          /* Primary brand text, key CTAs on dark */
-    --text-brand-secondary: var(--color-violet-400);        /* Supporting brand text on dark */
-    --text-brand-tertiary: var(--color-violet-500);         /* Subtle brand accents on dark */
-    --text-brand-quaternary: var(--color-violet-600);       /* Minimal brand presence on dark */
-
-    /* Text Utilities - Special purpose text styling for dark */
-    --text-disabled: var(--color-neutral-600);              /* Disabled form controls, inactive elements on dark */
-    --text-placeholder: var(--color-neutral-500);           /* Input placeholders, empty states on dark */
-    --text-caption: var(--color-neutral-400);               /* Image captions, fine print, helper text on dark */
-    --text-overline: var(--color-neutral-300);              /* Section headers, category labels on dark */
-    --text-code: var(--color-violet-300);                   /* Inline code, technical content on dark */
-    --text-highlight: var(--color-tangerine-300);           /* Search highlights, selected text on dark */
-
-    /* Links - Interactive text elements for dark themes */
-    --text-link: var(--color-aqua-400);                     /* Default link color on dark */
-    --text-link-hover: var(--color-aqua-300);               /* Link hover state on dark */
-    --text-link-active: var(--color-aqua-200);              /* Link pressed/active state on dark */
-    --text-link-visited: var(--color-violet-400);           /* Visited link color on dark */
-
-    /* Status Text - Semantic messaging and feedback for dark themes */
-    --text-info-primary: var(--color-aqua-300);             /* Important info messages, tips on dark */
-    --text-info-secondary: var(--color-aqua-400);           /* Supporting info text on dark */
-    --text-success-primary: var(--color-emerald-300);       /* Success messages, confirmations on dark */
-    --text-success-secondary: var(--color-emerald-400);     /* Supporting success text on dark */
-    --text-warning-primary: var(--color-tangerine-300);     /* Warning messages, cautions on dark */
-    --text-warning-secondary: var(--color-tangerine-400);   /* Supporting warning text on dark */
-    --text-error-primary: var(--color-red-300);             /* Error messages, validation failures on dark */
-    --text-error-secondary: var(--color-red-400);           /* Supporting error text on dark */
-
-    /* Muted Status Text - Subtle status indicators for dark themes */
-    --text-info-muted: var(--color-aqua-500);               /* Subtle info badges, indicators on dark */
-    --text-success-muted: var(--color-emerald-500);         /* Subtle success indicators on dark */
-    --text-warning-muted: var(--color-tangerine-500);       /* Subtle warning indicators on dark */
-    --text-error-muted: var(--color-red-500);               /* Subtle error indicators on dark */
-
-    /* Context Aware Text - Text on colored backgrounds in dark theme */
-    --text-on-brand-primary: var(--color-violet-950);       /* Text on brand backgrounds in dark theme */
-    --text-on-brand-secondary: var(--color-violet-900);     /* Secondary text on brand backgrounds in dark theme */
-    --text-on-info-primary: var(--color-aqua-950);          /* Text on info backgrounds in dark theme */
-    --text-on-info-secondary: var(--color-aqua-900);        /* Secondary text on info backgrounds in dark theme */
-    --text-on-success-primary: var(--color-emerald-950);    /* Text on success backgrounds in dark theme */
-    --text-on-success-secondary: var(--color-emerald-900);  /* Secondary text on success backgrounds in dark theme */
-    --text-on-warning-primary: var(--color-tangerine-950);  /* Text on warning backgrounds in dark theme */
-    --text-on-warning-secondary: var(--color-tangerine-900); /* Secondary text on warning backgrounds in dark theme */
-    --text-on-error-primary: var(--color-red-950);          /* Text on error backgrounds in dark theme */
-    --text-on-error-secondary: var(--color-red-900);        /* Secondary text on error backgrounds in dark theme */
-
-    /* Inverse Text - Light theme text colors for mixed contexts */
-    --text-inverse-primary: var(--color-off-black-800);     /* Light theme primary text */
-    --text-inverse-secondary: var(--color-off-black-600);   /* Light theme secondary text */
-    --text-inverse-tertiary: var(--color-off-black-400);    /* Light theme tertiary text */
-    --text-inverse-quaternary: var(--color-off-black-200);  /* Light theme quaternary text */
-    --text-inverse-disabled: var(--color-off-black-300);    /* Light theme disabled text */
-    --text-inverse-placeholder: var(--color-off-black-400); /* Light theme placeholder text */
-    --text-inverse-link: var(--color-aqua-600);             /* Light theme link color */
-    --text-inverse-link-hover: var(--color-aqua-700);       /* Light theme link hover */
-    --text-inverse-link-active: var(--color-aqua-800);      /* Light theme link active */
-    --text-inverse-link-visited: var(--color-violet-600);   /* Light theme visited link */
-
-    /* BORDER COLORS - DARK THEME OVERRIDES
-     * Lighter borders for dark backgrounds
-     * ================================ */
-    
-    /* General Borders - Content separation and structure for dark themes */
-    --border-primary: var(--color-neutral-600);             /* Standard borders, card outlines on dark */
-    --border-secondary: var(--color-neutral-700);           /* Subtle dividers, table borders on dark */
-    --border-tertiary: var(--color-neutral-500);            /* Emphasized borders, section dividers on dark */
-    --border-quaternary: var(--color-neutral-400);          /* Strong borders, highlighted containers on dark */
-
-    /* Brand Borders - Brand-colored boundaries and accents for dark themes */
-    --border-brand-primary: var(--color-violet-500);        /* Primary brand borders, featured cards on dark */
-    --border-brand-secondary: var(--color-violet-600);      /* Secondary brand accents on dark */
-    --border-brand-tertiary: var(--color-violet-400);       /* Strong brand emphasis on dark */
-    --border-brand-quaternary: var(--color-violet-300);     /* Strongest brand borders on dark */
-
-    /* Border Utilities - Interactive and state borders for dark themes */
-    --border-disabled: var(--color-neutral-700);            /* Disabled form controls, inactive elements on dark */
-    --border-focus: var(--color-violet-400);                /* Focus rings, input focus states on dark */
-    --border-hover: var(--color-neutral-500);               /* Hover state borders on dark */
-
-    /* Status Borders - Semantic state boundaries for dark themes */
-    --border-info-primary: var(--color-aqua-500);           /* Info alerts, notification borders on dark */
-    --border-info-secondary: var(--color-aqua-600);         /* Subtle info indicators on dark */
-    --border-success-primary: var(--color-emerald-500);     /* Success messages, confirmation borders on dark */
-    --border-success-secondary: var(--color-emerald-600);   /* Subtle success indicators on dark */
-    --border-warning-primary: var(--color-tangerine-500);   /* Warning alerts, caution borders on dark */
-    --border-warning-secondary: var(--color-tangerine-600); /* Subtle warning indicators on dark */
-    --border-error-primary: var(--color-red-500);           /* Error alerts, validation borders on dark */
-    --border-error-secondary: var(--color-red-600);         /* Subtle error indicators on dark */
-
-    /* Muted Status Borders - Very subtle status indicators for dark themes */
-    --border-info-muted: var(--color-aqua-700);             /* Very subtle info borders on dark */
-    --border-success-muted: var(--color-emerald-700);       /* Very subtle success borders on dark */
-    --border-warning-muted: var(--color-tangerine-700);     /* Very subtle warning borders on dark */
-    --border-error-muted: var(--color-red-700);             /* Very subtle error borders on dark */
-
-    /* Context Aware Borders - Borders on colored backgrounds in dark theme */
-    --border-on-brand-primary: var(--color-violet-700);     /* Borders on brand backgrounds in dark theme */
-    --border-on-brand-secondary: var(--color-violet-800);   /* Subtle borders on brand backgrounds in dark theme */
-    --border-on-info-primary: var(--color-aqua-700);        /* Borders on info backgrounds in dark theme */
-    --border-on-info-secondary: var(--color-aqua-800);      /* Subtle borders on info backgrounds in dark theme */
-    --border-on-success-primary: var(--color-emerald-700);  /* Borders on success backgrounds in dark theme */
-    --border-on-success-secondary: var(--color-emerald-800); /* Subtle borders on success backgrounds in dark theme */
-    --border-on-warning-primary: var(--color-tangerine-700); /* Borders on warning backgrounds in dark theme */
-    --border-on-warning-secondary: var(--color-tangerine-800); /* Subtle borders on warning backgrounds in dark theme */
-    --border-on-error-primary: var(--color-red-700);        /* Borders on error backgrounds in dark theme */
-    --border-on-error-secondary: var(--color-red-800);      /* Subtle borders on error backgrounds in dark theme */
-
-    /* Inverse Borders - Light theme borders for mixed contexts */
-    --border-inverse-primary: var(--color-neutral-300);     /* Light theme primary borders */
-    --border-inverse-secondary: var(--color-neutral-200);   /* Light theme subtle borders */
-    --border-inverse-tertiary: var(--color-neutral-400);    /* Light theme emphasized borders */
-    --border-inverse-quaternary: var(--color-neutral-500);  /* Light theme strong borders */
-    --border-inverse-disabled: var(--color-neutral-200);    /* Light theme disabled borders */
-    --border-inverse-focus: var(--color-violet-500);        /* Light theme focus borders */
-    --border-inverse-hover: var(--color-neutral-400);       /* Light theme hover borders */
-
-    /* ICON COLORS - DARK THEME OVERRIDES
-     * Perfect mirror of text tokens for semantic consistency
-     * Icons should match adjacent text emphasis levels
-     * ================================ */
-    
-    /* General Icons - Match with corresponding text emphasis for dark themes */
-    --icon-primary: var(--text-primary);                    /* Primary icons, main navigation on dark */
-    --icon-secondary: var(--text-secondary);                /* Secondary icons, supporting UI on dark */
-    --icon-tertiary: var(--text-tertiary);                  /* Subtle icons, decorative elements on dark */
-    --icon-quaternary: var(--text-quaternary);              /* Minimal icons, disabled states on dark */
-
-    /* Brand Icons - Match with corresponding brand text for dark themes */
-    --icon-brand-primary: var(--text-brand-primary);        /* Primary brand icons, CTAs on dark */
-    --icon-brand-secondary: var(--text-brand-secondary);    /* Secondary brand icons on dark */
-    --icon-brand-tertiary: var(--text-brand-tertiary);      /* Subtle brand icons on dark */
-    --icon-brand-quaternary: var(--text-brand-quaternary);  /* Minimal brand presence on dark */
-
-    /* Icon Utilities - Special purpose icons for dark themes */
-    --icon-disabled: var(--text-disabled);                  /* Disabled form icons, inactive buttons on dark */
-    --icon-placeholder: var(--text-placeholder);            /* Empty state icons, placeholder graphics on dark */
-    --icon-caption: var(--text-caption);                    /* Small descriptive icons on dark */
-    --icon-overline: var(--text-overline);                  /* Section header icons, category indicators on dark */
-    --icon-code: var(--text-code);                          /* Code-related icons, technical indicators on dark */
-    --icon-highlight: var(--text-highlight);                /* Highlighted icons, search result icons on dark */
-
-    /* Link Icons - Icons within interactive links for dark themes */
-    --icon-link: var(--text-link);                          /* Icons in links, external link indicators on dark */
-    --icon-link-hover: var(--text-link-hover);              /* Link icon hover state on dark */
-    --icon-link-active: var(--text-link-active);            /* Link icon pressed/active state on dark */
-    --icon-link-visited: var(--text-link-visited);          /* Icons in visited links on dark */
-
-    /* Status Icons for dark themes */
-    --icon-info-primary: var(--text-info-primary);          /* Info icons on dark */
-    --icon-info-secondary: var(--text-info-secondary);      /* Secondary info icons on dark */
-    --icon-success-primary: var(--text-success-primary);    /* Success icons on dark */
-    --icon-success-secondary: var(--text-success-secondary); /* Secondary success icons on dark */
-    --icon-warning-primary: var(--text-warning-primary);    /* Warning icons on dark */
-    --icon-warning-secondary: var(--text-warning-secondary); /* Secondary warning icons on dark */
-    --icon-error-primary: var(--text-error-primary);        /* Error icons on dark */
-    --icon-error-secondary: var(--text-error-secondary);    /* Secondary error icons on dark */
-
-    /* Status Icons - Muted for dark themes */
-    --icon-info-muted: var(--text-info-muted);              /* Subtle info icons on dark */
-    --icon-success-muted: var(--text-success-muted);        /* Subtle success icons on dark */
-    --icon-warning-muted: var(--text-warning-muted);        /* Subtle warning icons on dark */
-    --icon-error-muted: var(--text-error-muted);            /* Subtle error icons on dark */
-
-    /* Context Aware Icons for dark themes */
-    --icon-on-brand-primary: var(--text-on-brand-primary);  /* Icons on brand backgrounds in dark theme */
-    --icon-on-brand-secondary: var(--text-on-brand-secondary); /* Secondary icons on brand backgrounds in dark theme */
-    --icon-on-info-primary: var(--text-on-info-primary);    /* Icons on info backgrounds in dark theme */
-    --icon-on-info-secondary: var(--text-on-info-secondary); /* Secondary icons on info backgrounds in dark theme */
-    --icon-on-success-primary: var(--text-on-success-primary); /* Icons on success backgrounds in dark theme */
-    --icon-on-success-secondary: var(--text-on-success-secondary); /* Secondary icons on success backgrounds in dark theme */
-    --icon-on-warning-primary: var(--text-on-warning-primary); /* Icons on warning backgrounds in dark theme */
-    --icon-on-warning-secondary: var(--text-on-warning-secondary); /* Secondary icons on warning backgrounds in dark theme */
-    --icon-on-error-primary: var(--text-on-error-primary);  /* Icons on error backgrounds in dark theme */
-    --icon-on-error-secondary: var(--text-on-error-secondary); /* Secondary icons on error backgrounds in dark theme */
-
-    /* Inverse Icons for dark themes */
-    --icon-inverse-primary: var(--text-inverse-primary);    /* Light theme primary icons */
-    --icon-inverse-secondary: var(--text-inverse-secondary); /* Light theme secondary icons */
-    --icon-inverse-tertiary: var(--text-inverse-tertiary);  /* Light theme tertiary icons */
-    --icon-inverse-quaternary: var(--text-inverse-quaternary); /* Light theme quaternary icons */
-    --icon-inverse-disabled: var(--text-inverse-disabled);  /* Light theme disabled icons */
-    --icon-inverse-placeholder: var(--text-inverse-placeholder); /* Light theme placeholder icons */
-    --icon-inverse-link: var(--text-inverse-link);          /* Light theme link icons */
-    --icon-inverse-link-hover: var(--text-inverse-link-hover); /* Light theme link icon hover */
-    --icon-inverse-link-active: var(--text-inverse-link-active); /* Light theme link icon active */
-    --icon-inverse-link-visited: var(--text-inverse-link-visited); /* Light theme visited link icons */
-
-    /* BACKGROUND COLORS - DARK THEME OVERRIDES
-     * Dark backgrounds with appropriate contrast
-     * ================================ */
-    
-    /* Canvas - App and page foundation backgrounds for dark themes */
-    --bg-canvas-primary: var(--color-neutral-900);          /* Main app background on dark */
-    --bg-canvas-secondary: var(--color-neutral-800);        /* Secondary page areas on dark */
-    --bg-canvas-tertiary: var(--color-neutral-700);         /* Contrast sections, sidebars on dark */
-
-    /* Surface - Content containers and cards for dark themes */
-    --bg-surface-primary: var(--color-neutral-800);         /* Cards, panels, primary containers on dark */
-    --bg-surface-secondary: var(--color-neutral-700);       /* Secondary cards, nested containers on dark */
-    --bg-surface-tertiary: var(--color-neutral-600);        /* Tertiary surfaces, grouped content on dark */
-    --bg-surface-quaternary: var(--color-neutral-500);      /* Subtle surface variations on dark */
-
-    /* Overlay - Floating elements (modals, tooltips, dropdowns) for dark themes */
-    --bg-overlay-primary: var(--color-neutral-800);         /* Primary overlays on dark */
-    --bg-overlay-secondary: var(--color-neutral-700);       /* Secondary overlays on dark */
-    --bg-overlay-backdrop: var(--color-off-black-950);      /* Backdrop overlays on dark */
-
-    /* Interactive - UI element state backgrounds for dark themes */
-    --bg-interactive-hover: var(--color-neutral-700);       /* Hover state for buttons, links on dark */
-    --bg-interactive-active: var(--color-neutral-600);      /* Active/pressed state on dark */
-    --bg-interactive-selected: var(--color-violet-800);     /* Selected items, current page on dark */
-    --bg-interactive-pressed: var(--color-neutral-500);     /* Button pressed state on dark */
-    --bg-interactive-disabled: var(--color-neutral-700);    /* Disabled interactive elements on dark */
-
-    /* Brand Backgrounds - Primary brand color applications for dark themes */
-    --bg-brand-primary: var(--color-violet-600);            /* Primary buttons, key CTAs on dark */
-    --bg-brand-secondary: var(--color-violet-800);          /* Brand highlights, featured sections on dark */
-    --bg-brand-tertiary: var(--color-violet-900);           /* Subtle brand backgrounds on dark */
-    --bg-brand-hover: var(--color-violet-500);              /* Brand button hover state on dark */
-    --bg-brand-active: var(--color-violet-400);             /* Brand button pressed/active state on dark */
-
-    /* Status Backgrounds - Semantic state backgrounds for dark themes */
-    --bg-info-primary: var(--color-aqua-600);               /* Info buttons, info callouts on dark */
-    --bg-info-secondary: var(--color-aqua-800);             /* Info highlights, info sections on dark */
-    --bg-info-tertiary: var(--color-aqua-900);              /* Subtle info backgrounds on dark */
-    --bg-success-primary: var(--color-emerald-600);         /* Success buttons, confirmations on dark */
-    --bg-success-secondary: var(--color-emerald-800);       /* Success highlights, success sections on dark */
-    --bg-success-tertiary: var(--color-emerald-900);        /* Subtle success backgrounds on dark */
-    --bg-warning-primary: var(--color-tangerine-600);       /* Warning buttons, caution alerts on dark */
-    --bg-warning-secondary: var(--color-tangerine-800);     /* Warning highlights, warning sections on dark */
-    --bg-warning-tertiary: var(--color-tangerine-900);      /* Subtle warning backgrounds on dark */
-    --bg-error-primary: var(--color-red-600);               /* Error buttons, critical alerts on dark */
-    --bg-error-secondary: var(--color-red-800);             /* Error highlights, error sections on dark */
-    --bg-error-tertiary: var(--color-red-900);              /* Subtle error backgrounds on dark */
-
-    /* Status Backgrounds - Muted (subtle indicators) for dark themes */
-    --bg-info-muted: var(--color-aqua-900);                 /* Very subtle info backgrounds on dark */
-    --bg-success-muted: var(--color-emerald-900);           /* Very subtle success backgrounds on dark */
-    --bg-warning-muted: var(--color-tangerine-900);         /* Very subtle warning backgrounds on dark */
-    --bg-error-muted: var(--color-red-900);                 /* Very subtle error backgrounds on dark */
-
-    /* Elevation - Layered surfaces with visual depth for dark themes */
-    --bg-elevated-primary: var(--color-neutral-800);        /* Cards at base elevation (1px shadow) on dark */
-    --bg-elevated-secondary: var(--color-neutral-700);      /* Cards at medium elevation (4px shadow) on dark */
-    --bg-elevated-tertiary: var(--color-neutral-600);       /* Cards at high elevation (8px shadow) on dark */
-    --bg-elevated-quaternary: var(--color-neutral-500);     /* Cards at highest elevation (16px shadow) on dark */
-
-    /* Form - Input and form control backgrounds for dark themes */
-    --bg-form-primary: var(--color-neutral-800);            /* Text inputs, textareas on dark */
-    --bg-form-secondary: var(--color-neutral-700);          /* Select boxes, secondary inputs on dark */
-    --bg-form-hover: var(--color-neutral-700);              /* Form input hover state on dark */
-    --bg-form-focus: var(--color-neutral-800);              /* Focused input background on dark */
-    --bg-form-disabled: var(--color-neutral-600);           /* Disabled form controls on dark */
-    --bg-form-readonly: var(--color-neutral-700);           /* Read-only form fields on dark */
-
-    /* Form Validation for dark themes */
-    --bg-form-valid: var(--color-emerald-900);              /* Valid form backgrounds on dark */
-    --bg-form-valid-hover: var(--color-emerald-800);        /* Valid form hover on dark */
-    --bg-form-invalid: var(--color-red-900);                /* Invalid form backgrounds on dark */
-    --bg-form-invalid-hover: var(--color-red-800);          /* Invalid form hover on dark */
-    --bg-form-warning: var(--color-tangerine-900);          /* Warning form backgrounds on dark */
-    --bg-form-warning-hover: var(--color-tangerine-800);    /* Warning form hover on dark */
-
-    /* Navigation - Menu and navigation element backgrounds for dark themes */
-    --bg-nav-primary: var(--color-transparent);             /* Default nav item background on dark */
-    --bg-nav-secondary: var(--color-neutral-800);           /* Secondary nav backgrounds on dark */
-    --bg-nav-hover: var(--color-neutral-700);               /* Nav item hover state on dark */
-    --bg-nav-active: var(--color-neutral-600);              /* Nav item active/pressed state on dark */
-    --bg-nav-selected: var(--color-violet-800);             /* Current page, selected nav item on dark */
-    --bg-nav-selected-hover: var(--color-violet-700);       /* Selected nav item hover state on dark */
-
-    /* Gradients - Modern gradient backgrounds for visual appeal on dark themes */
-    --bg-gradient-brand-primary: linear-gradient(135deg, var(--color-violet-600), var(--color-violet-700));     /* Primary brand gradient buttons on dark */
-    --bg-gradient-brand-secondary: linear-gradient(135deg, var(--color-violet-800), var(--color-violet-900));   /* Subtle brand gradient backgrounds on dark */
-    --bg-gradient-brand-tertiary: linear-gradient(135deg, var(--color-violet-900), var(--color-violet-950));    /* Very subtle brand gradients on dark */
-    --bg-gradient-neutral-primary: linear-gradient(180deg, var(--color-neutral-800), var(--color-neutral-900)); /* Neutral gradient surfaces on dark */
-    --bg-gradient-neutral-secondary: linear-gradient(180deg, var(--color-neutral-700), var(--color-neutral-800)); /* Alternative neutral gradients on dark */
-    --bg-gradient-status-success: linear-gradient(135deg, var(--color-emerald-600), var(--color-emerald-700));  /* Success gradient buttons on dark */
-    --bg-gradient-status-warning: linear-gradient(135deg, var(--color-tangerine-600), var(--color-tangerine-700)); /* Warning gradient buttons on dark */
-    --bg-gradient-status-error: linear-gradient(135deg, var(--color-red-600), var(--color-red-700));            /* Error gradient buttons on dark */
-    --bg-gradient-status-info: linear-gradient(135deg, var(--color-aqua-600), var(--color-aqua-700));           /* Info gradient buttons on dark */
-
-    /* Scrim - Modal and overlay backdrop masks for dark themes */
-    --bg-scrim-light: rgba(0, 0, 0, 0.4);                   /* Light dark overlay, subtle masking */
-    --bg-scrim-medium: rgba(0, 0, 0, 0.6);                  /* Medium dark overlay opacity */
-    --bg-scrim-heavy: rgba(0, 0, 0, 0.8);                   /* Heavy dark overlay, strong masking */
-    --bg-scrim-dark-light: rgba(255, 255, 255, 0.1);        /* Light overlay on dark, subtle */
-    --bg-scrim-dark-medium: rgba(255, 255, 255, 0.2);       /* Light overlay on dark, standard modals */
-    --bg-scrim-dark-heavy: rgba(255, 255, 255, 0.3);        /* Light overlay on dark, strong emphasis */
-
-    /* Background Utilities - Special purpose backgrounds for dark themes */
-    --bg-disabled: var(--color-neutral-700);                /* Disabled buttons, inactive elements on dark */
-    --bg-loading: var(--color-neutral-600);                 /* Loading states, progress indicators on dark */
-    --bg-skeleton: var(--color-neutral-600);                /* Skeleton loading placeholders on dark */
-    --bg-code: var(--color-violet-900);                     /* Code blocks, technical content on dark */
-    --bg-highlight: var(--color-tangerine-800);             /* Search highlights, selected content on dark */
-    --bg-transparent: transparent;                          /* Transparent backgrounds (unchanged) */
-
-    /* Inverse - Light theme backgrounds for mixed contexts */
-    --bg-inverse-canvas-primary: var(--color-neutral-50);   /* Light theme primary canvas */
-    --bg-inverse-canvas-secondary: var(--color-neutral-100); /* Light theme secondary canvas */
-    --bg-inverse-surface-primary: var(--color-white);       /* Light theme primary surface */
-    --bg-inverse-surface-secondary: var(--color-neutral-50); /* Light theme secondary surface */
-    --bg-inverse-overlay-primary: var(--color-white);       /* Light theme primary overlay */
-    --bg-inverse-overlay-backdrop: var(--color-off-black-900); /* Light theme backdrop overlay */
-    --bg-inverse-interactive-hover: var(--color-neutral-100); /* Light theme interactive hover */
-    --bg-inverse-interactive-selected: var(--color-violet-100); /* Light theme interactive selected */
-    --bg-inverse-elevated-primary: var(--color-white);      /* Light theme primary elevated */
-    --bg-inverse-elevated-secondary: var(--color-neutral-50); /* Light theme secondary elevated */
-    --bg-inverse-form-primary: var(--color-white);          /* Light theme primary form */
-    --bg-inverse-form-hover: var(--color-neutral-50);       /* Light theme form hover */
-    --bg-inverse-nav-hover: var(--color-neutral-100);       /* Light theme nav hover */
-    --bg-inverse-nav-selected: var(--color-violet-100);     /* Light theme nav selected */
-  }
 }
