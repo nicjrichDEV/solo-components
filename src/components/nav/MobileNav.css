@@ -1,50 +1,69 @@
-.mobile-nav-root {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--bg-surface-primary);
-  height: var(--mobile-nav-height);
-  border-top: 1px solid var(--border-primary);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.start-container,
-.end-container {
-  width: var(--mobile-nav-height);
-  height: var(--mobile-nav-height);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease-in-out;
-
-  path {
-    stroke: var(--icon-primary);
+@layer component {
+  .mobile-nav-root {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-surface-primary);
+    height: var(--mobile-nav-height);
+    border-top: 1px solid var(--border-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
 
-.start-container:hover,
-.end-container:hover {
-  background-color: var(--bg-surface-secondary);
-}
+  .start-container,
+  .end-container {
+    width: var(--mobile-nav-height);
+    height: var(--mobile-nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
 
-.start-container {
-  border-right: 1px solid var(--border-primary);
-}
+    path {
+      stroke: var(--icon-primary);
+    }
+  }
 
-.logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 24px;
-  width: 24px;
-}
+  .start-container:hover,
+  .end-container:hover {
+    background-color: var(--bg-surface-secondary);
+  }
 
-.end-container {
-  border: none;
-  border-left: 1px solid var(--border-primary);
-  background-color: unset;
+  .start-container {
+    border-right: 1px solid var(--border-primary);
+  }
+
+  .logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+  }
+
+  .end-container {
+    border: none;
+    border-left: 1px solid var(--border-primary);
+    background-color: unset;
+  }
+
+  .mobile-nav-expanded-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    border-top: 1px solid var(--border-primary);
+    text-decoration: none;
+    color: var(--text-secondary);
+    margin: 0 39px;
+    border-left: 1px solid var(--border-primary);
+    border-right: 1px solid var(--border-primary);
+  }
+
+  .mobile-nav-expanded-links:last-child {
+    border-top: unset;
+  }
 }

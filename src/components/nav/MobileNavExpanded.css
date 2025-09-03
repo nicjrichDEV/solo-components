@@ -1,18 +1,20 @@
-.mobile-nav-expanded-base {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 40px;
-  background-color: var(--bg-surface-primary);
-  display: flex;
-  flex-direction: column-reverse;
-  border-top: 1px solid var(--border-primary);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
-  transform: translateY(calc(100% + 40px));
-  z-index: -1;
-}
+@layer component {
+  .mobile-nav-expanded-base {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 40px;
+    background-color: var(--bg-surface-primary);
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: 1px solid var(--border-primary);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    transform: translateY(calc(100% + 40px));
+    z-index: -1;
+  }
 
-.mobile-nav-expanded-open {
-  transform: translateY(0);
+  .mobile-nav-expanded-open {
+    transform: translateY(0);
+  }
 }
