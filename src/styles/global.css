@@ -152,7 +152,7 @@
     /* Common Layout Values */
     --sidebar-width: 256px;          /* Matches your current SideNav width */
     --sidebar-width-collapsed: 64px;  /* For collapsed sidebar state */
-    --mobile-nav-height: 56px;       /* Mobile navigation height */
+    --mobile-nav-height: 40px;       /* Mobile navigation height */
 
     /* Border Radius Scale */
     --radius-none: 0;
@@ -174,7 +174,7 @@
     /* TEXT COLORS
      * Use for all text content and typography
      * ================================ */
-    
+
     /* General Text Emphasis - Use for body text, headings, and content */
     --text-primary: var(--color-off-black-800);      /* Main body text, headings */
     --text-secondary: var(--color-off-black-600);    /* Supporting text, captions */
@@ -244,7 +244,7 @@
     /* BORDER COLORS
      * Use for all borders, dividers, and outlines
      * ================================ */
-    
+
     /* General Borders - Content separation and structure */
     --border-primary: var(--color-neutral-100);           /* Standard borders, card outlines */
     --border-secondary: var(--color-neutral-200);         /* Additional emphasis */
@@ -303,7 +303,7 @@
      * Perfect mirror of text tokens for semantic consistency
      * Icons should match adjacent text emphasis levels
      * ================================ */
-    
+
     /* General Icons - Match with corresponding text emphasis */
     --icon-primary: var(--text-primary);                 /* Primary icons, main navigation */
     --icon-secondary: var(--text-secondary);             /* Secondary icons, supporting UI */
@@ -373,7 +373,7 @@
     /* BACKGROUND COLORS
      * Comprehensive background system for all UI contexts
      * ================================ */
-    
+
     /* Canvas - App and page foundation backgrounds */
     --bg-canvas-primary: var(--color-neutral-50);         /* Main app background */
     --bg-canvas-secondary: var(--color-neutral-100);      /* Secondary page areas */

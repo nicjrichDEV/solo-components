@@ -1,5 +1,6 @@
 import CONSTANTS from "../../utils/constants";
 import { Github, Menu } from "lucide-react";
+import Logo from "../../assets/pmi-small.svg";
 import "./MobileNav.css";
 
 export default function MobileNav({ toggleMobile }) {
@@ -8,9 +9,7 @@ export default function MobileNav({ toggleMobile }) {
       <a className="start-container" href={CONSTANTS.GITHUB}>
         <Github size={"20px"} />
       </a>
-      <div className="middle-container">
-        <h2 className="mark">UI Next</h2>
-      </div>
+      <img src={Logo} className="logo" />
       <button onClick={toggleMobile} className="end-container">
         <Menu size={"20px"} />
       </button>

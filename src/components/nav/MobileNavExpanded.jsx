@@ -15,9 +15,7 @@ export default function MobileExpanded({ mobileOpen }) {
   });
 
   return (
-    <div
-      className={`${mobileOpen ? "translate-y-0 border-t shadow-inner" : "translate-y-full border-t-0"} fixed right-0 bottom-10 left-0 flex max-h-9/12 flex-col-reverse overflow-y-auto border-t-neutral-200 bg-white transition-transform duration-300 will-change-transform`}
-    >
+    <div className={`${mobileOpen && "mobile-nav-open"} mobile-nav-base`}>
       {navLinks}
     </div>
   );

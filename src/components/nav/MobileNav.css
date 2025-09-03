@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   background-color: var(--bg-surface-primary);
-  height: 40px;
+  height: var(--mobile-nav-height);
   border-top: 1px solid var(--border-primary);
   display: flex;
   justify-content: space-between;
@@ -13,19 +13,34 @@
 
 .start-container,
 .end-container {
-  width: 40px;
-  height: 40px;
+  width: var(--mobile-nav-height);
+  height: var(--mobile-nav-height);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease-in-out;
 
   path {
     stroke: var(--icon-primary);
   }
 }
 
+.start-container:hover,
+.end-container:hover {
+  background-color: var(--bg-surface-secondary);
+}
+
 .start-container {
   border-right: 1px solid var(--border-primary);
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
 }
 
 .end-container {
@@ -33,3 +48,8 @@
   border-left: 1px solid var(--border-primary);
   background-color: unset;
 }
+
+/* TODO(human): Add :active pseudo-class styling here for immediate visual feedback
+   when the menu button is pressed. This provides instant user feedback while
+   React processes the state change. Consider using var(--bg-interactive-active)
+   or similar semantic token for consistency. */
