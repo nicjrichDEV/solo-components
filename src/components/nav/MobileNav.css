@@ -48,8 +48,3 @@
   border-left: 1px solid var(--border-primary);
   background-color: unset;
 }
-
-/* TODO(human): Add :active pseudo-class styling here for immediate visual feedback
-   when the menu button is pressed. This provides instant user feedback while
-   React processes the state change. Consider using var(--bg-interactive-active)
-   or similar semantic token for consistency. */

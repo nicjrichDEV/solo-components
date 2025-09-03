@@ -1,4 +1,4 @@
-.mobile-nav-base {
+.mobile-nav-expanded-base {
   position: fixed;
   right: 0;
   left: 0;
@@ -13,6 +13,6 @@
   z-index: -1;
 }
 
-.mobile-nav-open {
+.mobile-nav-expanded-open {
   transform: translateY(0);
 }
