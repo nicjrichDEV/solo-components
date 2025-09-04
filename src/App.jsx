@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import Badge from "./components/badge/Badge";
-import Demo from "./internalComponents/demo/index";
+import Demo from "./internalComponents/demo/Demo";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 
 const ThemeContext = createContext(null);
@@ -21,61 +21,42 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MainLayout>
-        <Demo.Root>
-          <Demo.VStack gap={"4px"}>
-            <Demo.Title>Badge</Demo.Title>
-            <Demo.Description>
-              A non-interactive div that downstream teams can use to assign
-              specific meaning within their own apps.
-            </Demo.Description>
-          </Demo.VStack>
-          <Demo.HStack gap={"16px"}>
-            <Demo.VStack gap={"2px"}>
+        <Demo
+          componentName="badge"
+          title="Badge"
+          description="A non-interactive badge that downstream teams are allowed to define meaning for."
+        >
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "12px" }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <h3>Variants</h3>
+              <Badge>Solid</Badge>
+              <Badge variant="soft">Soft</Badge>
+              <Badge variant="outline">Outline</Badge>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <h3>Size</h3>
+              <Badge size="sm">Small</Badge>
+              <Badge>Medium</Badge>
+              <Badge size="lg">Large</Badge>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <h3>Status</h3>
               <Badge>Neutral</Badge>
               <Badge status="brand">Brand</Badge>
               <Badge status="info">Info</Badge>
               <Badge status="success">Success</Badge>
               <Badge status="warning">Warning</Badge>
               <Badge status="error">Error</Badge>
-            </Demo.VStack>
-            <Demo.VStack gap={"2px"}>
-              <Badge>Neutral</Badge>
-              <Badge variant="soft" status="brand">
-                Brand
-              </Badge>
-              <Badge variant="soft" status="info">
-                Info
-              </Badge>
-              <Badge variant="soft" status="success">
-                Success
-              </Badge>
-              <Badge variant="soft" status="warning">
-                Warning
-              </Badge>
-              <Badge variant="soft" status="error">
-                Error
-              </Badge>
-            </Demo.VStack>
-            <Demo.VStack gap={"2px"}>
-              <Badge>Neutral</Badge>
-              <Badge variant="outline" status="brand">
-                Brand
-              </Badge>
-              <Badge variant="outline" status="info">
-                Info
-              </Badge>
-              <Badge variant="outline" status="success">
-                Success
-              </Badge>
-              <Badge variant="outline" status="warning">
-                Warning
-              </Badge>
-              <Badge variant="outline" status="error">
-                Error
-              </Badge>
-            </Demo.VStack>
-          </Demo.HStack>
-        </Demo.Root>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <h3>Shape</h3>
+              <Badge>Pill</Badge>
+              <Badge shape="square">Square</Badge>
+            </div>
+          </div>
+        </Demo>
       </MainLayout>
     </ThemeContext.Provider>
   );

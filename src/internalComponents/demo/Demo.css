@@ -5,3 +5,52 @@
   background-color: var(--bg-surface-primary);
   border: 1px solid var(--border-primary);
 }
+
+.demo-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  h2,
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+}
+
+.demo-area {
+  margin-top: 12px;
+}
+
+@media (min-width: 640px) {
+  .demo-container {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .demo-copy {
+    gap: 4px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .demo-area {
+    margin-top: 1rem;
+  }
+}
