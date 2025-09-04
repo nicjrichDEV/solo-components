@@ -1,0 +1,38 @@
+@layer component {
+  /* Baseline Badge Styles */
+  .badge {
+    padding: 0 0.75rem;
+    width: fit-content;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Define the shape of the badge */
+  .badge.square {
+    border-radius: 0.25rem;
+  }
+
+  .badge.pill {
+    border-radius: 624.9375rem;
+  }
+
+  /* Define colors of badges */
+  .badge.neutral {
+    color: var(--text-primary);
+    background-color: var(--color-neutral-100);
+  }
+
+  .badge.brand {
+  }
+  .badge.info {
+  }
+  .badge.success {
+  }
+  .badge.warning {
+  }
+  .badge.error {
+  }
+}

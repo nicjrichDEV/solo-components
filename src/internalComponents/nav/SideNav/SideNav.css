@@ -25,6 +25,12 @@
       a:hover {
         background-color: var(--bg-brand-tertiary);
       }
+
+      a:focus {
+        outline: 2px solid var(--border-focus);
+        outline-offset: -0.5rem;
+        border-radius: 0.75rem;
+      }
     }
 
     .sidebar-header-action {

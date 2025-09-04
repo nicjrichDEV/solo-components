@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import MainLayout from "./layouts/MainLayout/MainLayout";
+import Badge from "./components/badge/Badge";
 
 function App() {
   useEffect(() => {
@@ -10,11 +11,7 @@ function App() {
   return (
     <>
       <MainLayout>
-        <div style={{ height: "400px", backgroundColor: "red" }}></div>
-        <div style={{ height: "400px", backgroundColor: "royalblue" }}></div>
-        <div
-          style={{ height: "400px", backgroundColor: "rebeccapurple" }}
-        ></div>
+        <Badge>Badge</Badge>
       </MainLayout>
     </>
   );

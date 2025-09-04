@@ -15,6 +15,7 @@
   main {
     background-color: var(--bg-canvas-primary);
     overflow-y: auto;
+    height: 100dvh;
   }
 
   @container (width > 640px) {
@@ -29,15 +30,15 @@
     grid-template-columns: 256px 1fr;
     grid-template-areas: "sidebar main";
   }
-  
+
   .aside-root {
     grid-area: sidebar;
   }
-  
+
   .mobile-nav-container {
     display: none;
   }
-  
+
   main {
     grid-area: main;
   }
