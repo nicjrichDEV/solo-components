@@ -12,6 +12,7 @@ function App() {
     <>
       <MainLayout>
         <Badge>Badge</Badge>
+        <Badge type="pill">Badge</Badge>
       </MainLayout>
     </>
   );

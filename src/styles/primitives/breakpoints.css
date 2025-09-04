@@ -1,0 +1,31 @@
+@layer base {
+  :root {
+    /* ================================
+     * BREAKPOINTS & LAYOUT TOKENS
+     * ================================
+     * Consistent responsive design breakpoints and spacing
+     */
+    /* Breakpoints - PMI's three-tier responsive system */
+    --breakpoint-mobile: 640px; /* Mobile: 0-640px */
+    --breakpoint-tablet: 1024px; /* Tablet: 641px-1024px */
+    /* Desktop: 1025px+ (no upper limit needed) */
+
+    /* Alternative naming for framework compatibility */
+    /* --breakpoint-sm: 640px;          /* Mobile breakpoint */
+    /* --breakpoint-lg: 1024px;         /* Desktop breakpoint */
+
+    /* Container Max Widths */
+    /* --container-mobile: 100%;        /* Full width on mobile */
+    /* --container-tablet: 640px;       /* Constrained width on tablet */
+    /* --container-desktop: 1024px;     /* Constrained width on desktop */
+
+    /* Container Query Breakpoints */
+    --container-mobile-size: 640px; /* Container queries for mobile */
+    --container-tablet-size: 1024px; /* Container queries for tablet */
+
+    /* Common Layout Values */
+    --sidebar-width: 256px; /* Matches your current SideNav width */
+    --sidebar-width-collapsed: 64px; /* For collapsed sidebar state */
+    --mobile-nav-height: 40px; /* Mobile navigation height */
+  }
+}

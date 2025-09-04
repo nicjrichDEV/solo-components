@@ -20,7 +20,7 @@ export default function SideNav() {
       <div className="sidebar-header-container">
         <div className="logo-container">
           <img src={Logo} alt="PMI Standalone logo" className="logo" />
-          <h1>Components++</h1>
+          <h1>Catalyst 2.0 🚧</h1>
         </div>
         <a
           className="sidebar-header-action"

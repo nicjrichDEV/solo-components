@@ -1,0 +1,88 @@
+@layer base {
+  :root {
+    /* ICON COLORS
+     * Perfect mirror of text tokens for semantic consistency
+     * Icons should match adjacent text emphasis levels
+     * ================================ */
+
+    /* General Icons - Match with corresponding text emphasis */
+    --icon-primary: var(--text-primary); /* Primary icons, main navigation */
+    --icon-secondary: var(--text-secondary);
+    --icon-tertiary: var(--text-tertiary);
+    --icon-quaternary: var(--text-quaternary);
+
+    /* Brand Icons - Match with corresponding brand text */
+    --icon-brand-primary: var(--text-brand-primary);
+    --icon-brand-secondary: var(--text-brand-secondary);
+    --icon-brand-tertiary: var(--text-brand-tertiary);
+    --icon-brand-quaternary: var(--text-brand-quaternary);
+
+    /* Icon Utilities - Special purpose icons */
+    --icon-disabled: var(
+      --text-disabled
+    ); /* Disabled form icons, inactive buttons */
+    --icon-placeholder: var(
+      --text-placeholder
+    ); /* Empty state icons, placeholder graphics */
+    --icon-caption: var(--text-caption); /* Small descriptive icons */
+    --icon-overline: var(
+      --text-overline
+    ); /* Section header icons, category indicators */
+    --icon-code: var(
+      --text-code
+    ); /* Code-related icons, technical indicators */
+    --icon-highlight: var(
+      --text-highlight
+    ); /* Highlighted icons, search result icons */
+
+    /* Link Icons - Icons within interactive links */
+    --icon-link: var(
+      --text-link
+    ); /* Icons in links, external link indicators */
+    --icon-link-hover: var(--text-link-hover); /* Link icon hover state */
+    --icon-link-active: var(
+      --text-link-active
+    ); /* Link icon pressed/active state */
+    --icon-link-visited: var(--text-link-visited); /* Icons in visited links */
+
+    /* Status Icons */
+    --icon-info-primary: var(--text-info-primary);
+    --icon-info-secondary: var(--text-info-secondary);
+    --icon-success-primary: var(--text-success-primary);
+    --icon-success-secondary: var(--text-success-secondary);
+    --icon-warning-primary: var(--text-warning-primary);
+    --icon-warning-secondary: var(--text-warning-secondary);
+    --icon-error-primary: var(--text-error-primary);
+    --icon-error-secondary: var(--text-error-secondary);
+
+    /* Status Icons - Muted */
+    --icon-info-muted: var(--text-info-muted);
+    --icon-success-muted: var(--text-success-muted);
+    --icon-warning-muted: var(--text-warning-muted);
+    --icon-error-muted: var(--text-error-muted);
+
+    /* Context Aware */
+    --icon-on-brand-primary: var(--text-on-brand-primary);
+    --icon-on-brand-secondary: var(--text-on-brand-secondary);
+    --icon-on-info-primary: var(--text-on-info-primary);
+    --icon-on-info-secondary: var(--text-on-info-secondary);
+    --icon-on-success-primary: var(--text-on-success-primary);
+    --icon-on-success-secondary: var(--text-on-success-secondary);
+    --icon-on-warning-primary: var(--text-on-warning-primary);
+    --icon-on-warning-secondary: var(--text-on-warning-secondary);
+    --icon-on-error-primary: var(--text-on-error-primary);
+    --icon-on-error-secondary: var(--text-on-error-secondary);
+
+    /* Inverse */
+    --icon-inverse-primary: var(--text-inverse-primary);
+    --icon-inverse-secondary: var(--text-inverse-secondary);
+    --icon-inverse-tertiary: var(--text-inverse-tertiary);
+    --icon-inverse-quaternary: var(--text-inverse-quaternary);
+    --icon-inverse-disabled: var(--text-inverse-disabled);
+    --icon-inverse-placeholder: var(--text-inverse-placeholder);
+    --icon-inverse-link: var(--text-inverse-link);
+    --icon-inverse-link-hover: var(--text-inverse-link-hover);
+    --icon-inverse-link-active: var(--text-inverse-link-active);
+    --icon-inverse-link-visited: var(--text-inverse-link-visited);
+  }
+}

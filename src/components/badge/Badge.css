@@ -1,4 +1,4 @@
-@layer component {
+@layer components {
   /* Baseline Badge Styles */
   .badge {
     padding: 0 0.75rem;
@@ -12,7 +12,7 @@
 
   /* Define the shape of the badge */
   .badge.square {
-    border-radius: 0.25rem;
+    border-radius: var(--radius-base);
   }
 
   .badge.pill {
@@ -20,19 +20,28 @@
   }
 
   /* Define colors of badges */
-  .badge.neutral {
-    color: var(--text-primary);
-    background-color: var(--color-neutral-100);
+  .badge.solid.neutral {
+    color: var(--text-neutral-primary);
+    background-color: var(--bg-neutral-primary);
   }
 
-  .badge.brand {
+  .badge.solid.brand {
+    color: var(--text-brand-primary);
   }
-  .badge.info {
+
+  .badge.solid.info {
+    color: var(--text-info-primary);
   }
-  .badge.success {
+
+  .badge.solid.success {
+    color: var(--text-success-primary);
   }
-  .badge.warning {
+
+  .badge.solid.warning {
+    color: var(--text-warning-primary);
   }
-  .badge.error {
+
+  .badge.solid.error {
+    color: var(--text-error-primary);
   }
 }

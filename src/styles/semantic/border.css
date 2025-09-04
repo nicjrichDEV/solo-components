@@ -1,0 +1,62 @@
+@layer base {
+  :root {
+    /* BORDER COLORS
+     * Use for all borders, dividers, and outlines
+     * ================================ */
+
+    /* General Borders - Content separation and structure */
+    --border-primary: var(--color-neutral-100);
+    --border-secondary: var(--color-neutral-200);
+    --border-tertiary: var(--color-neutral-400);
+    --border-quaternary: var(--color-neutral-500);
+
+    /* Brand Borders - Brand-colored boundaries and accents */
+    --border-brand-primary: var(--color-violet-400);
+    --border-brand-secondary: var(--color-violet-300);
+    --border-brand-tertiary: var(--color-violet-500);
+    --border-brand-quaternary: var(--color-violet-600);
+
+    /* Border Utilities - Interactive and state borders */
+    --border-disabled: var(--color-neutral-200);
+    --border-focus: var(--color-violet-500);
+
+    /* Status Borders - Semantic state boundaries */
+    --border-neutral-primary: var();
+    --border-neutral-secondary: var();
+    --border-info-primary: var(--color-aqua-400);
+    --border-info-secondary: var(--color-aqua-300);
+    --border-success-primary: var(--color-emerald-400);
+    --border-success-secondary: var(--color-emerald-300);
+    --border-warning-primary: var(--color-tangerine-400);
+    --border-warning-secondary: var(--color-tangerine-300);
+    --border-error-primary: var(--color-red-400);
+    --border-error-secondary: var(--color-red-300);
+
+    /* Muted Status Borders - Very subtle status indicators */
+    --border-info-muted: var(--color-aqua-200);
+    --border-success-muted: var(--color-emerald-200);
+    --border-warning-muted: var(--color-tangerine-200);
+    --border-error-muted: var(--color-red-200);
+
+    /* Context Aware Borders - Borders on colored backgrounds */
+    --border-on-brand-primary: var(--color-violet-200);
+    --border-on-brand-secondary: var(--color-violet-100);
+    --border-on-info-primary: var(--color-aqua-200);
+    --border-on-info-secondary: var(--color-aqua-100);
+    --border-on-success-primary: var(--color-emerald-200);
+    --border-on-success-secondary: var(--color-emerald-100);
+    --border-on-warning-primary: var(--color-tangerine-200);
+    --border-on-warning-secondary: var(--color-tangerine-100);
+    --border-on-error-primary: var(--color-red-200);
+    --border-on-error-secondary: var(--color-red-100);
+
+    /* Inverse Borders - For dark themes and dark backgrounds */
+    --border-inverse-primary: var(--color-neutral-600);
+    --border-inverse-secondary: var(--color-neutral-700);
+    --border-inverse-tertiary: var(--color-neutral-500);
+    --border-inverse-quaternary: var(--color-neutral-400);
+    --border-inverse-disabled: var(--color-neutral-700);
+    --border-inverse-focus: var(--color-violet-400);
+    --border-inverse-hover: var(--color-neutral-500);
+  }
+}

@@ -3,12 +3,13 @@ import cn from "../../utils/cn";
 
 export default function Badge({
   children,
-  type = "square",
-  color = "neutral",
+  variant = "solid",
+  status = "neutral",
+  shape = "pill",
   className,
   ...rest
 }) {
-  const badgeClasses = cn(`badge ${type} ${color}`, className);
+  const badgeClasses = cn(`badge ${variant} ${status} ${shape}`, className);
 
   return (
     <div className={badgeClasses} {...rest}>
