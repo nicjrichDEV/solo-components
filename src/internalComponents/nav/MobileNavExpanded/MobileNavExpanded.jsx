@@ -1,23 +1,26 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../../App";
+import { NavContext } from "../../../layouts/MainLayout/MainLayout";
 import componentNames from "../../../utils/componentNames";
 import "./MobileNavExpanded.css";
 
-export default function MobileNavExpanded({ mobileOpen }) {
+export default function MobileNavExpanded() {
+  const context = useContext(NavContext);
   const navLinks = componentNames.map((comp, index) => {
     return (
-      <a
-        href={`#${comp}`}
-        key={index}
-        className="mobile-nav-expanded-links mx-[39px] flex h-10 min-h-10 items-center justify-center justify-items-start border-x border-t border-x-neutral-200 border-t-neutral-200 text-base text-neutral-700 last:border-t-0"
-      >
+      <a href={`#${comp}`} key={index} className="mobile-nav-expanded-links ">
         {comp[0].toUpperCase() + comp.slice(1)}
       </a>
     );
   });
 
+  const theme = useContext(ThemeContext);
+
   return (
     <div
-      className={`${mobileOpen && "mobile-nav-expanded-open"} mobile-nav-expanded-base`}
+      className={`${context.mobileOpen && "mobile-nav-expanded-open"} mobile-nav-expanded-base`}
     >
+      <button onClick={theme.toggleTheme}>Toggle Theme</button>
       {navLinks}
     </div>
   );

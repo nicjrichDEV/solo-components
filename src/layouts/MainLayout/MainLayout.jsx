@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import MobileNav from "../../internalComponents/nav/MobileNav";
 import MobileNavExpanded from "../../internalComponents/nav/MobileNavExpanded";
 import SideNav from "../../internalComponents/nav/SideNav";
 import "./MainLayout.css";
+
+const NavContext = createContext(null);
 
 export default function MainLayout({ children }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -27,19 +29,23 @@ export default function MainLayout({ children }) {
   }
 
   return (
-    <div className="app-shell">
-      {/* Desktop Sidebar */}
-      <SideNav />
+    <NavContext.Provider value={{ mobileOpen, toggleMobile }}>
+      <div className="app-shell">
+        {/* Desktop Sidebar */}
+        <SideNav />
 
-      {/* Mobile */}
-      <nav className="mobile-nav-container" ref={mobileNavRef}>
-        {/* Fixed top bar */}
-        <MobileNav toggleMobile={toggleMobile} />
-        {/* Mobile Expand Down */}
-        <MobileNavExpanded mobileOpen={mobileOpen} />
-      </nav>
+        {/* Mobile */}
+        <nav className="mobile-nav-container" ref={mobileNavRef}>
+          {/* Fixed top bar */}
+          <MobileNav toggleMobile={toggleMobile} />
+          {/* Mobile Expand Down */}
+          <MobileNavExpanded mobileOpen={mobileOpen} />
+        </nav>
 
-      <main className="main">{children}</main>
-    </div>
+        <main className="main">{children}</main>
+      </div>
+    </NavContext.Provider>
   );
 }
+
+export { NavContext };

@@ -36,11 +36,18 @@
   .end-container:focus {
     outline: 2px solid var(--border-focus);
     outline-offset: -0.5rem;
-    border-radius: 0.75rem;
+
+    svg {
+      pointer-events: none;
+    }
   }
 
   .start-container {
     border-right: 1px solid var(--border-primary);
+
+    svg {
+      stroke: var(--icon-primary);
+    }
   }
 
   .logo {
@@ -56,6 +63,10 @@
     border: none;
     border-left: 1px solid var(--border-primary);
     background-color: unset;
+
+    svg {
+      stroke: var(--icon-primary);
+    }
   }
 
   .mobile-nav-expanded-links {
