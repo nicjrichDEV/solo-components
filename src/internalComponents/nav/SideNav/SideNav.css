@@ -17,19 +17,32 @@
       justify-content: space-between;
       border-bottom: 1px solid var(--border-primary);
       padding: 0 0 0 0.75rem;
+    }
 
-      a {
+    .sidebar-header-action-container {
+      display: flex;
+      height: 100%;
+      a,
+      button {
         transition: background-color 50ms ease;
       }
 
-      a:hover {
+      a:hover,
+      button:hover {
         background-color: var(--bg-brand-tertiary);
       }
 
-      a:focus {
+      a:focus,
+      button:focus {
         outline: 2px solid var(--border-focus);
         outline-offset: -0.5rem;
-        border-radius: 0.75rem;
+      }
+
+      button {
+        border-right: unset;
+        border-top: unset;
+        border-bottom: unset;
+        background-color: unset;
       }
     }
 

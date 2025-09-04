@@ -1,8 +1,8 @@
-import { Globe } from "lucide-react";
+import { Globe, Moon, Sun } from "lucide-react";
 import { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import LogoLight from "../../../assets/pmi-small-light.svg";
 import LogoDark from "../../../assets/pmi-small-dark.svg";
+import LogoLight from "../../../assets/pmi-small-light.svg";
 import componentNames from "../../../utils/componentNames";
 import CONSTANTS from "../../../utils/constants";
 import "./SideNav.css";
@@ -31,19 +31,27 @@ export default function SideNav() {
             alt="PMI Standalone logo"
             className="logo"
           />
-          <h1>Catalyst 2.0 🚧</h1>
+          <h1>Catalyst 🧪</h1>
         </div>
-        <a
-          className="sidebar-header-action"
-          target="_blank"
-          href={CONSTANTS.PMI}
-        >
-          <Globe size={"16px"} />
-        </a>
+        <div className="sidebar-header-action-container">
+          <button className="sidebar-header-action" onClick={theme.toggleTheme}>
+            {theme.theme === "light" ? (
+              <Moon size={"16px"} />
+            ) : (
+              <Sun size={"16px"} />
+            )}
+          </button>
+          <a
+            className="sidebar-header-action"
+            target="_blank"
+            href={CONSTANTS.PMI}
+          >
+            <Globe size={"16px"} />
+          </a>
+        </div>
       </div>
       <ul className="sidebar-content-container">{navLinks}</ul>
       {/* TODO: Actually make this not look like poo */}
-      <button onClick={theme.toggleTheme}>Toggle Theme</button>
     </aside>
   );
 }
