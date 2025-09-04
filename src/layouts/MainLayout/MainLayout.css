@@ -16,6 +16,7 @@
     background-color: var(--bg-canvas-primary);
     overflow-y: auto;
     height: 100dvh;
+    padding: 0 0.75rem;
   }
 
   @container (width > 640px) {
@@ -41,5 +42,6 @@
 
   main {
     grid-area: main;
+    padding: 1.5rem;
   }
 }

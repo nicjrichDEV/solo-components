@@ -1,39 +1,48 @@
-import { useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import Badge from "./components/badge/Badge";
-import { AccessibilityIcon } from "lucide-react";
+
+const ThemeContext = createContext(null);
 
 function App() {
+  // Might need to abstract this into its own component. That way we can check preferred theme and save to local s
+  const [theme, setTheme] = useState("light");
+
+  function toggleTheme() {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  }
+
   useEffect(() => {
     const doc = document.documentElement;
-    doc.setAttribute("data-theme", "light");
-  });
+    doc.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
-    <>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MainLayout>
         {/* SM */}
-        <Badge size="lg" variant="outline" shape="square">
+        <Badge size="lg" variant="outline">
           Badge
         </Badge>
-        <Badge size="lg" variant="outline" shape="square" status="brand">
+        <Badge size="lg" variant="outline" status="brand">
           Badge
         </Badge>
-        <Badge size="lg" variant="outline" shape="square" status="info">
+        <Badge size="lg" variant="outline" status="info">
           Badge
         </Badge>
-        <Badge size="lg" variant="outline" shape="square" status="success">
+        <Badge size="lg" variant="outline" status="success">
           Badge
         </Badge>
-        <Badge size="lg" variant="outline" shape="square" status="warning">
+        <Badge size="lg" variant="outline" status="warning">
           Badge
         </Badge>
-        <Badge size="lg" variant="outline" shape="square" status="error">
+        <Badge size="lg" variant="outline" status="error">
           Badge
         </Badge>
       </MainLayout>
-    </>
+    </ThemeContext.Provider>
   );
 }
 
 export default App;
+export { ThemeContext };

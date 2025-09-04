@@ -1,5 +1,0 @@
-@layer themes {
-  :where([data-theme="dark"]) {
-    --bg-canvas-primary: var(--color-off-black-900);
-  }
-}

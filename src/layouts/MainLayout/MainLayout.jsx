@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import MobileNavExpanded from "../../internalComponents/nav/MobileNavExpanded";
 import MobileNav from "../../internalComponents/nav/MobileNav";
+import MobileNavExpanded from "../../internalComponents/nav/MobileNavExpanded";
 import SideNav from "../../internalComponents/nav/SideNav";
 import "./MainLayout.css";
 

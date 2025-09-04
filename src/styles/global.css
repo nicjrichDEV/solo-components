@@ -1,13 +1,10 @@
 @import "./reset.css";
-@import "./primitives/colors.css";
-@import "./primitives/radius.css";
-@import "./primitives/breakpoints.css";
-@import "./semantic/text.css";
-@import "./semantic/icon.css";
-@import "./semantic/border.css";
-@import "./semantic/background.css";
-@import "./themes/dark.css";
-@layer reset, base, themes, components, utilities;
+@import "./primitives/primitives.css";
+@import "./semantic/semantic.css";
+@import "./themes/dark/dark.css";
+
+@layer reset, base, themes, components,
+  utilities;
 
 @layer base {
   :root {
