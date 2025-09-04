@@ -1,0 +1,7 @@
+/* Base Styles */
+.demo-container {
+  padding: 8px;
+  border-radius: 12px;
+  background-color: var(--bg-surface-primary);
+  border: 1px solid var(--border-primary);
+}
