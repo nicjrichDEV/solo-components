@@ -21,6 +21,11 @@
     font-family: var(--font-display);
   }
 
+  ::selection {
+    color: var(--text-primary);
+    background-color: var(--text-highlight);
+  }
+
   @font-face {
     font-family: "Aeonik";
     src: url("https://cdn.pmi.org/dsm/fonts/Aeonik/Aeonik-Regular.woff2");

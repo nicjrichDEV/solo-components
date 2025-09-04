@@ -53,7 +53,7 @@
     --text-on-brand-secondary: var(--color-violet-100);
     --text-on-brand-tertiary: var();
     --text-on-brand-quaternary: var();
-    --text-on-neutral-primary: var();
+    --text-on-neutral-primary: var(--color-white);
     --text-on-neutral-secondary: var();
     --text-on-neutral-tertiary: var();
     --text-on-info-primary: var(--color-aqua-50);

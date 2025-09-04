@@ -5,25 +5,15 @@
      * ================================ */
 
     /* Canvas - App and page foundation backgrounds */
-    --bg-canvas-primary: var(--color-neutral-50); /* Main app background */
-    --bg-canvas-secondary: var(--color-neutral-100); /* Secondary page areas */
-    --bg-canvas-tertiary: var(
-      --color-neutral-200
-    ); /* Contrast sections, sidebars */
+    --bg-canvas-primary: var(--color-neutral-50);
+    --bg-canvas-secondary: var(--color-neutral-100);
+    --bg-canvas-tertiary: var(--color-neutral-200);
 
     /* Surface - Content containers and cards */
-    --bg-surface-primary: var(
-      --color-white
-    ); /* Cards, panels, primary containers */
-    --bg-surface-secondary: var(
-      --color-neutral-50
-    ); /* Secondary cards, nested containers */
-    --bg-surface-tertiary: var(
-      --color-neutral-100
-    ); /* Tertiary surfaces, grouped content */
-    --bg-surface-quaternary: var(
-      --color-neutral-200
-    ); /* Subtle surface variations */
+    --bg-surface-primary: var(--color-white);
+    --bg-surface-secondary: var(--color-neutral-50);
+    --bg-surface-tertiary: var(--color-neutral-100);
+    --bg-surface-quaternary: var(--color-neutral-200);
 
     /* Overlay - Floating elements (modals, tooltips, dropdowns) */
     --bg-overlay-primary: var(--color-white);
@@ -31,30 +21,21 @@
     --bg-overlay-backdrop: var(--color-off-black-900);
 
     /* Interactive - UI element state backgrounds */
-    --bg-interactive-hover: var(
-      --color-neutral-100
-    ); /* Hover state for buttons, links */
-    --bg-interactive-active: var(
-      --color-neutral-200
-    ); /* Active/pressed state */
-    --bg-interactive-selected: var(
-      --color-violet-100
-    ); /* Selected items, current page */
-    --bg-interactive-pressed: var(
-      --color-neutral-300
-    ); /* Button pressed state */
-    --bg-interactive-disabled: var(
-      --color-neutral-100
-    ); /* Disabled interactive elements */
+    --bg-interactive-hover: var(--color-neutral-100);
+    --bg-interactive-active: var(--color-neutral-200);
+    --bg-interactive-selected: var(--color-violet-100);
+    --bg-interactive-pressed: var(--color-neutral-300);
+    --bg-interactive-disabled: var(--color-neutral-100);
 
     /* Brand Backgrounds - Primary brand color applications */
     --bg-brand-primary: var(--color-violet-500);
     --bg-brand-secondary: var(--color-violet-100);
-    --bg-brand-tertiary: var(--color-violet-50); /* Subtle brand backgrounds */
-    --bg-brand-hover: var(--color-violet-600); /* Brand button hover state */
+    --bg-brand-tertiary: var(--color-violet-50);
+    --bg-brand-hover: var(--color-violet-600);
     --bg-brand-active: var(--color-violet-700);
 
     /* Status Backgrounds - Semantic state backgrounds */
+    --bg-neutral-primary: var(--color-neutral-700);
     --bg-info-primary: var(--color-aqua-500);
     --bg-info-secondary: var(--color-aqua-100);
     --bg-info-tertiary: var(--color-aqua-50);
@@ -83,10 +64,10 @@
     /* Background Utilities - Special purpose backgrounds */
     --bg-disabled: var(--color-neutral-100);
     --bg-loading: var(--color-neutral-200);
-    --bg-skeleton: var(--color-neutral-200); /* Skeleton loading placeholders */
+    --bg-skeleton: var(--color-neutral-200);
     --bg-code: var(--color-violet-50);
     --bg-highlight: var(--color-tangerine-100);
-    --bg-transparent: transparent; /* Transparent backgrounds */
+    --bg-transparent: transparent;
 
     /* Inverse - For dark themes */
     --bg-inverse-canvas-primary: var(--color-neutral-900);

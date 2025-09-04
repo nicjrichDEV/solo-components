@@ -1,0 +1,10 @@
+@layer components {
+  /* Shape Variants */
+  .badge.square {
+    border-radius: var(--radius-base);
+  }
+
+  .badge.pill {
+    border-radius: 624.9375rem;
+  }
+}

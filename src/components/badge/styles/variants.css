@@ -1,0 +1,63 @@
+@layer components {
+  /* Solid Variant - Status Colors */
+  .badge.solid.neutral {
+    color: var(--text-on-neutral-primary);
+    background-color: var(--bg-neutral-primary);
+  }
+
+  .badge.solid.brand {
+    color: var(--text-on-brand-primary);
+    background-color: var(--bg-brand-primary);
+  }
+
+  .badge.solid.info {
+    color: var(--text-on-info-primary);
+    background-color: var(--bg-info-primary);
+  }
+
+  .badge.solid.success {
+    color: var(--text-on-success-primary);
+    background-color: var(--bg-success-primary);
+  }
+
+  .badge.solid.warning {
+    color: var(--text-on-warning-primary);
+    background-color: var(--bg-warning-primary);
+  }
+
+  .badge.solid.error {
+    color: var(--text-on-error-primary);
+    background-color: var(--bg-error-primary);
+  }
+
+  /* Soft Variant - Placeholder for future implementation */
+  .badge.soft.neutral {
+    color: var(--text-neutral-primary);
+    background-color: var(--bg-neutral-secondary);
+  }
+
+  .badge.soft.brand {
+    color: var(--text-brand-primary);
+    background-color: var(--bg-brand-secondary);
+  }
+
+  .badge.soft.info {
+    color: var(--text-info-primary);
+    background-color: var(--bg-info-secondary);
+  }
+
+  .badge.soft.success {
+    color: var(--text-success-primary);
+    background-color: var(--bg-success-secondary);
+  }
+
+  .badge.soft.warning {
+    color: var(--text-warning-primary);
+    background-color: var(--bg-warning-secondary);
+  }
+
+  .badge.soft.error {
+    color: var(--text-error-primary);
+    background-color: var(--bg-error-secondary);
+  }
+}
