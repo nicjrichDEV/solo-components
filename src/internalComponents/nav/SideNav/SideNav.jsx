@@ -19,6 +19,7 @@ export default function SideNav() {
     <aside className="sidebar-root">
       <div className="sidebar-header-container">
         <div className="logo-container">
+          {/* TODO: Wrap logo and title in href to return to / url */}
           <img src={Logo} alt="PMI Standalone logo" className="logo" />
           <h1>Catalyst 2.0 🚧</h1>
         </div>
