@@ -12,15 +12,23 @@
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
-    background-color: var(--color-neutral-50);
-    color: var(--text-primary)
   }
+
+  ul {
+    padding-inline-start: 0;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
 }
 
 @layer base {
   :root {
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --color-transparent: transparent;
+
     /* Violet - Original brand colors */
     --color-violet-50: #EFEDF3;
     --color-violet-100: #E0C8F9;
@@ -170,6 +178,10 @@
      * These tokens provide consistent, theme-aware colors for UI components.
      * Always use semantic tokens instead of raw color values in components.
      */
+
+     /* Font Face */
+     --font-display: 'Aeonik', sans-serif;
+     --font-body: 'Aeonik', sans-serif;
 
     /* TEXT COLORS
      * Use for all text content and typography
@@ -431,7 +443,7 @@
     --bg-elevated-quaternary: var(--color-neutral-200);      /* Cards at highest elevation (16px shadow) */
 
     /* Form - Input and form control backgrounds */
-    --bg-form-primary: var(--color-white);               /* Text inputs, textareas */
+    --bg-form-primary: var(--color-white);               /* Text inputs, text areas */
     --bg-form-secondary: var(--color-neutral-50);        /* Select boxes, secondary inputs */
     --bg-form-hover: var(--color-neutral-50);            /* Form input hover state */
     --bg-form-focus: var(--color-white);                 /* Focused input background */
@@ -497,8 +509,48 @@
     --bg-inverse-nav-hover: var(--color-neutral-700);
     --bg-inverse-nav-selected: var(--color-violet-800);
   }
+
+  body {
+    color: var(--text-primary);
+    font-family: var(--font-display)
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('https://cdn.pmi.org/dsm/fonts/Aeonik/Aeonik-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('https://cdn.pmi.org/dsm/fonts/Aeonik/Aeonik-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('https://cdn.pmi.org/dsm/fonts/Aeonik/Aeonik-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('https://cdn.pmi.org/dsm/fonts/Aeonik/Aeonik-Black.woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 @layer themes {
-
+  :where([data-theme="dark"]) {
+    --bg-canvas-primary: var(--color-off-black-900); 
+  }
 }
+

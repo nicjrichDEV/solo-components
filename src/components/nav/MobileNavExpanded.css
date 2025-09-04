@@ -11,7 +11,9 @@
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
     transform: translateY(calc(100% + 40px));
-    z-index: -1;
+    overflow-y: scroll;
+    max-height: 90dvh;
+    z-index: 0;
   }
 
   .mobile-nav-expanded-open {

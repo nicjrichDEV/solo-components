@@ -1,5 +1,5 @@
 const CONSTANTS = {
-    GITHUB: 'https://github.com/nicjrichDEV/solo-components'
-}
+  PMI: "https://www.pmi.org/",
+};
 
-export default CONSTANTS
+export default CONSTANTS;

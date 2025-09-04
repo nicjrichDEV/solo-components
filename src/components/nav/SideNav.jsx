@@ -1,33 +1,36 @@
 import componentNames from "../../utils/componentNames";
 import CONSTANTS from "../../utils/constants";
-import { Github } from "lucide-react";
+import { Globe } from "lucide-react";
 import "./SideNav.css";
+import Logo from "../../assets/pmi-small.svg";
 
 export default function SideNav() {
   const navLinks = componentNames.map((comp, index) => {
     return (
-      <a
-        href={`#${comp}`}
-        key={index}
-        className="text-text-secondary font-body flex h-8 min-h-8 items-center justify-items-start border-b border-b-neutral-200 px-2 text-sm font-medium transition-colors duration-150 ease-in hover:bg-neutral-200"
-      >
-        {comp[0].toUpperCase() + comp.slice(1)}
-      </a>
+      <div key={index} className="sidebar-link-container">
+        <li>
+          <a href={`#${comp}`}>{comp[0].toUpperCase() + comp.slice(1)}</a>
+        </li>
+      </div>
     );
   });
 
   return (
-    <aside className="aside-root">
-      <div className="flex h-10 items-center justify-between border-b border-b-neutral-200 pl-2">
-        <h2 className="font-display text-primary font-medium">UI Next</h2>
+    <aside className="sidebar-root">
+      <div className="sidebar-header-container">
+        <div className="logo-container">
+          <img src={Logo} alt="PMI Standalone logo" className="logo" />
+          <h1>Components++</h1>
+        </div>
         <a
-          className="flex h-full w-10 items-center justify-center border-l border-l-neutral-200 transition-colors duration-150 ease-in hover:bg-neutral-200 active:shadow-inner"
-          href={CONSTANTS.GITHUB}
+          className="sidebar-header-action"
+          target="_blank"
+          href={CONSTANTS.PMI}
         >
-          <Github size={"18px"} />
+          <Globe size={"16px"} />
         </a>
       </div>
-      <div className="flex-1">{navLinks}</div>
+      <ul className="sidebar-content-container">{navLinks}</ul>
     </aside>
   );
 }

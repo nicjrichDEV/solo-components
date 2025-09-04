@@ -39,9 +39,7 @@ export default function MainLayout({ children }) {
         <MobileNavExpanded mobileOpen={mobileOpen} />
       </nav>
 
-      <main className="bg-background-primary flex flex-1 flex-col items-center overflow-y-auto scroll-smooth p-2 lg:p-6">
-        {children}
-      </main>
+      <main className="main">{children}</main>
     </div>
   );
 }

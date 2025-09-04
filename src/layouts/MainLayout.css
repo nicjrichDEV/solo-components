@@ -8,6 +8,15 @@
     grid-template-columns: 1fr;
   }
 
+  .mobile-nav-container {
+    height: fit-content;
+  }
+
+  main {
+    background-color: var(--bg-canvas-primary);
+    overflow-y: auto;
+  }
+
   @container (width > 640px) {
     .mobile-nav-container {
       visibility: hidden;
@@ -18,5 +27,18 @@
 @media (min-width: 640px) {
   .app-shell {
     grid-template-columns: 256px 1fr;
+    grid-template-areas: "sidebar main";
+  }
+  
+  .aside-root {
+    grid-area: sidebar;
+  }
+  
+  .mobile-nav-container {
+    display: none;
+  }
+  
+  main {
+    grid-area: main;
   }
 }

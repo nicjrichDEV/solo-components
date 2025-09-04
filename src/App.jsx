@@ -10,7 +10,11 @@ function App() {
   return (
     <>
       <MainLayout>
-        <div className=""></div>
+        <div style={{ height: "400px", backgroundColor: "red" }}></div>
+        <div style={{ height: "400px", backgroundColor: "royalblue" }}></div>
+        <div
+          style={{ height: "400px", backgroundColor: "rebeccapurple" }}
+        ></div>
       </MainLayout>
     </>
   );
