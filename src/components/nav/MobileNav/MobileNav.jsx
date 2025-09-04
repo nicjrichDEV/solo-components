@@ -1,6 +1,6 @@
-import CONSTANTS from "../../utils/constants";
+import CONSTANTS from "../../../utils/constants";
 import { Globe, Menu } from "lucide-react";
-import Logo from "../../assets/pmi-small.svg";
+import Logo from "../../../assets/pmi-small.svg";
 import "./MobileNav.css";
 
 export default function MobileNav({ toggleMobile }) {

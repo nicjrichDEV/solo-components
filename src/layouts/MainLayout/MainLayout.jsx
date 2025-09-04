@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import MobileNavExpanded from "../components/nav/MobileNavExpanded";
-import MobileNav from "../components/nav/MobileNav";
-import SideNav from "../components/nav/SideNav";
+import MobileNavExpanded from "../../components/nav/MobileNavExpanded";
+import MobileNav from "../../components/nav/MobileNav";
+import SideNav from "../../components/nav/SideNav";
 import "./MainLayout.css";
 
 export default function MainLayout({ children }) {

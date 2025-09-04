@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./layouts/MainLayout/MainLayout";
 
 function App() {
   useEffect(() => {

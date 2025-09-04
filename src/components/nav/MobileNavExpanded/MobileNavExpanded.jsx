@@ -1,7 +1,7 @@
-import componentNames from "../../utils/componentNames";
+import componentNames from "../../../utils/componentNames";
 import "./MobileNavExpanded.css";
 
-export default function MobileExpanded({ mobileOpen }) {
+export default function MobileNavExpanded({ mobileOpen }) {
   const navLinks = componentNames.map((comp, index) => {
     return (
       <a

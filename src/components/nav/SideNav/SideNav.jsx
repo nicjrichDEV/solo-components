@@ -1,8 +1,8 @@
-import componentNames from "../../utils/componentNames";
-import CONSTANTS from "../../utils/constants";
+import componentNames from "../../../utils/componentNames";
+import CONSTANTS from "../../../utils/constants";
 import { Globe } from "lucide-react";
 import "./SideNav.css";
-import Logo from "../../assets/pmi-small.svg";
+import Logo from "../../../assets/pmi-small.svg";
 
 export default function SideNav() {
   const navLinks = componentNames.map((comp, index) => {
