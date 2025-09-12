@@ -36,28 +36,24 @@
 
     /* Status Backgrounds - Semantic state backgrounds */
     --bg-neutral-primary: var(--color-neutral-700);
+    --bg-neutral-secondary: var(--color-neutral-500);
+    --bg-neutral-tertiary: var(--color-neutral-100);
     --bg-info-primary: var(--color-aqua-500);
     --bg-info-secondary: var(--color-aqua-100);
-    --bg-info-tertiary: var(--color-aqua-50);
+    --bg-info-tertiary: var(--color-aqua-100);
     --bg-success-primary: var(--color-emerald-700);
     --bg-success-secondary: var(--color-emerald-100);
-    --bg-success-tertiary: var(--color-emerald-50);
+    --bg-success-tertiary: var(--color-emerald-100);
     --bg-warning-primary: var(--color-tangerine-500);
     --bg-warning-secondary: var(--color-tangerine-100);
-    --bg-warning-tertiary: var(--color-tangerine-50);
+    --bg-warning-tertiary: var(--color-tangerine-100);
     --bg-error-primary: var(--color-red-700);
     --bg-error-secondary: var(--color-red-100);
-    --bg-error-tertiary: var(--color-red-50);
+    --bg-error-tertiary: var(--color-red-100);
 
     /* Status Backgrounds - Muted (subtle indicators) */
-    --bg-info-muted: var(--color-aqua-50);
-    --bg-success-muted: var(--color-emerald-50);
-    --bg-warning-muted: var(--color-tangerine-50);
-    --bg-error-muted: var(--color-red-50);
 
     /* TODO: Elevation - Layered surfaces with visual depth */
-
-    /* Form - Input and form control backgrounds | Honestly not sure if this is needed */
 
     /* TODO: Scrim - Modal and overlay backdrop masks */
 
