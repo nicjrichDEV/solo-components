@@ -1,0 +1,11 @@
+.safe-area {
+  padding: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .safe-area {
+    padding: 1.5rem;
+    max-width: 70.5rem;
+    width: 100%;
+  }
+}
