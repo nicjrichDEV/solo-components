@@ -1,7 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import DemoBadge from "./demos/DemoBadge/DemoBadge";
 import MainLayout from "./layouts/MainLayout/MainLayout";
-import SafeArea from "./layouts/SafeArea/SafeArea";
 
 const ThemeContext = createContext(null);
 
@@ -21,9 +20,7 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MainLayout>
-        <SafeArea>
-          <DemoBadge />
-        </SafeArea>
+        <DemoBadge />
       </MainLayout>
     </ThemeContext.Provider>
   );

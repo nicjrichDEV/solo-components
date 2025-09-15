@@ -42,7 +42,9 @@ export default function MainLayout({ children }) {
           <MobileNavExpanded mobileOpen={mobileOpen} />
         </nav>
 
-        <main className="main">{children}</main>
+        <main className="main">
+          <div className="safe-area">{children}</div>
+        </main>
       </div>
     </NavContext.Provider>
   );
