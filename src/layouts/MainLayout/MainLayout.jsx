@@ -8,36 +8,51 @@ const NavContext = createContext(null);
 
 export default function MainLayout({ children }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [sidebarOverlay, setSidebarOverlay] = useState(false);
   const mobileNavRef = useRef();
+  const sidebarRef = useRef;
 
   useEffect(() => {
     function handleOutOfBounds(event) {
       if (
         !mobileNavRef.current.contains(event.target) ||
         event.target.tagName === "A"
-      )
-        toggleMobile();
+      ) {
+        if (mobileOpen) toggleMobile();
+        if (sidebarOverlay) toggleSidebar();
+      }
     }
 
-    if (mobileOpen) document.addEventListener("click", handleOutOfBounds);
+    if (mobileOpen || sidebarOverlay)
+      document.addEventListener("click", handleOutOfBounds);
 
     return () => document.removeEventListener("click", handleOutOfBounds);
-  }, [mobileOpen]);
+  }, [mobileOpen, sidebarOverlay]);
 
   function toggleMobile() {
     setMobileOpen((v) => !v);
   }
 
+  function toggleSidebar() {
+    console.log("Sidebar called");
+    setSidebarOverlay((last) => !last);
+  }
+
   return (
-    <NavContext.Provider value={{ mobileOpen, toggleMobile }}>
+    <NavContext.Provider
+      value={{ mobileOpen, toggleMobile, sidebarOverlay, toggleSidebar }}
+    >
       <div className="app-shell">
         {/* Desktop Sidebar */}
-        <SideNav />
+        <SideNav ref={sidebarRef} />
 
         {/* Mobile */}
         <nav className="mobile-nav-container" ref={mobileNavRef}>
           {/* Fixed top bar */}
-          <MobileNav toggleMobile={toggleMobile} />
+          <MobileNav
+            toggleMobile={toggleMobile}
+            toggleSidebar={toggleSidebar}
+          />
           {/* Mobile Expand Down */}
           <MobileNavExpanded mobileOpen={mobileOpen} />
         </nav>

@@ -7,9 +7,24 @@ import { NavContext } from "../../../layouts/MainLayout/MainLayout";
 import CONSTANTS from "../../../utils/constants";
 import "./MobileNav.css";
 
-export default function MobileNav() {
+export default function MobileNav({ toggleMobile, toggleSidebar }) {
   const context = useContext(NavContext);
   const theme = useContext(ThemeContext);
+
+  function handleMenuClick() {
+    if (typeof window === "undefined") return;
+
+    const isTablet = window.matchMedia(
+      "(min-width: 640px) and (max-width: 1023px)"
+    ).matches;
+
+    if (isTablet) {
+      toggleSidebar();
+    } else {
+      toggleMobile();
+    }
+  }
+
   return (
     <div className="mobile-nav-root">
       <a className="start-container" target="_blank" href={CONSTANTS.PMI}>
@@ -20,8 +35,12 @@ export default function MobileNav() {
         className="logo"
         alt="PMI Standalone Logo"
       />
-      <button onClick={context.toggleMobile} className="end-container">
-        {context.mobileOpen ? <X size={"16px"} /> : <Menu size={"16px"} />}
+      <button onClick={handleMenuClick} className="end-container">
+        {context.mobileOpen || context.sidebarOverlay ? (
+          <X size={"16px"} />
+        ) : (
+          <Menu size={"16px"} />
+        )}
       </button>
     </div>
   );

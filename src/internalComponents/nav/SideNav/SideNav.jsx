@@ -3,12 +3,15 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../App";
 import LogoDark from "../../../assets/pmi-small-dark.svg";
 import LogoLight from "../../../assets/pmi-small-light.svg";
+import { NavContext } from "../../../layouts/MainLayout/MainLayout";
+import cn from "../../../utils/cn";
 import componentNames from "../../../utils/componentNames";
 import CONSTANTS from "../../../utils/constants";
 import "./SideNav.css";
 
 export default function SideNav() {
   const theme = useContext(ThemeContext);
+  const sideBarContext = useContext(NavContext);
 
   const navLinks = componentNames.map((comp, index) => {
     return (
@@ -21,7 +24,9 @@ export default function SideNav() {
   });
 
   return (
-    <aside className="sidebar-root">
+    <aside
+      className={cn("sidebar-root", sideBarContext.sidebarOverlay && "open")}
+    >
       <div className="sidebar-header-container">
         <div className="logo-container">
           {/* TODO: Wrap logo and title in href to return to / url */}
