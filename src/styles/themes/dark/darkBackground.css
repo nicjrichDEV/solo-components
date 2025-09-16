@@ -32,6 +32,7 @@
     /* Status Backgrounds - Semantic state backgrounds */
     --bg-neutral-primary: var(--color-neutral-700);
     --bg-neutral-secondary: var();
+
     --bg-info-primary: var(--color-aqua-500);
     --bg-info-secondary: var(--color-aqua-100);
     --bg-info-tertiary: var(--color-aqua-50);

@@ -27,7 +27,7 @@
     --text-link-visited: var(--color-violet-600);
 
     /* Status Text - Semantic messaging and feedback */
-    --text-neutral-primary: var(--color-neutral-800);
+    --text-neutral-primary: var(--color-neutral-50);
     --text-neutral-secondary: var(--color-neutral-600);
     --text-neutral-tertiary: var(var(--color-neutral-500));
     --text-info-primary: var(--color-aqua-700);

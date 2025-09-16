@@ -35,7 +35,6 @@ export default function MainLayout({ children }) {
   }
 
   function toggleSidebar() {
-    console.log("Sidebar called");
     setSidebarOverlay((last) => !last);
   }
 
