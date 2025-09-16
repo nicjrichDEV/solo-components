@@ -16,10 +16,16 @@
     background-color: var(--bg-canvas-primary);
     overflow-y: auto;
     height: 100dvh;
+    transition: background-color 150ms ease;
   }
 
   .safe-area {
     padding: 0.75rem;
+  }
+
+  .overlay {
+    filter: blur(0.25rem);
+    background-color: var(--bg-overlay-backdrop);
   }
 
   @container (width > 1024px) {

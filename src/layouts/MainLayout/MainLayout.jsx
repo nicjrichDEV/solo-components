@@ -2,6 +2,7 @@ import { createContext, useEffect, useRef, useState } from "react";
 import MobileNav from "../../internalComponents/nav/MobileNav";
 import MobileNavExpanded from "../../internalComponents/nav/MobileNavExpanded";
 import SideNav from "../../internalComponents/nav/SideNav";
+import cn from "../../utils/cn";
 import "./MainLayout.css";
 
 const NavContext = createContext(null);
@@ -57,7 +58,7 @@ export default function MainLayout({ children }) {
           <MobileNavExpanded mobileOpen={mobileOpen} />
         </nav>
 
-        <main className="main">
+        <main className={cn("main", sidebarOverlay && "overlay")}>
           <div className="safe-area">{children}</div>
         </main>
       </div>
