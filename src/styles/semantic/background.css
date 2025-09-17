@@ -1,4 +1,5 @@
 @layer base {
+  /* TODO: It looks like its going to be better to assign the values for light within a specific :where([data-theme="light"]). This allows you to override the theme at any spot within the app which is kinda nice flexibility wise! You can do it with dark since its already using that where syntax */
   :root {
     /* BACKGROUND COLORS
      * Comprehensive background system for all UI contexts

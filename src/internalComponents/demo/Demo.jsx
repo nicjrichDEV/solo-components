@@ -16,7 +16,7 @@ export default function Demo({
         {title && <h2>{title}</h2>}
         {description && <p>{description}</p>}
       </div>
-      <div className="demo-area">{children}</div>
+      <div>{children}</div>
     </section>
   );
 }
