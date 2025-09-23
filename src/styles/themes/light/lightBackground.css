@@ -1,0 +1,80 @@
+@layer themes {
+  :where([data-theme="light"]) {
+    /* Canvas - App and page foundation backgrounds */
+    --bg-canvas-primary: var(--color-neutral-50);
+    --bg-canvas-secondary: var(--color-neutral-100);
+    --bg-canvas-tertiary: var(--color-neutral-200);
+
+    /* Surface - Content containers and cards */
+    --bg-surface-primary: var(--color-white);
+    --bg-surface-secondary: var(--color-neutral-50);
+    --bg-surface-tertiary: var(--color-neutral-100);
+    --bg-surface-quaternary: var(--color-neutral-200);
+
+    /* Overlay - Floating elements (modals, tooltips, dropdowns) */
+    --bg-overlay-primary: var(--color-white);
+    --bg-overlay-secondary: var(--color-neutral-50);
+    --bg-overlay-backdrop: var(--color-off-black-900);
+
+    /* Interactive - UI element state backgrounds */
+    --bg-interactive-hover: var(--color-neutral-100);
+    --bg-interactive-active: var(--color-neutral-200);
+    --bg-interactive-selected: var(--color-violet-100);
+    --bg-interactive-pressed: var(--color-neutral-300);
+    --bg-interactive-disabled: var(--color-neutral-100);
+
+    /* Brand Backgrounds - Primary brand color applications */
+    --bg-brand-primary: var(--color-violet-500);
+    --bg-brand-secondary: var(--color-violet-100);
+    --bg-brand-tertiary: var(--color-violet-50);
+    --bg-brand-hover: var(--color-violet-600);
+    --bg-brand-active: var(--color-violet-700);
+
+    /* Status Backgrounds - Semantic state backgrounds */
+    --bg-neutral-primary: var(--color-neutral-700);
+    --bg-neutral-secondary: var(--color-neutral-500);
+    --bg-neutral-tertiary: var(--color-neutral-100);
+    --bg-info-primary: var(--color-aqua-500);
+    --bg-info-secondary: var(--color-aqua-100);
+    --bg-info-tertiary: var(--color-aqua-100);
+    --bg-success-primary: var(--color-emerald-700);
+    --bg-success-secondary: var(--color-emerald-100);
+    --bg-success-tertiary: var(--color-emerald-100);
+    --bg-warning-primary: var(--color-tangerine-500);
+    --bg-warning-secondary: var(--color-tangerine-100);
+    --bg-warning-tertiary: var(--color-tangerine-100);
+    --bg-error-primary: var(--color-red-700);
+    --bg-error-secondary: var(--color-red-100);
+    --bg-error-tertiary: var(--color-red-100);
+
+    /* Status Backgrounds - Muted (subtle indicators) */
+
+    /* TODO: Elevation - Layered surfaces with visual depth */
+
+    /* TODO: Scrim - Modal and overlay backdrop masks */
+
+    /* Background Utilities - Special purpose backgrounds */
+    --bg-disabled: var(--color-neutral-100);
+    --bg-loading: var(--color-neutral-200);
+    --bg-skeleton: var(--color-neutral-200);
+    --bg-code: var(--color-violet-50);
+    --bg-highlight: var(--color-tangerine-100);
+    --bg-transparent: transparent;
+
+    /* Inverse - For dark themes */
+    --bg-inverse-canvas-primary: var(--color-neutral-900);
+    --bg-inverse-canvas-secondary: var(--color-neutral-800);
+    --bg-inverse-surface-primary: var(--color-neutral-800);
+    --bg-inverse-surface-secondary: var(--color-neutral-700);
+    --bg-inverse-overlay-primary: var(--color-neutral-800);
+    --bg-inverse-overlay-backdrop: var(--color-off-black-950);
+    --bg-inverse-interactive-hover: var(--color-neutral-700);
+    --bg-inverse-interactive-selected: var(--color-violet-900);
+    --bg-inverse-elevated-primary: var(--color-neutral-800);
+    --bg-inverse-elevated-secondary: var(--color-neutral-700);
+    --bg-inverse-form-primary: var(--color-neutral-800);
+    --bg-inverse-form-hover: var(--color-neutral-700);
+    --bg-inverse-nav-hover: var(--color-neutral-700);
+    --bg-inverse-nav-selected: var(--color-violet-800);
+  }
+}

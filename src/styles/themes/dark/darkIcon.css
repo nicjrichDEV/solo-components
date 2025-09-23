@@ -1,0 +1,69 @@
+@layer themes {
+  :where([data-theme="dark"]) {
+    /* General Icons - Match with corresponding text emphasis */
+    --icon-primary: var(--text-primary);
+    --icon-secondary: var(--text-secondary);
+    --icon-tertiary: var(--text-tertiary);
+    --icon-quaternary: var(--text-quaternary);
+
+    /* Brand Icons - Match with corresponding brand text */
+    --icon-brand-primary: var(--text-brand-primary);
+    --icon-brand-secondary: var(--text-brand-secondary);
+    --icon-brand-tertiary: var(--text-brand-tertiary);
+    --icon-brand-quaternary: var(--text-brand-quaternary);
+
+    /* Icon Utilities - Special purpose icons */
+    --icon-disabled: var(--text-disabled);
+    --icon-placeholder: var(--text-placeholder);
+    --icon-caption: var(--text-caption);
+    --icon-overline: var(--text-overline);
+    --icon-code: var(--text-code);
+    --icon-highlight: var(--text-highlight);
+
+    /* Link Icons - Icons within interactive links */
+    --icon-link: var(--text-link);
+    --icon-link-hover: var(--text-link-hover);
+    --icon-link-active: var(--text-link-active);
+    --icon-link-visited: var(--text-link-visited);
+
+    /* Status Icons */
+    --icon-info-primary: var(--text-info-primary);
+    --icon-info-secondary: var(--text-info-secondary);
+    --icon-success-primary: var(--text-success-primary);
+    --icon-success-secondary: var(--text-success-secondary);
+    --icon-warning-primary: var(--text-warning-primary);
+    --icon-warning-secondary: var(--text-warning-secondary);
+    --icon-error-primary: var(--text-error-primary);
+    --icon-error-secondary: var(--text-error-secondary);
+
+    /* Status Icons - Muted */
+    --icon-info-muted: var(--text-info-muted);
+    --icon-success-muted: var(--text-success-muted);
+    --icon-warning-muted: var(--text-warning-muted);
+    --icon-error-muted: var(--text-error-muted);
+
+    /* Context Aware */
+    --icon-on-brand-primary: var(--text-on-brand-primary);
+    --icon-on-brand-secondary: var(--text-on-brand-secondary);
+    --icon-on-info-primary: var(--text-on-info-primary);
+    --icon-on-info-secondary: var(--text-on-info-secondary);
+    --icon-on-success-primary: var(--text-on-success-primary);
+    --icon-on-success-secondary: var(--text-on-success-secondary);
+    --icon-on-warning-primary: var(--text-on-warning-primary);
+    --icon-on-warning-secondary: var(--text-on-warning-secondary);
+    --icon-on-error-primary: var(--text-on-error-primary);
+    --icon-on-error-secondary: var(--text-on-error-secondary);
+
+    /* Inverse */
+    --icon-inverse-primary: var(--text-inverse-primary);
+    --icon-inverse-secondary: var(--text-inverse-secondary);
+    --icon-inverse-tertiary: var(--text-inverse-tertiary);
+    --icon-inverse-quaternary: var(--text-inverse-quaternary);
+    --icon-inverse-disabled: var(--text-inverse-disabled);
+    --icon-inverse-placeholder: var(--text-inverse-placeholder);
+    --icon-inverse-link: var(--text-inverse-link);
+    --icon-inverse-link-hover: var(--text-inverse-link-hover);
+    --icon-inverse-link-active: var(--text-inverse-link-active);
+    --icon-inverse-link-visited: var(--text-inverse-link-visited);
+  }
+}

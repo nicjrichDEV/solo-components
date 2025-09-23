@@ -1,0 +1,121 @@
+@layer themes {
+  :where([data-theme="light"]) {
+    /* General Text Emphasis - Use for body text, headings, and content */
+    --text-primary: var(--color-off-black-800);
+    --text-secondary: var(--color-off-black-600);
+    --text-tertiary: var(--color-off-black-400);
+    --text-quaternary: var(--color-off-black-200);
+
+    /* Brand Text - Use for brand-focused elements and CTAs */
+    --text-brand-primary: var(--color-violet-600);
+    --text-brand-secondary: var(--color-violet-400);
+    --text-brand-tertiary: var(--color-violet-300);
+    --text-brand-quaternary: var(--color-violet-200);
+
+    /* Text Utilities - Special purpose text styling */
+    --text-disabled: var(--color-off-black-300); /* TODO: Update */
+    --text-placeholder: var(--color-off-black-400);
+    --text-caption: var(--color-off-black-500);
+    --text-overline: var(--color-off-black-600);
+    --text-code: var(--color-violet-700);
+    --text-highlight: var(--color-violet-100);
+
+    /* Links - Interactive text elements */
+    --text-link: var(--color-aqua-600);
+    --text-link-hover: var(--color-aqua-700);
+    --text-link-active: var(--color-aqua-800);
+    --text-link-visited: var(--color-violet-600);
+
+    /* Status Text - Semantic messaging and feedback */
+    --text-neutral-primary: var(--color-neutral-800);
+    --text-neutral-secondary: var(--color-neutral-600);
+    --text-neutral-tertiary: var(var(--color-neutral-500));
+    --text-info-primary: var(--color-aqua-700);
+    --text-info-secondary: var(--color-aqua-600);
+    --text-info-tertiary: var(--color-aqua-500);
+    --text-success-primary: var(--color-emerald-700);
+    --text-success-secondary: var(--color-emerald-600);
+    --text-success-tertiary: var(var(--color-emerald-500));
+    --text-warning-primary: var(--color-tangerine-700);
+    --text-warning-secondary: var(--color-tangerine-600);
+    --text-warning-tertiary: var(var(--color-tangerine-500));
+    --text-error-primary: var(--color-red-700);
+    --text-error-secondary: var(--color-red-600);
+    --text-error-tertiary: var(--color-red-500);
+
+    /* Context Aware */
+    --text-on-brand-primary: var(--color-violet-50);
+    --text-on-brand-secondary: var(--color-violet-100);
+    --text-on-brand-tertiary: var();
+    --text-on-brand-quaternary: var();
+    --text-on-neutral-primary: var(--color-white);
+    --text-on-neutral-secondary: var();
+    --text-on-neutral-tertiary: var();
+    --text-on-info-primary: var(--color-aqua-50);
+    --text-on-info-secondary: var(--color-aqua-100);
+    --text-on-info-tertiary: var();
+    --text-on-success-primary: var(--color-emerald-50);
+    --text-on-success-secondary: var(--color-emerald-100);
+    --text-on-success-tertiary: var();
+    --text-on-warning-primary: var(--color-tangerine-50);
+    --text-on-warning-secondary: var(--color-tangerine-100);
+    --text-on-warning-tertiary: var();
+    --text-on-error-primary: var(--color-red-50);
+    --text-on-error-secondary: var(--color-red-100);
+    --text-on-error-tertiary: var();
+
+    /* Inverse */
+    --text-inverse-primary: var(--color-neutral-50);
+    --text-inverse-secondary: var(--color-neutral-200);
+    --text-inverse-tertiary: var(--color-neutral-300);
+    --text-inverse-quaternary: var(--color-neutral-400);
+    --text-inverse-brand-primary: var();
+    --text-inverse-brand-secondary: var();
+    --text-inverse-brand-tertiary: var();
+    --text-inverse-brand-quaternary: var();
+    --text-inverse-disabled: var(--color-neutral-500);
+    --text-inverse-placeholder: var(--color-neutral-400);
+    --text-inverse-caption: var();
+    --text-inverse-overline: var();
+    --text-inverse-code: var();
+    --text-inverse-highlight: var();
+    --text-inverse-link: var(--color-aqua-300);
+    --text-inverse-link-hover: var(--color-aqua-200);
+    --text-inverse-link-active: var(--color-aqua-100);
+    --text-inverse-link-visited: var(--color-violet-300);
+    --text-inverse-neutral-primary: var();
+    --text-inverse-neutral-secondary: var();
+    --text-inverse-neutral-tertiary: var();
+    --text-inverse-info-primary: var();
+    --text-inverse-info-secondary: var();
+    --text-inverse-info-tertiary: var();
+    --text-inverse-success-primary: var();
+    --text-inverse-success-secondary: var();
+    --text-inverse-success-tertiary: var();
+    --text-inverse-warning-primary: var();
+    --text-inverse-warning-secondary: var();
+    --text-inverse-warning-tertiary: var();
+    --text-inverse-error-primary: var();
+    --text-inverse-error-secondary: var();
+    --text-inverse-error-tertiary: var();
+    --text-inverse-on-brand-primary: var();
+    --text-inverse-on-brand-secondary: var();
+    --text-inverse-on-brand-tertiary: var();
+    --text-inverse-on-brand-quaternary: var();
+    --text-inverse-on-neutral-primary: var();
+    --text-inverse-on-neutral-secondary: var();
+    --text-inverse-on-neutral-tertiary: var();
+    --text-inverse-on-info-primary: var();
+    --text-inverse-on-info-secondary: var();
+    --text-inverse-on-info-tertiary: var();
+    --text-inverse-on-success-primary: var();
+    --text-inverse-on-success-secondary: var();
+    --text-inverse-on-success-tertiary: var();
+    --text-inverse-on-warning-primary: var();
+    --text-inverse-on-warning-secondary: var();
+    --text-inverse-on-warning-tertiary: var();
+    --text-inverse-on-error-primary: var();
+    --text-inverse-on-error-secondary: var();
+    --text-inverse-on-error-tertiary: var();
+  }
+}

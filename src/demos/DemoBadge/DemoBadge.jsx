@@ -74,7 +74,7 @@ export default function DemoBadge() {
             comparison.
           </p>
           <div className="grids-container">
-            <div className="demo-grid">
+            <div className="demo-grid" data-theme="light">
               <div>
                 <h3>Solid</h3>
                 <div className="demo-column">
@@ -159,7 +159,7 @@ export default function DemoBadge() {
                 </div>
               </div>
             </div>
-            <div className="demo-grid" data-theme="">
+            <div className="demo-grid" data-theme="dark">
               <div>
                 <h3>Solid</h3>
                 <div className="demo-column">

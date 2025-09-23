@@ -2,6 +2,7 @@
 @import "./primitives/primitives.css";
 @import "./semantic/semantic.css";
 @import "./themes/dark/dark.css";
+@import "./themes/light/light.css";
 
 @layer reset, base, themes, components,
   utilities;

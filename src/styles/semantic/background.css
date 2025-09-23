@@ -1,56 +1,55 @@
 @layer base {
-  /* TODO: It looks like its going to be better to assign the values for light within a specific :where([data-theme="light"]). This allows you to override the theme at any spot within the app which is kinda nice flexibility wise! You can do it with dark since its already using that where syntax */
   :root {
     /* BACKGROUND COLORS
      * Comprehensive background system for all UI contexts
      * ================================ */
 
     /* Canvas - App and page foundation backgrounds */
-    --bg-canvas-primary: var(--color-neutral-50);
-    --bg-canvas-secondary: var(--color-neutral-100);
-    --bg-canvas-tertiary: var(--color-neutral-200);
+    --bg-canvas-primary: var();
+    --bg-canvas-secondary: var();
+    --bg-canvas-tertiary: var();
 
     /* Surface - Content containers and cards */
-    --bg-surface-primary: var(--color-white);
-    --bg-surface-secondary: var(--color-neutral-50);
-    --bg-surface-tertiary: var(--color-neutral-100);
-    --bg-surface-quaternary: var(--color-neutral-200);
+    --bg-surface-primary: var();
+    --bg-surface-secondary: var();
+    --bg-surface-tertiary: var();
+    --bg-surface-quaternary: var();
 
     /* Overlay - Floating elements (modals, tooltips, dropdowns) */
-    --bg-overlay-primary: var(--color-white);
-    --bg-overlay-secondary: var(--color-neutral-50);
-    --bg-overlay-backdrop: var(--color-off-black-900);
+    --bg-overlay-primary: var();
+    --bg-overlay-secondary: var();
+    --bg-overlay-backdrop: var();
 
     /* Interactive - UI element state backgrounds */
-    --bg-interactive-hover: var(--color-neutral-100);
-    --bg-interactive-active: var(--color-neutral-200);
-    --bg-interactive-selected: var(--color-violet-100);
-    --bg-interactive-pressed: var(--color-neutral-300);
-    --bg-interactive-disabled: var(--color-neutral-100);
+    --bg-interactive-hover: var();
+    --bg-interactive-active: var();
+    --bg-interactive-selected: var();
+    --bg-interactive-pressed: var();
+    --bg-interactive-disabled: var();
 
     /* Brand Backgrounds - Primary brand color applications */
-    --bg-brand-primary: var(--color-violet-500);
-    --bg-brand-secondary: var(--color-violet-100);
-    --bg-brand-tertiary: var(--color-violet-50);
-    --bg-brand-hover: var(--color-violet-600);
-    --bg-brand-active: var(--color-violet-700);
+    --bg-brand-primary: var();
+    --bg-brand-secondary: var();
+    --bg-brand-tertiary: var();
+    --bg-brand-hover: var();
+    --bg-brand-active: var();
 
     /* Status Backgrounds - Semantic state backgrounds */
-    --bg-neutral-primary: var(--color-neutral-700);
-    --bg-neutral-secondary: var(--color-neutral-500);
-    --bg-neutral-tertiary: var(--color-neutral-100);
-    --bg-info-primary: var(--color-aqua-500);
-    --bg-info-secondary: var(--color-aqua-100);
-    --bg-info-tertiary: var(--color-aqua-100);
-    --bg-success-primary: var(--color-emerald-700);
-    --bg-success-secondary: var(--color-emerald-100);
-    --bg-success-tertiary: var(--color-emerald-100);
-    --bg-warning-primary: var(--color-tangerine-500);
-    --bg-warning-secondary: var(--color-tangerine-100);
-    --bg-warning-tertiary: var(--color-tangerine-100);
-    --bg-error-primary: var(--color-red-700);
-    --bg-error-secondary: var(--color-red-100);
-    --bg-error-tertiary: var(--color-red-100);
+    --bg-neutral-primary: var();
+    --bg-neutral-secondary: var();
+    --bg-neutral-tertiary: var();
+    --bg-info-primary: var();
+    --bg-info-secondary: var();
+    --bg-info-tertiary: var();
+    --bg-success-primary: var();
+    --bg-success-secondary: var();
+    --bg-success-tertiary: var();
+    --bg-warning-primary: var();
+    --bg-warning-secondary: var();
+    --bg-warning-tertiary: var();
+    --bg-error-primary: var();
+    --bg-error-secondary: var();
+    --bg-error-tertiary: var();
 
     /* Status Backgrounds - Muted (subtle indicators) */
 
@@ -59,27 +58,27 @@
     /* TODO: Scrim - Modal and overlay backdrop masks */
 
     /* Background Utilities - Special purpose backgrounds */
-    --bg-disabled: var(--color-neutral-100);
-    --bg-loading: var(--color-neutral-200);
-    --bg-skeleton: var(--color-neutral-200);
-    --bg-code: var(--color-violet-50);
-    --bg-highlight: var(--color-tangerine-100);
+    --bg-disabled: var();
+    --bg-loading: var();
+    --bg-skeleton: var();
+    --bg-code: var();
+    --bg-highlight: var();
     --bg-transparent: transparent;
 
     /* Inverse - For dark themes */
-    --bg-inverse-canvas-primary: var(--color-neutral-900);
-    --bg-inverse-canvas-secondary: var(--color-neutral-800);
-    --bg-inverse-surface-primary: var(--color-neutral-800);
-    --bg-inverse-surface-secondary: var(--color-neutral-700);
-    --bg-inverse-overlay-primary: var(--color-neutral-800);
-    --bg-inverse-overlay-backdrop: var(--color-off-black-950);
-    --bg-inverse-interactive-hover: var(--color-neutral-700);
-    --bg-inverse-interactive-selected: var(--color-violet-900);
-    --bg-inverse-elevated-primary: var(--color-neutral-800);
-    --bg-inverse-elevated-secondary: var(--color-neutral-700);
-    --bg-inverse-form-primary: var(--color-neutral-800);
-    --bg-inverse-form-hover: var(--color-neutral-700);
-    --bg-inverse-nav-hover: var(--color-neutral-700);
-    --bg-inverse-nav-selected: var(--color-violet-800);
+    --bg-inverse-canvas-primary: var();
+    --bg-inverse-canvas-secondary: var();
+    --bg-inverse-surface-primary: var();
+    --bg-inverse-surface-secondary: var();
+    --bg-inverse-overlay-primary: var();
+    --bg-inverse-overlay-backdrop: var();
+    --bg-inverse-interactive-hover: var();
+    --bg-inverse-interactive-selected: var();
+    --bg-inverse-elevated-primary: var();
+    --bg-inverse-elevated-secondary: var();
+    --bg-inverse-form-primary: var();
+    --bg-inverse-form-hover: var();
+    --bg-inverse-nav-hover: var();
+    --bg-inverse-nav-selected: var();
   }
 }
