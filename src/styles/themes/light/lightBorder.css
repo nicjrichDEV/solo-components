@@ -17,7 +17,7 @@
     --border-focus: var(--color-violet-500);
 
     /* Status Borders - Semantic state boundaries */
-    --border-neutral-primary: var();
+    --border-neutral-primary: var(--color-neutral-800);
     --border-neutral-secondary: var();
     --border-info-primary: var(--color-aqua-400);
     --border-info-secondary: var(--color-aqua-300);

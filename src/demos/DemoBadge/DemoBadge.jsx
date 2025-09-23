@@ -74,167 +74,197 @@ export default function DemoBadge() {
             comparison.
           </p>
           <div className="grids-container">
-            <div className="demo-grid" data-theme="light">
-              <div className="demo-solid">
-                <div className="demo-column">
-                  <Badge className="demo-badge">Neutral</Badge>
-                  <Badge className="demo-badge" status="brand">
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info">
-                    Info
-                  </Badge>
-                  <Badge className="demo-badge" status="success">
-                    Success
-                  </Badge>
-                  <Badge className="demo-badge" status="warning">
-                    Warning
-                  </Badge>
-                  <Badge className="demo-badge" status="error">
-                    Error
-                  </Badge>
+            <div className="demo-light">
+              <h3>Light</h3>
+              <div className="demo-grid" data-theme="light">
+                <div className="demo-solid">
+                  <div className="demo-column">
+                    <Badge className="demo-badge">Neutral</Badge>
+                    <Badge className="demo-badge" status="brand">
+                      Brand
+                    </Badge>
+                    <Badge className="demo-badge" status="info">
+                      Info
+                    </Badge>
+                    <Badge className="demo-badge" status="success">
+                      Success
+                    </Badge>
+                    <Badge className="demo-badge" status="warning">
+                      Warning
+                    </Badge>
+                    <Badge className="demo-badge" status="error">
+                      Error
+                    </Badge>
+                  </div>
                 </div>
-              </div>
-              <div className="demo-soft">
-                <div className="demo-column">
-                  <Badge className="demo-badge" variant="soft">
-                    Neutral
-                  </Badge>
-                  <Badge className="demo-badge" status="brand" variant="soft">
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info" variant="soft">
-                    Info
-                  </Badge>
-                  <Badge className="demo-badge" status="success" variant="soft">
-                    Success
-                  </Badge>
-                  <Badge className="demo-badge" status="warning" variant="soft">
-                    Warning
-                  </Badge>
-                  <Badge className="demo-badge" status="error" variant="soft">
-                    Error
-                  </Badge>
+                <div className="demo-soft">
+                  <div className="demo-column">
+                    <Badge className="demo-badge" variant="soft">
+                      Neutral
+                    </Badge>
+                    <Badge className="demo-badge" status="brand" variant="soft">
+                      Brand
+                    </Badge>
+                    <Badge className="demo-badge" status="info" variant="soft">
+                      Info
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="success"
+                      variant="soft"
+                    >
+                      Success
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="warning"
+                      variant="soft"
+                    >
+                      Warning
+                    </Badge>
+                    <Badge className="demo-badge" status="error" variant="soft">
+                      Error
+                    </Badge>
+                  </div>
                 </div>
-              </div>
-              <div className="demo-outline">
-                <div className="demo-column">
-                  <Badge className="demo-badge" variant="outline">
-                    Neutral
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="brand"
-                    variant="outline"
-                  >
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info" variant="outline">
-                    Info
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="success"
-                    variant="outline"
-                  >
-                    Success
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="warning"
-                    variant="outline"
-                  >
-                    Warning
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="error"
-                    variant="outline"
-                  >
-                    Error
-                  </Badge>
+                <div className="demo-outline">
+                  <div className="demo-column">
+                    <Badge className="demo-badge" variant="outline">
+                      Neutral
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="brand"
+                      variant="outline"
+                    >
+                      Brand
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="info"
+                      variant="outline"
+                    >
+                      Info
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="success"
+                      variant="outline"
+                    >
+                      Success
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="warning"
+                      variant="outline"
+                    >
+                      Warning
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="error"
+                      variant="outline"
+                    >
+                      Error
+                    </Badge>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="demo-grid" data-theme="dark">
-              <div className="demo-solid">
-                <div className="demo-column">
-                  <Badge className="demo-badge">Neutral</Badge>
-                  <Badge className="demo-badge" status="brand">
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info">
-                    Info
-                  </Badge>
-                  <Badge className="demo-badge" status="success">
-                    Success
-                  </Badge>
-                  <Badge className="demo-badge" status="warning">
-                    Warning
-                  </Badge>
-                  <Badge className="demo-badge" status="error">
-                    Error
-                  </Badge>
+            <div className="demo-dark">
+              <h3>Dark</h3>
+              <div className="demo-grid" data-theme="dark">
+                <div className="demo-solid">
+                  <div className="demo-column">
+                    <Badge className="demo-badge">Neutral</Badge>
+                    <Badge className="demo-badge" status="brand">
+                      Brand
+                    </Badge>
+                    <Badge className="demo-badge" status="info">
+                      Info
+                    </Badge>
+                    <Badge className="demo-badge" status="success">
+                      Success
+                    </Badge>
+                    <Badge className="demo-badge" status="warning">
+                      Warning
+                    </Badge>
+                    <Badge className="demo-badge" status="error">
+                      Error
+                    </Badge>
+                  </div>
                 </div>
-              </div>
-              <div className="demo-soft">
-                <div className="demo-column">
-                  <Badge className="demo-badge" variant="soft">
-                    Neutral
-                  </Badge>
-                  <Badge className="demo-badge" status="brand" variant="soft">
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info" variant="soft">
-                    Info
-                  </Badge>
-                  <Badge className="demo-badge" status="success" variant="soft">
-                    Success
-                  </Badge>
-                  <Badge className="demo-badge" status="warning" variant="soft">
-                    Warning
-                  </Badge>
-                  <Badge className="demo-badge" status="error" variant="soft">
-                    Error
-                  </Badge>
+                <div className="demo-soft">
+                  <div className="demo-column">
+                    <Badge className="demo-badge" variant="soft">
+                      Neutral
+                    </Badge>
+                    <Badge className="demo-badge" status="brand" variant="soft">
+                      Brand
+                    </Badge>
+                    <Badge className="demo-badge" status="info" variant="soft">
+                      Info
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="success"
+                      variant="soft"
+                    >
+                      Success
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="warning"
+                      variant="soft"
+                    >
+                      Warning
+                    </Badge>
+                    <Badge className="demo-badge" status="error" variant="soft">
+                      Error
+                    </Badge>
+                  </div>
                 </div>
-              </div>
-              <div className="demo-outline">
-                <div className="demo-column">
-                  <Badge className="demo-badge" variant="outline">
-                    Neutral
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="brand"
-                    variant="outline"
-                  >
-                    Brand
-                  </Badge>
-                  <Badge className="demo-badge" status="info" variant="outline">
-                    Info
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="success"
-                    variant="outline"
-                  >
-                    Success
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="warning"
-                    variant="outline"
-                  >
-                    Warning
-                  </Badge>
-                  <Badge
-                    className="demo-badge"
-                    status="error"
-                    variant="outline"
-                  >
-                    Error
-                  </Badge>
+                <div className="demo-outline">
+                  <div className="demo-column">
+                    <Badge className="demo-badge" variant="outline">
+                      Neutral
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="brand"
+                      variant="outline"
+                    >
+                      Brand
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="info"
+                      variant="outline"
+                    >
+                      Info
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="success"
+                      variant="outline"
+                    >
+                      Success
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="warning"
+                      variant="outline"
+                    >
+                      Warning
+                    </Badge>
+                    <Badge
+                      className="demo-badge"
+                      status="error"
+                      variant="outline"
+                    >
+                      Error
+                    </Badge>
+                  </div>
                 </div>
               </div>
             </div>

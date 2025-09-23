@@ -7,10 +7,10 @@
     --text-quaternary: var(--color-off-black-600);
 
     /* Brand Text - Use for brand-focused elements and CTAs */
-    --text-brand-primary: var(--color-violet-600);
-    --text-brand-secondary: var(--color-violet-400);
-    --text-brand-tertiary: var(--color-violet-300);
-    --text-brand-quaternary: var(--color-violet-200);
+    --text-brand-primary: var(--color-violet-100);
+    --text-brand-secondary: var(--color-violet-300);
+    --text-brand-tertiary: var(--color-violet-500);
+    --text-brand-quaternary: var(--color-violet-700);
 
     /* Text Utilities - Special purpose text styling */
     --text-disabled: var(--color-off-black-300); /* TODO: Update */
@@ -27,20 +27,20 @@
     --text-link-visited: var(--color-violet-600);
 
     /* Status Text - Semantic messaging and feedback */
-    --text-neutral-primary: var(--color-neutral-50);
-    --text-neutral-secondary: var(--color-neutral-600);
-    --text-neutral-tertiary: var(var(--color-neutral-500));
-    --text-info-primary: var(--color-aqua-700);
-    --text-info-secondary: var(--color-aqua-600);
+    --text-neutral-primary: var(--color-neutral-200);
+    --text-neutral-secondary: var(--color-neutral-300);
+    --text-neutral-tertiary: var(--color-neutral-500);
+    --text-info-primary: var(--color-aqua-200);
+    --text-info-secondary: var(--color-aqua-300);
     --text-info-tertiary: var(--color-aqua-500);
-    --text-success-primary: var(--color-emerald-700);
-    --text-success-secondary: var(--color-emerald-600);
-    --text-success-tertiary: var(var(--color-emerald-500));
-    --text-warning-primary: var(--color-tangerine-700);
-    --text-warning-secondary: var(--color-tangerine-600);
-    --text-warning-tertiary: var(var(--color-tangerine-500));
-    --text-error-primary: var(--color-red-700);
-    --text-error-secondary: var(--color-red-600);
+    --text-success-primary: var(--color-emerald-200);
+    --text-success-secondary: var(--color-emerald-300);
+    --text-success-tertiary: var(--color-emerald-500);
+    --text-warning-primary: var(--color-tangerine-200);
+    --text-warning-secondary: var(--color-tangerine-300);
+    --text-warning-tertiary: var(--color-tangerine-500);
+    --text-error-primary: var(--color-red-200);
+    --text-error-secondary: var(--color-red-300);
     --text-error-tertiary: var(--color-red-500);
 
     /* Context Aware */

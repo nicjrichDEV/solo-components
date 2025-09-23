@@ -61,6 +61,33 @@
     background-color: var(--bg-error-tertiary);
   }
 
+  /* TODO: This is a bit of a band aid to avoid component specific variables but it showcases a larger problem within the semantic variables for this particular setup */
+  :where([data-theme="dark"]) {
+    .badge.soft.neutral {
+      color: hsl(from var(--text-neutral-primary) h s calc(l - 60));
+    }
+
+    .badge.soft.brand {
+      color: hsl(from var(--text-brand-primary) h s calc(l - 60));
+    }
+
+    .badge.soft.info {
+      color: hsl(from var(--text-info-primary) h s calc(l - 60));
+    }
+
+    .badge.soft.success {
+      color: hsl(from var(--text-success-primary) h s calc(l - 60));
+    }
+
+    .badge.soft.warning {
+      color: hsl(from var(--text-warning-primary) h s calc(l - 60));
+    }
+
+    .badge.soft.error {
+      color: hsl(from var(--text-error-primary) h s calc(l - 60));
+    }
+  }
+
   /* Outline */
   .badge.outline {
     border-width: 0.0625rem;

@@ -5,6 +5,9 @@
     border-right: 1px solid var(--border-primary);
     height: 100vh;
     z-index: 1;
+    transform: translateX(-256px);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
   }
 
   .sidebar-header-container {
@@ -125,9 +128,6 @@
       left: 0;
       bottom: 0;
       min-width: 16rem;
-      transform: translateX(-256px);
-      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      will-change: transform;
     }
 
     .open {
@@ -139,11 +139,9 @@
     .sidebar-root {
       display: block;
       position: relative;
-      top: unset;
-      left: unset;
-      bottom: unset;
-      transform: unset;
+      transform: translateX(0);
       transition: unset;
+      /* TODO: When the sidebar goes from tablet to desktop without unsetting the transition the background behind the sidebar is white. Almost looks like the sidebar is there before it fully transitions in. */
     }
   }
 }

@@ -1,7 +1,7 @@
 @layer themes {
   :where([data-theme="dark"]) {
     /* General Borders - Content separation and structure */
-    --border-primary: var(--color-off-black-700);
+    --border-primary: var(--color-off-black-600);
     --border-secondary: var(--color-neutral-200);
     --border-tertiary: var(--color-neutral-400);
     --border-quaternary: var(--color-neutral-500);
@@ -17,7 +17,7 @@
     --border-focus: var(--color-violet-500);
 
     /* Status Borders - Semantic state boundaries */
-    --border-neutral-primary: var();
+    --border-neutral-primary: var(--color-neutral-200);
     --border-neutral-secondary: var();
     --border-info-primary: var(--color-aqua-400);
     --border-info-secondary: var(--color-aqua-300);

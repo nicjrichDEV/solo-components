@@ -31,10 +31,11 @@
     background-color: var(--bg-surface-secondary);
     width: fit-content;
     border-radius: 1rem;
-    border: 2px solid var(--border-primary);
+    border: 1px solid var(--border-primary);
   }
 
   .grids-container {
+    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -42,6 +43,7 @@
   }
 
   .demo-grid {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: fit-content;
@@ -52,10 +54,10 @@
   }
 
   .demo-column {
-    padding: 2rem 1rem;
+    padding: 1rem 0.25rem;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.5rem;
     border-right: 2px dashed var(--border-primary);
   }
 
@@ -64,16 +66,17 @@
   }
 
   .demo-column:first-of-type {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .demo-column:last-of-type {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 
   .demo-badge {
     width: 80px;
   }
+
   @media (min-width: 640px) {
     .demo-section {
       padding: 0.75rem 1.5rem 0.75rem 1.5rem;
@@ -86,6 +89,23 @@
       p {
         font-size: 1rem;
       }
+    }
+
+    .demo-column {
+      padding: 2rem 1rem;
+      gap: 1rem;
+    }
+
+    .demo-column:first-of-type {
+      padding-left: 2rem;
+    }
+
+    .demo-column:last-of-type {
+      padding-right: 2rem;
+    }
+
+    .grids-container {
+      gap: 2rem;
     }
   }
 }
