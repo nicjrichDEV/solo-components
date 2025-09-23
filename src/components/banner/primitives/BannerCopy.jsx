@@ -1,3 +1,5 @@
+import "../styles/base.css";
+
 export default function BannerCopy({ children }) {
-  return <div>{children}</div>;
+  return <div className="banner-copy">{children}</div>;
 }

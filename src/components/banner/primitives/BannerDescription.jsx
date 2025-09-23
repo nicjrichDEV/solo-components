@@ -1,3 +1,5 @@
+import "../styles/base.css";
+
 export default function BannerDescription({ children }) {
-  return <p>{children}</p>;
+  return <p className="banner-description">{children}</p>;
 }

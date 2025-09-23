@@ -2,5 +2,28 @@
   .banner {
     padding: 1rem;
     border-radius: 0.5rem;
+    display: flex;
+    gap: 8px;
+
+    svg {
+      color: var(--icon-primary);
+    }
+  }
+
+  .banner-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }

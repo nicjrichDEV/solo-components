@@ -1,5 +1,49 @@
 @layer components {
   .banner.neutral {
     background-color: var(--bg-neutral-tertiary);
+
+    h4 {
+      color: var(--text-primary);
+    }
+
+    p {
+      color: var(--text-secondary);
+    }
+
+    svg {
+      stroke: var(--icon-primary);
+    }
+  }
+
+  .banner.brand {
+    background-color: var(--bg-brand-tertiary);
+
+    h4 {
+      color: var(--text-brand-primary);
+    }
+
+    p {
+      color: var(--text-brand-secondary);
+    }
+
+    svg {
+      stroke: var(--icon-brand-primary);
+    }
+  }
+
+  .banner.info {
+    background-color: var(--bg-info-tertiary);
+  }
+
+  .banner.success {
+    background-color: var(--bg-success-tertiary);
+  }
+
+  .banner.warning {
+    background-color: var(--bg-warning-tertiary);
+  }
+
+  .banner.error {
+    background-color: var(--bg-error-tertiary);
   }
 }

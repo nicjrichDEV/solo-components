@@ -32,6 +32,51 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
+        <Banner.Root status="brand">
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
+        <Banner.Root status="info">
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
+        <Banner.Root status="success">
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
+        <Banner.Root status="warning">
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
+        <Banner.Root status="error">
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
       </MainLayout>
     </ThemeContext.Provider>
   );
