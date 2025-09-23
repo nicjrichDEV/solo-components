@@ -1,0 +1,5 @@
+@layer components {
+  .banner.neutral {
+    background-color: var(--bg-neutral-tertiary);
+  }
+}

@@ -1,4 +1,6 @@
+import { Globe2 } from "lucide-react";
 import { createContext, useEffect, useState } from "react";
+import { Banner } from "./components/banner/primitives";
 import DemoBadge from "./demos/DemoBadge/DemoBadge";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 
@@ -21,6 +23,15 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MainLayout>
         <DemoBadge />
+        <Banner.Root>
+          <Globe2 />
+          <Banner.Copy>
+            <Banner.Title>Banner Title</Banner.Title>
+            <Banner.Description>
+              Testing some kind of banner description
+            </Banner.Description>
+          </Banner.Copy>
+        </Banner.Root>
       </MainLayout>
     </ThemeContext.Provider>
   );
