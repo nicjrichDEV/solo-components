@@ -75,8 +75,7 @@ export default function DemoBadge() {
           </p>
           <div className="grids-container">
             <div className="demo-grid" data-theme="light">
-              <div>
-                <h3>Solid</h3>
+              <div className="demo-solid">
                 <div className="demo-column">
                   <Badge className="demo-badge">Neutral</Badge>
                   <Badge className="demo-badge" status="brand">
@@ -96,8 +95,7 @@ export default function DemoBadge() {
                   </Badge>
                 </div>
               </div>
-              <div>
-                <h3>Soft</h3>
+              <div className="demo-soft">
                 <div className="demo-column">
                   <Badge className="demo-badge" variant="soft">
                     Neutral
@@ -119,8 +117,7 @@ export default function DemoBadge() {
                   </Badge>
                 </div>
               </div>
-              <div>
-                <h3>Outline</h3>
+              <div className="demo-outline">
                 <div className="demo-column">
                   <Badge className="demo-badge" variant="outline">
                     Neutral
@@ -160,8 +157,7 @@ export default function DemoBadge() {
               </div>
             </div>
             <div className="demo-grid" data-theme="dark">
-              <div>
-                <h3>Solid</h3>
+              <div className="demo-solid">
                 <div className="demo-column">
                   <Badge className="demo-badge">Neutral</Badge>
                   <Badge className="demo-badge" status="brand">
@@ -181,8 +177,7 @@ export default function DemoBadge() {
                   </Badge>
                 </div>
               </div>
-              <div>
-                <h3>Soft</h3>
+              <div className="demo-soft">
                 <div className="demo-column">
                   <Badge className="demo-badge" variant="soft">
                     Neutral
@@ -204,8 +199,7 @@ export default function DemoBadge() {
                   </Badge>
                 </div>
               </div>
-              <div>
-                <h3>Outline</h3>
+              <div className="demo-outline">
                 <div className="demo-column">
                   <Badge className="demo-badge" variant="outline">
                     Neutral

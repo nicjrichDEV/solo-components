@@ -21,6 +21,7 @@
 
   .safe-area {
     padding: 0.75rem;
+    margin-bottom: 2.5rem;
   }
 
   .overlay {
