@@ -1,4 +1,6 @@
-# Repository Guidelines
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Common Commands
 
@@ -25,7 +27,7 @@ This is a **component library project** built with React and Vite, focusing on r
 
 **Component Architecture:**
 
-- **Primitive-based components**: Components like `Banner` use a primitive pattern where subcomponents are exported as properties (e.g., `Banner.Root`, `Banner.Title`, `Banner.Description`)
+- **Primitive-based components**: Components like `Banner` use a primitive pattern where sub-components are exported as properties (e.g., `Banner.Root`, `Banner.Title`, `Banner.Description`)
 - **Compound component exports**: Main component exports are structured as `export * as ComponentName from "./index.parts"`
 - **Demo components**: Each component has corresponding demo components in `src/demos/` for testing and showcasing
 
