@@ -1,5 +1,5 @@
-import "./Badge.css";
 import cn from "../../utils/cn";
+import "./Badge.css";
 
 export default function Badge({
   children,

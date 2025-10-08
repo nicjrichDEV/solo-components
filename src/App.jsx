@@ -1,6 +1,5 @@
-import { Globe2 } from "lucide-react";
 import { createContext, useEffect, useState } from "react";
-import { Banner } from "./components/banner/primitives";
+import { Banner } from "./components/banner";
 import DemoBadge from "./demos/DemoBadge/DemoBadge";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 
@@ -23,8 +22,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MainLayout>
         <DemoBadge />
-        <Banner.Root>
-          <Globe2 />
+        <Banner.Root dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>
@@ -32,8 +30,7 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
-        <Banner.Root status="brand">
-          <Globe2 />
+        <Banner.Root status="brand" dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>
@@ -41,8 +38,7 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
-        <Banner.Root status="info">
-          <Globe2 />
+        <Banner.Root status="info" dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>
@@ -50,8 +46,7 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
-        <Banner.Root status="success">
-          <Globe2 />
+        <Banner.Root status="success" dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>
@@ -59,8 +54,7 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
-        <Banner.Root status="warning">
-          <Globe2 />
+        <Banner.Root status="warning" dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>
@@ -68,8 +62,7 @@ function App() {
             </Banner.Description>
           </Banner.Copy>
         </Banner.Root>
-        <Banner.Root status="error">
-          <Globe2 />
+        <Banner.Root status="error" dismissible={true}>
           <Banner.Copy>
             <Banner.Title>Banner Title</Banner.Title>
             <Banner.Description>

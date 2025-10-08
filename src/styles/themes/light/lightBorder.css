@@ -19,6 +19,7 @@
     /* Status Borders - Semantic state boundaries */
     --border-neutral-primary: var(--color-neutral-800);
     --border-neutral-secondary: var();
+    --border-neutral-tertiary: var(--color-neutral-200);
     --border-info-primary: var(--color-aqua-400);
     --border-info-secondary: var(--color-aqua-300);
     --border-success-primary: var(--color-emerald-400);

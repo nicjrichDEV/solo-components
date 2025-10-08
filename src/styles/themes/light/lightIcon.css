@@ -27,6 +27,7 @@
     --icon-link-visited: var(--text-link-visited);
 
     /* Status Icons */
+    --icon-neutral-primary: var(--text-neutral-primary);
     --icon-info-primary: var(--text-info-primary);
     --icon-info-secondary: var(--text-info-secondary);
     --icon-success-primary: var(--text-success-primary);

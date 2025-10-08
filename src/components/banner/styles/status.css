@@ -11,7 +11,7 @@
     }
 
     svg {
-      stroke: var(--icon-primary);
+      stroke: var(--icon-neutral-primary);
     }
   }
 
@@ -45,5 +45,61 @@
 
   .banner.error {
     background-color: var(--bg-error-tertiary);
+  }
+
+  /* Styles for optional dismiss button */
+  .dismissButton.neutral {
+    background-color: var(--bg-neutral-tertiary);
+    border: 1px solid var(--border-neutral-tertiary);
+
+    svg {
+      stroke: var(--icon-neutral-primary);
+    }
+  }
+
+  /* TODO: Need to revisit the border scale. Right now to accommodate badges this border is very loud */
+  .dismissButton.brand {
+    background-color: var(--bg-brand-tertiary);
+    border: 1px solid var(--border-brand-tertiary);
+
+    svg {
+      stroke: var(--icon-brand-primary);
+    }
+  }
+
+  .dismissButton.info {
+    background-color: var(--bg-info-tertiary);
+    border: 1px solid var(--border-info-tertiary);
+
+    svg {
+      stroke: var(--icon-info-primary);
+    }
+  }
+
+  .dismissButton.success {
+    background-color: var(--bg-success-tertiary);
+    border: 1px solid var(--border-success-tertiary);
+
+    svg {
+      stroke: var(--icon-success-primary);
+    }
+  }
+
+  .dismissButton.warning {
+    background-color: var(--bg-warning-tertiary);
+    border: 1px solid var(--border-warning-tertiary);
+
+    svg {
+      stroke: var(--icon-warning-primary);
+    }
+  }
+
+  .dismissButton.error {
+    background-color: var(--bg-error-tertiary);
+    border: 1px solid var(--border-error-tertiary);
+
+    svg {
+      stroke: var(--icon-error-primary);
+    }
   }
 }
