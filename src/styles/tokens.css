@@ -1,0 +1,27 @@
+:root,
+[data-brand] {
+  /* Typeface */
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  /* Type Colors */
+  --text-primary: var(--text-primary);
+  --text-secondary: var(--text-secondary);
+
+  /* Icon Colors */
+  --icon-primary: var(--icon-primary);
+
+  /* Page Colors */
+  --surface: var(--surface);
+  --on-surface: var(--on-surface);
+  --on-surface-hover: var(--on-surface-hover);
+
+  /* Borders */
+  --border-primary: var(--border-primary);
+
+  /* Focus Colors */
+  --focus-ring: var(--focus-ring);
+
+  /* Overlay Colors */
+  --overlay: var(--overlay);
+}

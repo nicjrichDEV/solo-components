@@ -1,15 +1,15 @@
 import { Globe, Menu, X } from "lucide-react";
 import { useContext } from "react";
-import { ThemeContext } from "../../../App";
-import LogoDark from "../../../assets/pmi-small-dark.svg";
-import LogoLight from "../../../assets/pmi-small-light.svg";
 import { NavContext } from "../../../layouts/MainLayout/MainLayout";
 import CONSTANTS from "../../../utils/constants";
 import "./MobileNav.css";
+import { useTheme } from "../../../contexts/ThemeContext";
+import LogoLight from "../../../assets/pmi-small-light.svg";
+import LogoDark from "../../../assets/pmi-small-dark.svg";
 
 export default function MobileNav({ toggleMobile, toggleSidebar }) {
   const context = useContext(NavContext);
-  const theme = useContext(ThemeContext);
+  const { theme } = useTheme();
 
   function handleMenuClick() {
     if (typeof window === "undefined") return;
@@ -31,7 +31,7 @@ export default function MobileNav({ toggleMobile, toggleSidebar }) {
         <Globe size={"16px"} />
       </a>
       <img
-        src={theme.theme === "light" ? LogoLight : LogoDark}
+        src={theme === "light" ? LogoLight : LogoDark}
         className="logo"
         alt="PMI Standalone Logo"
       />

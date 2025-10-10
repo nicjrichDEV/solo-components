@@ -5,6 +5,8 @@ import SideNav from "../../internalComponents/nav/SideNav";
 import cn from "../../utils/cn";
 import "./MainLayout.css";
 
+// TODO: Refactor NavContext under contexts folder
+
 const NavContext = createContext(null);
 
 export default function MainLayout({ children }) {
@@ -42,12 +44,12 @@ export default function MainLayout({ children }) {
     <NavContext.Provider
       value={{ mobileOpen, toggleMobile, sidebarOverlay, toggleSidebar }}
     >
-      <div className="app-shell">
+      <div className="main-layout__shell">
         {/* Desktop Sidebar */}
         <SideNav ref={sidebarRef} />
 
         {/* Mobile */}
-        <nav className="mobile-nav-container" ref={mobileNavRef}>
+        <nav className="main-layout__mobile-nav" ref={mobileNavRef}>
           {/* Fixed top bar */}
           <MobileNav
             toggleMobile={toggleMobile}
@@ -57,8 +59,13 @@ export default function MainLayout({ children }) {
           <MobileNavExpanded mobileOpen={mobileOpen} />
         </nav>
 
-        <main className={cn("main", sidebarOverlay && "overlay")}>
-          <div className="safe-area">{children}</div>
+        <main
+          className={cn(
+            "main-layout__main",
+            sidebarOverlay && "main-layout__main--overlay"
+          )}
+        >
+          <div className="main-layout__content">{children}</div>
         </main>
       </div>
     </NavContext.Provider>

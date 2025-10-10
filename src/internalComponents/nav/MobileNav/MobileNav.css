@@ -4,8 +4,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--bg-surface-primary);
-    height: var(--mobile-nav-height);
+    background-color: var(--on-surface);
+    height: 40px;
     border-top: 1px solid var(--border-primary);
     display: flex;
     justify-content: space-between;
@@ -15,8 +15,8 @@
 
   .start-container,
   .end-container {
-    width: var(--mobile-nav-height);
-    height: var(--mobile-nav-height);
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
 
   .start-container:hover,
   .end-container:hover {
-    background-color: var(--bg-brand-tertiary);
+    background-color: var(--on-surface-hover);
   }
 
   .start-container:focus,

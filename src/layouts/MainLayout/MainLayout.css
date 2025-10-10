@@ -1,71 +1,66 @@
-@layer components {
-  .app-shell {
-    container-type: inline-size;
-    height: 100dvh;
-    width: 100dvw;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
+.main-layout__shell {
+  container-type: inline-size;
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-layout__mobile-nav {
+  height: fit-content;
+}
+
+.main-layout__main {
+  background-color: var(--surface);
+  overflow-y: auto;
+  height: 100dvh;
+  transition: background-color 150ms ease;
+}
+
+.main-layout__content {
+  padding: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+/* TODO: Refactor this so its a div over the page content so blur works properly */
+.main-layout__main--overlay {
+  filter: blur(0.25rem);
+  background-color: var(--overlay);
+}
+
+@container (width > 1024px) {
+  .main-layout__mobile-nav {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  .main-layout__content {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-layout__shell {
+    grid-template-columns: 256px 1fr;
+    grid-template-areas: "sidebar main";
   }
 
-  .mobile-nav-container {
-    height: fit-content;
+  .main-layout__mobile-nav {
+    display: none;
   }
 
-  main {
-    background-color: var(--bg-canvas-primary);
-    overflow-y: auto;
-    height: 100dvh;
-    transition: background-color 150ms ease;
+  .main-layout__main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .safe-area {
-    padding: 0.75rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .overlay {
-    filter: blur(0.25rem);
-    background-color: var(--bg-overlay-backdrop);
-  }
-
-  @container (width > 1024px) {
-    .mobile-nav-container {
-      visibility: hidden;
-    }
-  }
-
-  @media (min-width: 640px) {
-    .safe-area {
-      padding: 1rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .app-shell {
-      grid-template-columns: 256px 1fr;
-      grid-template-areas: "sidebar main";
-    }
-
-    .aside-root {
-      grid-area: sidebar;
-    }
-
-    .mobile-nav-container {
-      display: none;
-    }
-
-    main {
-      grid-area: main;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .safe-area {
-      padding: 1.5rem;
-      max-width: 70.5rem;
-      width: 100%;
-    }
+  .main-layout__content {
+    padding: 1.5rem;
+    max-width: 70.5rem;
+    width: 100%;
   }
 }

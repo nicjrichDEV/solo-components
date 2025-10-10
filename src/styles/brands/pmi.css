@@ -1,0 +1,53 @@
+[data-brand="pmi"] {
+  /* Typefaces */
+  --font-display:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+[data-brand="pmi"][data-theme="light"] {
+  /* Type Colors */
+  --text-primary: var(--color-neutral-900);
+  --text-secondary: var(--color-neutral-700);
+
+  /* Icon Colors */
+  --icon-primary: var(--text-primary);
+
+  /* Surface Colors */
+  --surface: var(--color-neutral-50);
+  --on-surface: var(--color-white);
+  --on-surface-hover: var(--color-violet-50);
+
+  /* Border Colors */
+  --border-primary: var(--color-neutral-100);
+
+  /* Focus Colors */
+  --focus-ring: var(--color-violet-500);
+
+  /* Overlay Colors */
+  --overlay: color-mix(in srgb, var(--color-violet-500) 30%, transparent);
+}
+
+[data-brand="pmi"][data-theme="dark"] {
+  /* Type Colors */
+  --text-primary: var(--color-neutral-50);
+  --text-secondary: var(--color-neutral-100);
+
+  /* Icon Colors*/
+  --icon-primary: var(--text-primary);
+
+  /* Surface Colors */
+  --surface: var(--color-neutral-950);
+  --on-surface: var(--color-neutral-900);
+  --on-surface-hover: var(--color-violet-500);
+
+  /*  Border Colors */
+  --border-primary: var(--color-neutral-800);
+
+  /* Focus Colors */
+  --focus-ring: var(--color-violet-300);
+
+  /* Overlay Colors */
+  --overlay: color-mix(in srgb, var(--color-violet-800) 80%, transparent);
+}

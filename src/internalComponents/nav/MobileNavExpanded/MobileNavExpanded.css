@@ -4,7 +4,7 @@
     right: 0;
     left: 0;
     bottom: 40px;
-    background-color: var(--bg-surface-primary);
+    background-color: var(--on-surface);
     display: flex;
     flex-direction: column-reverse;
     border-top: 1px solid var(--border-primary);
@@ -13,7 +13,7 @@
     transform: translateY(calc(100% + 40px));
     overflow-y: scroll;
     max-height: 90dvh;
-    z-index: 0;
+    z-index: 1;
   }
 
   .mobile-nav-expanded-open {
