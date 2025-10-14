@@ -1,21 +1,20 @@
 import { Globe, Menu, X } from "lucide-react";
-import { useContext } from "react";
-import { NavContext } from "../../../layouts/MainLayout/MainLayout";
 import CONSTANTS from "../../../utils/constants";
 import "./MobileNav.css";
 import { useTheme } from "../../../contexts/ThemeContext";
 import LogoLight from "../../../assets/pmi-small-light.svg";
 import LogoDark from "../../../assets/pmi-small-dark.svg";
+import { useNav } from "../../../contexts/NavContext.jsx";
 
 export default function MobileNav({ toggleMobile, toggleSidebar }) {
-  const context = useContext(NavContext);
   const { theme } = useTheme();
+  const { mobileOpen, sidebarOverlay } = useNav();
 
   function handleMenuClick() {
     if (typeof window === "undefined") return;
 
     const isTablet = window.matchMedia(
-      "(min-width: 640px) and (max-width: 1023px)"
+      "(min-width: 640px) and (max-width: 1023px)",
     ).matches;
 
     if (isTablet) {
@@ -36,7 +35,7 @@ export default function MobileNav({ toggleMobile, toggleSidebar }) {
         alt="PMI Standalone Logo"
       />
       <button onClick={handleMenuClick} className="end-container">
-        {context.mobileOpen || context.sidebarOverlay ? (
+        {mobileOpen || sidebarOverlay ? (
           <X size={"16px"} />
         ) : (
           <Menu size={"16px"} />

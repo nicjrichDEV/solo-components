@@ -1,0 +1,12 @@
+h1,
+h2 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+.hero {
+  background-color: red;
+}

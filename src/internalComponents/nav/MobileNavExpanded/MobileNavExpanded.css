@@ -1,22 +1,24 @@
-@layer component {
-  .mobile-nav-expanded-base {
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 40px;
-    background-color: var(--on-surface);
-    display: flex;
-    flex-direction: column-reverse;
-    border-top: 1px solid var(--border-primary);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
-    transform: translateY(calc(100% + 40px));
-    overflow-y: scroll;
-    max-height: 90dvh;
-    z-index: 1;
-  }
+/*TODO: Refactor to BEM*/
+/*TODO: Fix links to be a fixed width instead of the whole expanded container*/
+/*TODO: Add same styling from sidebar for active to mobile expanded*/
 
-  .mobile-nav-expanded-open {
-    transform: translateY(0);
-  }
+.mobile-nav-expanded-base {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  background-color: var(--on-surface);
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 1px solid var(--border-primary);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  transform: translateY(calc(100% + 40px));
+  overflow-y: scroll;
+  max-height: 90dvh;
+  z-index: 1;
+}
+
+.mobile-nav-expanded-open {
+  transform: translateY(0);
 }

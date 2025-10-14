@@ -1,6 +1,4 @@
 import { Globe, Moon, Sun } from "lucide-react";
-import { useContext } from "react";
-import { NavContext } from "../../../layouts/MainLayout/MainLayout";
 import cn from "../../../utils/cn";
 import componentNames from "../../../utils/componentNames";
 import CONSTANTS from "../../../utils/constants";
@@ -9,13 +7,15 @@ import { useTheme } from "../../../contexts/ThemeContext.jsx";
 import LogoLight from "../../../assets/pmi-small-light.svg";
 import LogoDark from "../../../assets/pmi-small-dark.svg";
 import { NavLink } from "react-router";
+import { useNav } from "../../../contexts/NavContext.jsx";
 
 // TODO: Refactor into parts
 // TODO: Replace classes with BEM
 
 export default function SideNav() {
   const { theme, toggleTheme } = useTheme();
-  const sideBarContext = useContext(NavContext);
+
+  const { sidebarOverlay } = useNav();
 
   const navLinks = componentNames.map((comp, index) => {
     return (
@@ -30,9 +30,7 @@ export default function SideNav() {
   });
 
   return (
-    <aside
-      className={cn("sidebar-root", sideBarContext.sidebarOverlay && "open")}
-    >
+    <aside className={cn("sidebar-root", sidebarOverlay && "open")}>
       <div className="sidebar-header-container">
         <div className="logo-container">
           <img
