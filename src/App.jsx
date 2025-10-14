@@ -1,62 +1,30 @@
-import { Banner } from "./components/banner";
-import DemoBadge from "./demos/DemoBadge/DemoBadge";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
+import { Route, Routes } from "react-router";
+import HomePage from "./pages/HomePage.jsx";
+import BadgePage from "./pages/BadgePage.jsx";
+import BannerPage from "./pages/BannerPage.jsx";
+import CardPage from "./pages/CardPage.jsx";
+import LinkPage from "./pages/LinkPage.jsx";
+import TestimonialPage from "./pages/TestimonialPage.jsx";
+import ToastPage from "./pages/ToastPage.jsx";
+import TooltipPage from "./pages/TooltipPage.jsx";
 
 function App() {
   return (
     <ThemeProvider>
-      <MainLayout>
-        <DemoBadge />
-        <Banner.Root dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-        <Banner.Root status="brand" dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-        <Banner.Root status="info" dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-        <Banner.Root status="success" dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-        <Banner.Root status="warning" dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-        <Banner.Root status="error" dismissible={true}>
-          <Banner.Copy>
-            <Banner.Title>Banner Title</Banner.Title>
-            <Banner.Description>
-              Testing some kind of banner description
-            </Banner.Description>
-          </Banner.Copy>
-        </Banner.Root>
-      </MainLayout>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="badge" element={<BadgePage />} />
+          <Route path="banner" element={<BannerPage />} />
+          <Route path="card" element={<CardPage />} />
+          <Route path="link" element={<LinkPage />} />
+          <Route path="testimonial" element={<TestimonialPage />} />
+          <Route path="toast" element={<ToastPage />} />
+          <Route path="tooltip" element={<TooltipPage />} />
+        </Route>
+      </Routes>
     </ThemeProvider>
   );
 }

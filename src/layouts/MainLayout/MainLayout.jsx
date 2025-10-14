@@ -4,12 +4,13 @@ import MobileNavExpanded from "../../internalComponents/nav/MobileNavExpanded";
 import SideNav from "../../internalComponents/nav/SideNav";
 import cn from "../../utils/cn";
 import "./MainLayout.css";
+import { Outlet } from "react-router";
 
 // TODO: Refactor NavContext under contexts folder
 
 const NavContext = createContext(null);
 
-export default function MainLayout({ children }) {
+export default function MainLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [sidebarOverlay, setSidebarOverlay] = useState(false);
   const mobileNavRef = useRef();
@@ -62,10 +63,12 @@ export default function MainLayout({ children }) {
         <main
           className={cn(
             "main-layout__main",
-            sidebarOverlay && "main-layout__main--overlay"
+            sidebarOverlay && "main-layout__main--overlay",
           )}
         >
-          <div className="main-layout__content">{children}</div>
+          <div className="main-layout__content">
+            <Outlet />
+          </div>
         </main>
       </div>
     </NavContext.Provider>

@@ -15,6 +15,7 @@
   --surface: var(--surface);
   --on-surface: var(--on-surface);
   --on-surface-hover: var(--on-surface-hover);
+  --on-surface-selected: var(--on-surface-selected);
 
   /* Borders */
   --border-primary: var(--border-primary);

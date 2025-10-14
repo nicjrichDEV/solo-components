@@ -8,6 +8,7 @@ import "./SideNav.css";
 import { useTheme } from "../../../contexts/ThemeContext.jsx";
 import LogoLight from "../../../assets/pmi-small-light.svg";
 import LogoDark from "../../../assets/pmi-small-dark.svg";
+import { NavLink } from "react-router";
 
 // TODO: Refactor into parts
 // TODO: Replace classes with BEM
@@ -20,7 +21,9 @@ export default function SideNav() {
     return (
       <div key={index} className="sidebar-link-container">
         <li>
-          <a href={`#${comp}`}>{comp[0].toUpperCase() + comp.slice(1)}</a>
+          <NavLink to={comp.path} end>
+            {comp.name[0].toUpperCase() + comp.name.slice(1)}
+          </NavLink>
         </li>
       </div>
     );
@@ -54,6 +57,7 @@ export default function SideNav() {
       </div>
       <ul className="sidebar-content-container">{navLinks}</ul>
       {/* TODO: Actually make this not look like poo */}
+      {/* TODO: Create Brand Switcher Component */}
     </aside>
   );
 }

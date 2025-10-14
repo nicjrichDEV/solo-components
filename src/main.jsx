@@ -8,9 +8,12 @@ import "./styles/brands/pmi-high-contrast.css";
 import "./styles/brands/infinity.css";
 import "./styles/brands/infinity-high-contrast.css";
 import App from "./App.jsx";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 );

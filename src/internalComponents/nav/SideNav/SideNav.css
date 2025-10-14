@@ -118,6 +118,11 @@
   }
 }
 
+a.active {
+  background-color: var(--on-surface-selected);
+  color: var(--text-primary);
+}
+
 @media (min-width: 640px) {
   .sidebar-root {
     display: block;
