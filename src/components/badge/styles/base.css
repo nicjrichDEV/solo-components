@@ -1,11 +1,9 @@
-@layer components {
-  /* Base Badge Structure */
-  .badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: fit-content;
-    font-weight: 500;
-  }
+/* Base Badge Structure */
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  font-weight: 500;
 }

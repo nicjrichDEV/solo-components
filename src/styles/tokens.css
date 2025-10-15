@@ -1,5 +1,4 @@
-:root,
-[data-brand] {
+:root {
   /* Typeface */
   --font-display: var(--font-display);
   --font-body: var(--font-body);
@@ -7,6 +6,18 @@
   /* Type Colors */
   --text-primary: var(--text-primary);
   --text-secondary: var(--text-secondary);
+  --text-on-neutral: var(--text-on-neutral);
+  --text-on-neutral-soft: var(--text-on-neutral-soft);
+  --text-on-brand: var(--text-on-brand);
+  --text-on-brand-soft: var(--text-on-brand-soft);
+  --text-on-info: var(--text-on-info);
+  --text-on-info-soft: var(--text-on-info-soft);
+  --text-on-success: var(--text-on-success);
+  --text-on-success-soft: var(--text-on-success-soft);
+  --text-on-warning: var(--text-on-warning);
+  --text-on-warning-soft: var(--text-on-warning-soft);
+  --text-on-error: var(--text-on-error);
+  --text-on-error-soft: var(--text-on-error-soft);
 
   /* Icon Colors */
   --icon-primary: var(--icon-primary);
@@ -17,8 +28,28 @@
   --on-surface-hover: var(--on-surface-hover);
   --on-surface-selected: var(--on-surface-selected);
 
+  /* Background Colors */
+  --bg-neutral: var(--bg-neutral);
+  --bg-neutral-soft: var(--bg-neutral-soft);
+  --bg-brand: var(--bg-brand);
+  --bg-brand-soft: var(--bg-brand-soft);
+  --bg-info: var(--bg-info);
+  --bg-info-soft: var(--bg-info-soft);
+  --bg-success: var(--bg-success);
+  --bg-success-soft: var(--bg-success-soft);
+  --bg-warning: var(--bg-warning);
+  --bg-warning-soft: var(--bg-warning-soft);
+  --bg-error: var(--bg-error);
+  --bg-error-soft: var(--bg-error-soft);
+
   /* Borders */
   --border-primary: var(--border-primary);
+  --border-neutral: var(--border-neutral);
+  --border-brand: var(--border-brand);
+  --border-info: var(--border-info);
+  --border-success: var(--border-success);
+  --border-warning: var(--border-warning);
+  --border-error: var(--border-error);
 
   /* Focus Colors */
   --focus-ring: var(--focus-ring);

@@ -7,9 +7,27 @@
 }
 
 [data-brand="pmi"][data-theme="light"] {
-  /* Type Colors */
+  /* Text Colors */
   --text-primary: var(--color-neutral-900);
   --text-secondary: var(--color-neutral-700);
+  --text-neutral: var(--color-neutral-800);
+  --text-on-neutral: var(--color-neutral-50);
+  --text-on-neutral-soft: var(--color-neutral-600);
+  --text-brand: var(--color-violet-600);
+  --text-on-brand: var(--color-violet-50);
+  --text-on-brand-soft: var(--color-violet-600);
+  --text-info: var(--color-aqua-600);
+  --text-on-info: var(--color-aqua-50);
+  --text-on-info-soft: var(--color-aqua-600);
+  --text-success: var(--color-emerald-800);
+  --text-on-success: var(--color-emerald-50);
+  --text-on-success-soft: var(--color-emerald-800);
+  --text-warning: var(--color-tangerine-600);
+  --text-on-warning: var(--color-tangerine-50);
+  --text-on-warning-soft: var(--color-tangerine-600);
+  --text-error: var(--color-red-700);
+  --text-on-error: var(--color-red-50);
+  --text-on-error-soft: var(--color-red-800);
 
   /* Icon Colors */
   --icon-primary: var(--text-primary);
@@ -20,8 +38,28 @@
   --on-surface-hover: var(--color-violet-50);
   --on-surface-selected: var(--color-violet-50);
 
+  /* Background Colors */
+  --bg-neutral: var(--color-neutral-800);
+  --bg-neutral-soft: var(--color-neutral-100);
+  --bg-brand: var(--color-violet-500);
+  --bg-brand-soft: var(--color-violet-100);
+  --bg-info: var(--color-aqua-500);
+  --bg-info-soft: var(--color-aqua-100);
+  --bg-success: var(--color-emerald-600);
+  --bg-success-soft: var(--color-emerald-100);
+  --bg-warning: var(--color-tangerine-400);
+  --bg-warning-soft: var(--color-tangerine-100);
+  --bg-error: var(--color-red-600);
+  --bg-error-soft: var(--color-red-100);
+
   /* Border Colors */
   --border-primary: var(--color-neutral-100);
+  --border-neutral: var(--color-neutral-500);
+  --border-brand: var(--color-violet-500);
+  --border-info: var(--color-aqua-500);
+  --border-success: var(--color-emerald-500);
+  --border-warning: var(--color-tangerine-500);
+  --border-error: var(--color-red-500);
 
   /* Focus Colors */
   --focus-ring: var(--color-violet-500);
@@ -34,6 +72,24 @@
   /* Type Colors */
   --text-primary: var(--color-neutral-50);
   --text-secondary: var(--color-neutral-100);
+  --text-neutral: var(--color-neutral-200);
+  --text-on-neutral: var(--color-neutral-900);
+  --text-on-neutral-soft: var(--color-neutral-100);
+  --text-brand: var(--color-violet-200);
+  --text-on-brand: var(--color-violet-50);
+  --text-on-brand-soft: var(--color-violet-100);
+  --text-info: var(--color-aqua-200);
+  --text-on-info: var(--color-aqua-900);
+  --text-on-info-soft: var(--color-aqua-100);
+  --text-success: var(--color-emerald-200);
+  --text-on-success: var(--color-emerald-900);
+  --text-on-success-soft: var(--color-emerald-100);
+  --text-warning: var(--color-tangerine-200);
+  --text-on-warning: var(--color-tangerine-900);
+  --text-on-warning-soft: var(--color-tangerine-100);
+  --text-error: var(--color-red-200);
+  --text-on-error: var(--color-red-950);
+  --text-on-error-soft: var(--color-red-50);
 
   /* Icon Colors*/
   --icon-primary: var(--text-primary);
@@ -44,8 +100,28 @@
   --on-surface-hover: var(--color-violet-500);
   --on-surface-selected: var(--color-violet-500);
 
+  /* Background Colors */
+  --bg-neutral: var(--color-neutral-300);
+  --bg-neutral-soft: var(--color-neutral-600);
+  --bg-brand: var(--color-violet-400);
+  --bg-brand-soft: var(--color-violet-500);
+  --bg-info: var(--color-aqua-300);
+  --bg-info-soft: var(--color-aqua-600);
+  --bg-success: var(--color-emerald-400);
+  --bg-success-soft: var(--color-emerald-700);
+  --bg-warning: var(--color-tangerine-300);
+  --bg-warning-soft: var(--color-tangerine-600);
+  --bg-error: var(--color-red-400);
+  --bg-error-soft: var(--color-red-700);
+
   /*  Border Colors */
   --border-primary: var(--color-neutral-800);
+  --border-neutral: var(--color-neutral-400);
+  --border-brand: var(--color-violet-400);
+  --border-info: var(--color-aqua-400);
+  --border-success: var(--color-emerald-500);
+  --border-warning: var(--color-tangerine-500);
+  --border-error: var(--color-red-700);
 
   /* Focus Colors */
   --focus-ring: var(--color-violet-300);

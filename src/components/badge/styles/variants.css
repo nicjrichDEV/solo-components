@@ -1,123 +1,94 @@
-@layer components {
-  /* Solid Variant - Status Colors */
-  .badge.solid.neutral {
-    color: var(--text-on-neutral-primary);
-    background-color: var(--bg-neutral-primary);
-  }
+/* Solid Variant - Status Colors */
+.badge.solid.neutral {
+  color: var(--text-on-neutral);
+  background-color: var(--bg-neutral);
+}
 
-  .badge.solid.brand {
-    color: var(--text-on-brand-primary);
-    background-color: var(--bg-brand-primary);
-  }
+.badge.solid.brand {
+  color: var(--text-on-brand);
+  background-color: var(--bg-brand);
+}
 
-  .badge.solid.info {
-    color: var(--text-on-info-primary);
-    background-color: var(--bg-info-primary);
-  }
+.badge.solid.info {
+  color: var(--text-on-info);
+  background-color: var(--bg-info);
+}
 
-  .badge.solid.success {
-    color: var(--text-on-success-primary);
-    background-color: var(--bg-success-primary);
-  }
+.badge.solid.success {
+  color: var(--text-on-success);
+  background-color: var(--bg-success);
+}
 
-  .badge.solid.warning {
-    color: var(--text-on-warning-primary);
-    background-color: var(--bg-warning-primary);
-  }
+.badge.solid.warning {
+  color: var(--text-on-warning);
+  background-color: var(--bg-warning);
+}
 
-  .badge.solid.error {
-    color: var(--text-on-error-primary);
-    background-color: var(--bg-error-primary);
-  }
+.badge.solid.error {
+  color: var(--text-on-error);
+  background-color: var(--bg-error);
+}
 
-  /* Soft Variant - Placeholder for future implementation */
-  .badge.soft.neutral {
-    color: var(--text-neutral-primary);
-    background-color: var(--bg-neutral-tertiary);
-  }
+/* Soft Variant */
+.badge.soft.neutral {
+  color: var(--text-on-neutral-soft);
+  background-color: var(--bg-neutral-soft);
+}
 
-  .badge.soft.brand {
-    color: var(--text-brand-primary);
-    background-color: var(--bg-brand-tertiary);
-  }
+.badge.soft.brand {
+  color: var(--text-on-brand-soft);
+  background-color: var(--bg-brand-soft);
+}
 
-  .badge.soft.info {
-    color: var(--text-info-primary);
-    background-color: var(--bg-info-tertiary);
-  }
+.badge.soft.info {
+  color: var(--text-on-info-soft);
+  background-color: var(--bg-info-soft);
+}
 
-  .badge.soft.success {
-    color: var(--text-success-primary);
-    background-color: var(--bg-success-tertiary);
-  }
+.badge.soft.success {
+  color: var(--text-on-success-soft);
+  background-color: var(--bg-success-soft);
+}
 
-  .badge.soft.warning {
-    color: var(--text-warning-primary);
-    background-color: var(--bg-warning-tertiary);
-  }
+.badge.soft.warning {
+  color: var(--text-on-warning-soft);
+  background-color: var(--bg-warning-soft);
+}
 
-  .badge.soft.error {
-    color: var(--text-error-primary);
-    background-color: var(--bg-error-tertiary);
-  }
+.badge.soft.error {
+  color: var(--text-on-error-soft);
+  background-color: var(--bg-error-soft);
+}
 
-  /* TODO: This is a bit of a band aid to avoid component specific variables but it showcases a larger problem within the semantic variables for this particular setup */
-  :where([data-theme="dark"]) {
-    .badge.soft.neutral {
-      color: hsl(from var(--text-neutral-primary) h s calc(l - 60));
-    }
+/* Outline */
+.badge.outline {
+  border-width: 0.0625rem;
+  border-style: solid;
+}
 
-    .badge.soft.brand {
-      color: hsl(from var(--text-brand-primary) h s calc(l - 60));
-    }
+.badge.outline.neutral {
+  color: var(--text-neutral);
+  border-color: var(--border-neutral);
+}
+.badge.outline.brand {
+  color: var(--text-brand);
+  border-color: var(--border-brand);
+}
 
-    .badge.soft.info {
-      color: hsl(from var(--text-info-primary) h s calc(l - 60));
-    }
+.badge.outline.info {
+  color: var(--text-info);
+  border-color: var(--border-info);
+}
 
-    .badge.soft.success {
-      color: hsl(from var(--text-success-primary) h s calc(l - 60));
-    }
-
-    .badge.soft.warning {
-      color: hsl(from var(--text-warning-primary) h s calc(l - 60));
-    }
-
-    .badge.soft.error {
-      color: hsl(from var(--text-error-primary) h s calc(l - 60));
-    }
-  }
-
-  /* Outline */
-  .badge.outline {
-    border-width: 0.0625rem;
-    border-style: solid;
-  }
-
-  .badge.outline.neutral {
-    color: var(--text-neutral-primary);
-    border-color: var(--border-neutral-primary);
-  }
-  .badge.outline.brand {
-    color: var(--text-brand-primary);
-    border-color: var(--border-brand-primary);
-  }
-
-  .badge.outline.info {
-    color: var(--text-info-primary);
-    border-color: var(--border-info-primary);
-  }
-
-  .badge.outline.success {
-    color: var(--text-success-primary);
-    border-color: var(--border-success-primary);
-  }
-  .badge.outline.warning {
-    color: var(--text-warning-primary);
-    border-color: var(--border-warning-primary);
-  }
-  .badge.outline.error {
-    color: var(--text-error-primary);
-    border-color: var(--border-error-primary);
-  }
+.badge.outline.success {
+  color: var(--text-success);
+  border-color: var(--border-success);
+}
+.badge.outline.warning {
+  color: var(--text-warning);
+  border-color: var(--border-warning);
+}
+.badge.outline.error {
+  color: var(--text-error);
+  border-color: var(--border-error);
 }

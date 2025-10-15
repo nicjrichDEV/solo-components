@@ -1,8 +1,11 @@
 import Badge from "../../components/badge/Badge";
+import { useTheme } from "../../contexts/ThemeContext";
 import Demo from "../../internalComponents/demo/Demo";
 import "./DemoBadge.css";
 
 export default function DemoBadge() {
+  const { brand } = useTheme();
+
   return (
     <Demo
       componentName="badge"
@@ -76,7 +79,7 @@ export default function DemoBadge() {
           <div className="grids-container">
             <div className="demo-light">
               <h3>Light</h3>
-              <div className="demo-grid" data-theme="light">
+              <div className="demo-grid" data-brand={brand} data-theme="light">
                 <div className="demo-solid">
                   <div className="demo-column">
                     <Badge className="demo-badge">Neutral</Badge>
@@ -173,7 +176,7 @@ export default function DemoBadge() {
             </div>
             <div className="demo-dark">
               <h3>Dark</h3>
-              <div className="demo-grid" data-theme="dark">
+              <div className="demo-grid" data-brand={brand} data-theme="dark">
                 <div className="demo-solid">
                   <div className="demo-column">
                     <Badge className="demo-badge">Neutral</Badge>

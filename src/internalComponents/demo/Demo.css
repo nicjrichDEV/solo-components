@@ -1,7 +1,7 @@
 /* Base Styles */
 .demo-container {
   border-radius: 12px;
-  background-color: var(--bg-surface-primary);
+  background-color: var(--on-surface);
   border: 1px solid var(--border-primary);
 }
 
