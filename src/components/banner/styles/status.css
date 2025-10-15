@@ -1,105 +1,106 @@
-@layer components {
-  .banner.neutral {
-    background-color: var(--bg-neutral-tertiary);
+/* TODO: Need secondary text colors for all semantics */
+/* TODO: Need to fill out icon colors to mirror text tokens */
 
-    h4 {
-      color: var(--text-primary);
-    }
+.banner.neutral {
+  background-color: var(--bg-neutral-soft);
 
-    p {
-      color: var(--text-secondary);
-    }
-
-    svg {
-      stroke: var(--icon-neutral-primary);
-    }
+  h4 {
+    color: var(--text-primary);
   }
 
-  .banner.brand {
-    background-color: var(--bg-brand-tertiary);
-
-    h4 {
-      color: var(--text-brand-primary);
-    }
-
-    p {
-      color: var(--text-brand-secondary);
-    }
-
-    svg {
-      stroke: var(--icon-brand-primary);
-    }
+  p {
+    color: var(--text-secondary);
   }
 
-  .banner.info {
-    background-color: var(--bg-info-tertiary);
+  svg {
+    stroke: var(--icon-neutral-primary);
+  }
+}
+
+.banner.brand {
+  background-color: var(--bg-brand-soft);
+
+  h4 {
+    color: var(--text-brand);
   }
 
-  .banner.success {
-    background-color: var(--bg-success-tertiary);
+  p {
+    color: var(--text-brand-secondary);
   }
 
-  .banner.warning {
-    background-color: var(--bg-warning-tertiary);
+  svg {
+    stroke: var(--icon-brand-primary);
   }
+}
 
-  .banner.error {
-    background-color: var(--bg-error-tertiary);
+.banner.info {
+  background-color: var(--bg-info-soft);
+}
+
+.banner.success {
+  background-color: var(--bg-success-soft);
+}
+
+.banner.warning {
+  background-color: var(--bg-warning-soft);
+}
+
+.banner.error {
+  background-color: var(--bg-error-soft);
+}
+
+/* Styles for optional dismiss button */
+.dismissButton.neutral {
+  background-color: var(--bg-neutral-soft);
+  border: 1px solid var(--border-neutral);
+
+  svg {
+    stroke: var(--icon-neutral-primary);
   }
+}
 
-  /* Styles for optional dismiss button */
-  .dismissButton.neutral {
-    background-color: var(--bg-neutral-tertiary);
-    border: 1px solid var(--border-neutral-tertiary);
+/* TODO: Need to revisit the border scale. Right now to accommodate badges this border is very loud */
+.dismissButton.brand {
+  background-color: var(--bg-brand-soft);
+  border: 1px solid var(--border-brand);
 
-    svg {
-      stroke: var(--icon-neutral-primary);
-    }
+  svg {
+    stroke: var(--icon-brand-primary);
   }
+}
 
-  /* TODO: Need to revisit the border scale. Right now to accommodate badges this border is very loud */
-  .dismissButton.brand {
-    background-color: var(--bg-brand-tertiary);
-    border: 1px solid var(--border-brand-tertiary);
+.dismissButton.info {
+  background-color: var(--bg-info-soft);
+  border: 1px solid var(--border-info);
 
-    svg {
-      stroke: var(--icon-brand-primary);
-    }
+  svg {
+    stroke: var(--icon-info-primary);
   }
+}
 
-  .dismissButton.info {
-    background-color: var(--bg-info-tertiary);
-    border: 1px solid var(--border-info-tertiary);
+.dismissButton.success {
+  background-color: var(--bg-success-soft);
+  border: 1px solid var(--border-success);
 
-    svg {
-      stroke: var(--icon-info-primary);
-    }
+  svg {
+    stroke: var(--icon-success-primary);
   }
+}
 
-  .dismissButton.success {
-    background-color: var(--bg-success-tertiary);
-    border: 1px solid var(--border-success-tertiary);
+.dismissButton.warning {
+  background-color: var(--bg-warning-soft);
+  border: 1px solid var(--border-warning);
 
-    svg {
-      stroke: var(--icon-success-primary);
-    }
+  svg {
+    stroke: var(--icon-warning-primary);
   }
+}
 
-  .dismissButton.warning {
-    background-color: var(--bg-warning-tertiary);
-    border: 1px solid var(--border-warning-tertiary);
+.dismissButton.error {
+  background-color: var(--bg-error-soft);
+  border: 1px solid var(--border-error);
 
-    svg {
-      stroke: var(--icon-warning-primary);
-    }
-  }
-
-  .dismissButton.error {
-    background-color: var(--bg-error-tertiary);
-    border: 1px solid var(--border-error-tertiary);
-
-    svg {
-      stroke: var(--icon-error-primary);
-    }
+  svg {
+    stroke: var(--icon-error-primary);
   }
 }

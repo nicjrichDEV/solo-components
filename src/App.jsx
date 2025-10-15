@@ -1,10 +1,10 @@
-import MainLayout from "./layouts/MainLayout/MainLayout";
-import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import { Route, Routes } from "react-router";
-import HomePage from "./pages/home/HomePage.jsx";
+import { ThemeProvider } from "./contexts/ThemeContext.jsx";
+import MainLayout from "./layouts/MainLayout/MainLayout";
 import BadgePage from "./pages/BadgePage.jsx";
 import BannerPage from "./pages/BannerPage.jsx";
 import CardPage from "./pages/CardPage.jsx";
+import HomePage from "./pages/home/HomePage.jsx";
 import LinkPage from "./pages/LinkPage.jsx";
 import TestimonialPage from "./pages/TestimonialPage.jsx";
 import ToastPage from "./pages/ToastPage.jsx";
