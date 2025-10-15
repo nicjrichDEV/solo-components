@@ -6,7 +6,7 @@
     width: 100%;
     background-color: var(--on-surface);
     height: 40px;
-    border-top: 1px solid var(--border-primary);
+    border-top: 1px solid var(--border-neutral-subtle);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@
 
   .start-container:focus,
   .end-container:focus {
-    outline: 2px solid var(--border-focus);
+    outline: 2px solid var(--focus-ring);
     outline-offset: -0.5rem;
 
     svg {
@@ -43,10 +43,10 @@
   }
 
   .start-container {
-    border-right: 1px solid var(--border-primary);
+    border-right: 1px solid var(--border-neutral-subtle);
 
     svg {
-      stroke: var(--icon-primary);
+      stroke: var(--icon-neutral);
     }
   }
 
@@ -61,11 +61,11 @@
 
   .end-container {
     border: none;
-    border-left: 1px solid var(--border-primary);
+    border-left: 1px solid var(--border-neutral-subtle);
     background-color: unset;
 
     svg {
-      stroke: var(--icon-primary);
+      stroke: var(--icon-neutral);
     }
   }
 
@@ -74,17 +74,17 @@
     justify-content: center;
     align-items: center;
     height: 32px;
-    border-top: 1px solid var(--border-primary);
+    border-top: 1px solid var(--border-neutral-subtle);
     text-decoration: none;
     color: var(--text-secondary);
     margin: 0 39px;
-    border-left: 1px solid var(--border-primary);
-    border-right: 1px solid var(--border-primary);
+    border-left: 1px solid var(--border-neutral-subtle);
+    border-right: 1px solid var(--border-neutral-subtle);
     min-height: 32px;
   }
 
   .mobile-nav-expanded-links:focus {
-    outline: 2px solid var(--border-focus);
+    outline: 2px solid var(--focus-ring);
     outline-offset: -4px;
   }
 

@@ -6,23 +6,106 @@
   /* Type Colors */
   --text-primary: var(--text-primary);
   --text-secondary: var(--text-secondary);
+
+  --text-neutral: var(--text-neutral);
+  --text-neutral-muted: var(--text-neutral-muted);
+  --text-neutral-subtle: var(--text-neutral-subtle);
+
+  --text-brand: var(--text-brand);
+  --text-brand-muted: var(--text-brand-muted);
+  --text-brand-subtle: var(--text-brand-subtle);
+
+  --text-info: var(--text-info);
+  --text-info-muted: var(--text-info-muted);
+  --text-info-subtle: var(--text-info-subtle);
+
+  --text-success: var(--text-success);
+  --text-success-muted: var(--text-success-muted);
+  --text-success-subtle: var(--text-success-subtle);
+
+  --text-warning: var(--text-warning);
+  --text-warning-muted: var(--text-warning-muted);
+  --text-warning-subtle: var(--text-warning-subtle);
+
+  --text-error: var(--text-error);
+  --text-error-muted: var(--text-error-muted);
+  --text-error-subtle: var(--text-error-subtle);
+
   --text-on-neutral: var(--text-on-neutral);
-  --text-on-neutral-soft: var(--text-on-neutral-soft);
+  --text-on-neutral-muted: var(--text-on-neutral-muted);
+  --text-on-neutral-subtle: var(--text-on-neutral-subtle);
+
   --text-on-brand: var(--text-on-brand);
-  --text-on-brand-soft: var(--text-on-brand-soft);
+  --text-on-brand-muted: var(--text-on-brand-muted);
+  --text-on-brand-subtle: var(--text-on-brand-subtle);
+
   --text-on-info: var(--text-on-info);
-  --text-on-info-soft: var(--text-on-info-soft);
+  --text-on-info-muted: var(--text-on-info-muted);
+  --text-on-info-subtle: var(--text-on-info-subtle);
+
   --text-on-success: var(--text-on-success);
-  --text-on-success-soft: var(--text-on-success-soft);
+  --text-on-success-muted: var(--text-on-success-muted);
+  --text-on-success-subtle: var(--text-on-success-subtle);
+
   --text-on-warning: var(--text-on-warning);
-  --text-on-warning-soft: var(--text-on-warning-soft);
+  --text-on-warning-muted: var(--text-on-warning-muted);
+  --text-on-warning-subtle: var(--text-on-warning-subtle);
+
   --text-on-error: var(--text-on-error);
-  --text-on-error-soft: var(--text-on-error-soft);
+  --text-on-error-muted: var(--text-on-error-muted);
+  --text-on-error-subtle: var(--text-on-error-subtle);
 
   /* Icon Colors */
-  --icon-primary: var(--icon-primary);
+  --icon-neutral: var(--icon-neutral);
+  --icon-neutral-muted: var(--icon-neutral-muted);
+  --icon-neutarl-subtle: var(--icon-neutarl-subtle);
+
+  --icon-brand: var(--icon-brand);
+  --icon-brand-muted: var(--icon-brand-muted);
+  --icon-brand-subtle: var(--icon-brand-subtle);
+
+  --icon-info: var(--icon-info);
+  --icon-info-muted: var(--icon-info-muted);
+  --icon-info-subtle: var(--icon-info-subtle);
+
+  --icon-success: var(--icon-success);
+  --icon-success-muted: var(--icon-success-muted);
+  --icon-success-subtle: var(--icon-success-subtle);
+
+  --icon-warning: var(--icon-warning);
+  --icon-warning-muted: var(--icon-warning-muted);
+  --icon-warning-subtle: var(--icon-warning-subtle);
+
+  --icon-error: var(--icon-error);
+  --icon-error-muted: var(--icon-error-muted);
+  --icon-error-subtle: var(--icon-error-subtle);
+
+  --icon-on-neutral: var(--icon-on-neutral);
+  --icon-on-neutral-muted: var(--icon-on-neutral-muted);
+  --icon-on-neutral-subtle: var(--icon-on-neutral-subtle);
+
+  --icon-on-brand: var(--icon-on-brand);
+  --icon-on-brand-muted: var(--icon-on-brand-muted);
+  --icon-on-brand-subtle: var(--icon-on-brand-subtle);
+
+  --icon-on-info: var(--icon-on-info);
+  --icon-on-info-muted: var(--icon-on-info-muted);
+  --icon-on-info-subtle: var(--icon-on-info-subtle);
+
+  --icon-on-success: var(--icon-on-success);
+  --icon-on-success-muted: var(--icon-on-success-muted);
+  --icon-on-success-subtle: var(--icon-on-success-subtle);
+
+  --icon-on-warning: var(--icon-warning);
+  --icon-on-warning-muted: var(--icon-warning-muted);
+  --icon-on-warning-subtle: var(--icon-warning-subtle);
+
+  --icon-on-error: var(--icon-error);
+  --icon-on-error-muted: var(--icon-error-muted);
+  --icon-on-error-subtle: var(--icon-error-subtle);
 
   /* Page Colors */
+  /* TODO: This needs some work to fit with the default, muted, and subtle setup */
   --surface: var(--surface);
   --on-surface: var(--on-surface);
   --on-surface-hover: var(--on-surface-hover);
@@ -30,26 +113,55 @@
 
   /* Background Colors */
   --bg-neutral: var(--bg-neutral);
-  --bg-neutral-soft: var(--bg-neutral-soft);
+  --bg-neutral-muted: var(--bg-neutral-muted);
+  --bg-neutral-subtle: var(--bg-neutral-subtle);
+
   --bg-brand: var(--bg-brand);
-  --bg-brand-soft: var(--bg-brand-soft);
+  --bg-brand-muted: var(--bg-brand-muted);
+  --bg-brand-subtle: var(--bg-brand-subtle);
+
   --bg-info: var(--bg-info);
-  --bg-info-soft: var(--bg-info-soft);
+  --bg-info-muted: var(--bg-info-muted);
+  --bg-info-subtle: var(--bg-info-subtle);
+
   --bg-success: var(--bg-success);
-  --bg-success-soft: var(--bg-success-soft);
+  --bg-success-muted: var(--bg-success-muted);
+  --bg-success-subtle: var(--bg-success-subtle);
+
   --bg-warning: var(--bg-warning);
-  --bg-warning-soft: var(--bg-warning-soft);
+  --bg-warning-muted: var(--bg-warning-muted);
+  --bg-warning-subtle: var(--bg-warning-subtle);
+
   --bg-error: var(--bg-error);
-  --bg-error-soft: var(--bg-error-soft);
+  --bg-error-muted: var(--bg-error-muted);
+  --bg-error-subtle: var(--bg-error-subtle);
 
   /* Borders */
   --border-primary: var(--border-primary);
+
   --border-neutral: var(--border-neutral);
+  --border-neutral-muted: var(--border-neutral-muted);
+  --border-neutral-subtle: var(--border-neutral-subtle);
+
   --border-brand: var(--border-brand);
+  --border-brand-muted: var(--border-brand-muted);
+  --border-brand-subtle: var(--border-brand-subtle);
+
   --border-info: var(--border-info);
+  --border-info-muted: var(--border-info-muted);
+  --border-info-subtle: var(--border-info-subtle);
+
   --border-success: var(--border-success);
+  --border-success-muted: var(--border-success-muted);
+  --border-success-subtle: var(--border-success-subtle);
+
   --border-warning: var(--border-warning);
+  --border-warning-muted: var(--border-warning-muted);
+  --border-warning-subtle: var(--border-warning-subtle);
+
   --border-error: var(--border-error);
+  --border-error-muted: var(--border-error-muted);
+  --border-error-subtle: var(--border-error-subtle);
 
   /* Focus Colors */
   --focus-ring: var(--focus-ring);

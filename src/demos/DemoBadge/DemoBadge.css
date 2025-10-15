@@ -1,11 +1,11 @@
 .demo-section {
   padding: 0.75rem 0.75rem 0.75rem 0.75rem;
-  border-bottom: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-neutral-subtle);
 
   h3 {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--text-neutral);
     padding-bottom: 4px;
   }
 
@@ -13,7 +13,7 @@
     font-size: 0.875rem;
     max-width: 720px;
     line-height: 18px;
-    color: var(--text-secondary);
+    color: var(--text-neutral-muted);
   }
 }
 
@@ -30,7 +30,7 @@
   background-color: var(--surface);
   width: fit-content;
   border-radius: 1rem;
-  border: 1px solid var(--border-primary);
+  border: 1px solid var(--border-neutral-subtle);
 }
 
 .grids-container {
@@ -47,7 +47,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   max-width: fit-content;
   text-align: center;
-  border: 2px dashed var(--border-primary);
+  border: 2px dashed var(--border-neutral-subtle);
   border-radius: 1rem;
   background-color: var(--surface);
 }
@@ -57,7 +57,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-right: 2px dashed var(--border-primary);
+  border-right: 2px dashed var(--border-neutral-subtle);
 }
 
 .demo-outline > .demo-column {

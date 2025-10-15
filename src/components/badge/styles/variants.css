@@ -30,34 +30,34 @@
 }
 
 /* Soft Variant */
-.badge.soft.neutral {
-  color: var(--text-on-neutral-soft);
-  background-color: var(--bg-neutral-soft);
+.badge.subtle.neutral {
+  color: var(--text-on-neutral-subtle);
+  background-color: var(--bg-neutral-subtle);
 }
 
-.badge.soft.brand {
-  color: var(--text-on-brand-soft);
-  background-color: var(--bg-brand-soft);
+.badge.subtle.brand {
+  color: var(--text-on-brand-subtle);
+  background-color: var(--bg-brand-subtle);
 }
 
-.badge.soft.info {
-  color: var(--text-on-info-soft);
-  background-color: var(--bg-info-soft);
+.badge.subtle.info {
+  color: var(--text-on-info-subtle);
+  background-color: var(--bg-info-subtle);
 }
 
-.badge.soft.success {
-  color: var(--text-on-success-soft);
-  background-color: var(--bg-success-soft);
+.badge.subtle.success {
+  color: var(--text-on-success-subtle);
+  background-color: var(--bg-success-subtle);
 }
 
-.badge.soft.warning {
-  color: var(--text-on-warning-soft);
-  background-color: var(--bg-warning-soft);
+.badge.subtle.warning {
+  color: var(--text-on-warning-subtle);
+  background-color: var(--bg-warning-subtle);
 }
 
-.badge.soft.error {
-  color: var(--text-on-error-soft);
-  background-color: var(--bg-error-soft);
+.badge.subtle.error {
+  color: var(--text-on-error-subtle);
+  background-color: var(--bg-error-subtle);
 }
 
 /* Outline */

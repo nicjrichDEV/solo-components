@@ -2,14 +2,14 @@
 .demo-container {
   border-radius: 12px;
   background-color: var(--on-surface);
-  border: 1px solid var(--border-primary);
+  border: 1px solid var(--border-neutral-subtle);
 }
 
 .demo-copy {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  border-bottom: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-neutral-subtle);
   padding: 0.75rem;
 
   h2,
@@ -21,12 +21,12 @@
   h2 {
     font-size: 1.125rem;
     font-weight: 500;
-    color: var(--text-primary);
+    color: var(--text-neutral);
   }
 
   p {
     font-size: 0.875rem;
-    color: var(--text-secondary);
+    color: var(--text-neutral-muted);
   }
 }
 

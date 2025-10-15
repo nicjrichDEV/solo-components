@@ -22,7 +22,7 @@ export default function DemoBadge() {
           </p>
           <div className="demo-horizontal-container">
             <Badge>Solid</Badge>
-            <Badge variant="soft">Soft</Badge>
+            <Badge variant="subtle">Subtle</Badge>
             <Badge variant="outline">Outline</Badge>
           </div>
         </div>
@@ -102,30 +102,42 @@ export default function DemoBadge() {
                 </div>
                 <div className="demo-soft">
                   <div className="demo-column">
-                    <Badge className="demo-badge" variant="soft">
+                    <Badge className="demo-badge" variant="subtle">
                       Neutral
                     </Badge>
-                    <Badge className="demo-badge" status="brand" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="brand"
+                      variant="subtle"
+                    >
                       Brand
                     </Badge>
-                    <Badge className="demo-badge" status="info" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="info"
+                      variant="subtle"
+                    >
                       Info
                     </Badge>
                     <Badge
                       className="demo-badge"
                       status="success"
-                      variant="soft"
+                      variant="subtle"
                     >
                       Success
                     </Badge>
                     <Badge
                       className="demo-badge"
                       status="warning"
-                      variant="soft"
+                      variant="subtle"
                     >
                       Warning
                     </Badge>
-                    <Badge className="demo-badge" status="error" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="error"
+                      variant="subtle"
+                    >
                       Error
                     </Badge>
                   </div>
@@ -199,30 +211,42 @@ export default function DemoBadge() {
                 </div>
                 <div className="demo-soft">
                   <div className="demo-column">
-                    <Badge className="demo-badge" variant="soft">
+                    <Badge className="demo-badge" variant="subtle">
                       Neutral
                     </Badge>
-                    <Badge className="demo-badge" status="brand" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="brand"
+                      variant="subtle"
+                    >
                       Brand
                     </Badge>
-                    <Badge className="demo-badge" status="info" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="info"
+                      variant="subtle"
+                    >
                       Info
                     </Badge>
                     <Badge
                       className="demo-badge"
                       status="success"
-                      variant="soft"
+                      variant="subtle"
                     >
                       Success
                     </Badge>
                     <Badge
                       className="demo-badge"
                       status="warning"
-                      variant="soft"
+                      variant="subtle"
                     >
                       Warning
                     </Badge>
-                    <Badge className="demo-badge" status="error" variant="soft">
+                    <Badge
+                      className="demo-badge"
+                      status="error"
+                      variant="subtle"
+                    >
                       Error
                     </Badge>
                   </div>

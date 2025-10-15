@@ -8,29 +8,102 @@
 
 [data-brand="pmi"][data-theme="light"] {
   /* Text Colors */
-  --text-primary: var(--color-neutral-900);
-  --text-secondary: var(--color-neutral-700);
   --text-neutral: var(--color-neutral-800);
-  --text-on-neutral: var(--color-neutral-50);
-  --text-on-neutral-soft: var(--color-neutral-600);
-  --text-brand: var(--color-violet-600);
-  --text-on-brand: var(--color-violet-50);
-  --text-on-brand-soft: var(--color-violet-600);
-  --text-info: var(--color-aqua-600);
-  --text-on-info: var(--color-aqua-50);
-  --text-on-info-soft: var(--color-aqua-600);
+  --text-neutral-muted: var(--color-neutral-700); /* TODO: Update */
+  --text-neutral-subtle: var(--color-neutral-500);
+
+  --text-brand: var(--color-violet-700);
+  --text-brand-muted: var(--color-violet-500); /* TODO: Update */
+  --text-brand-subtle: var(--color-violet-300);
+
+  --text-info: var(--color-aqua-700);
+  --text-info-muted: var(--color-aqua-500); /* TODO: Update */
+  --text-info-subtle: var(--color-aqua-300);
+
   --text-success: var(--color-emerald-800);
-  --text-on-success: var(--color-emerald-50);
-  --text-on-success-soft: var(--color-emerald-800);
+  --text-success-muted: var(--color-emerald-600); /* TODO: Update */
+  --text-success-subtle: var(--color-emerald-400);
+
   --text-warning: var(--color-tangerine-600);
-  --text-on-warning: var(--color-tangerine-50);
-  --text-on-warning-soft: var(--color-tangerine-600);
+  --text-warning-muted: var(--color-tangerine-400); /* TODO: Update */
+  --text-warning-subtle: var(--color-tangerine-300);
+
   --text-error: var(--color-red-700);
+  --text-error-muted: var(--color-red-500); /* TODO: Update */
+  --text-error-subtle: var(--color-red-300);
+
+  --text-on-neutral: var(--color-neutral-50);
+  --text-on-neutral-muted: var(--color-neutral-300); /* TODO: Update */
+  --text-on-neutral-subtle: var(--color-neutral-800);
+
+  --text-on-brand: var(--color-violet-50);
+  --text-on-brand-muted: var(--color-violet-300); /* TODO: Update */
+  --text-on-brand-subtle: var(--color-violet-800);
+
+  --text-on-info: var(--color-aqua-50);
+  --text-on-info-muted: var(--color-aqua-300); /* TODO: Update */
+  --text-on-info-subtle: var(--color-aqua-800);
+
+  --text-on-success: var(--color-emerald-50);
+  --text-on-success-muted: var(--color-emerald-300); /* TODO: Update */
+  --text-on-success-subtle: var(--color-emerald-800);
+
+  --text-on-warning: var(--color-tangerine-50);
+  --text-on-warning-muted: var(--color-tangerine-300); /* TODO: Update */
+  --text-on-warning-subtle: var(--color-tangerine-800);
+
   --text-on-error: var(--color-red-50);
-  --text-on-error-soft: var(--color-red-800);
+  --text-on-error-muted: var(--color-red-300); /* TODO: Update */
+  --text-on-error-subtle: var(--color-red-800);
 
   /* Icon Colors */
-  --icon-primary: var(--text-primary);
+  --icon-neutral: var(--text-neutral);
+  --icon-neutral-muted: var(--text-neutral-muted);
+  --icon-neutral-subtle: var(--text-neutral-subtle);
+
+  --icon-brand: var(--text-brand);
+  --icon-brand-muted: var(--text-brand-muted);
+  --icon-brand-subtle: var(--text-brand-subtle);
+
+  --icon-info: var(--text-info);
+  --icon-info-muted: var(--text-info-muted);
+  --icon-info-subtle: var(--text-info-subtle);
+
+  --icon-success: var(--text-success);
+  --icon-success-muted: var(--text-success-muted);
+  --icon-success-subtle: var(--text-success-subtle);
+
+  --icon-warning: var(--text-warning);
+  --icon-warning-muted: var(--text-warning-muted);
+  --icon-warning-subtle: var(--text-warning-subtle);
+
+  --icon-error: var(--text-error);
+  --icon-error-muted: var(--text-error-muted);
+  --icon-error-subtle: var(--text-error-subtle);
+
+  --icon-on-neutral: var(--text-on-neutral);
+  --icon-on-neutral-muted: var(--text-on-neutral-muted);
+  --icon-on-neutral-subtle: var(--text-on-neutral-subtle);
+
+  --icon-on-brand: var(--text-on-brand);
+  --icon-on-brand-muted: var(--text-on-brand-muted);
+  --icon-on-brand-subtle: var(--text-on-brand-subtle);
+
+  --icon-on-info: var(--text-on-info);
+  --icon-on-info-muted: var(--text-on-info-muted);
+  --icon-on-info-subtle: var(--text-on-info-subtle);
+
+  --icon-on-success: var(--text-on-success);
+  --icon-on-success-muted: var(--text-on-success-muted);
+  --icon-on-success-subtle: var(--text-on-success-subtle);
+
+  --icon-on-warning: var(--text-on-warning);
+  --icon-on-warning-muted: var(--text-on-warning-muted);
+  --icon-on-warning-subtle: var(--text-on-warning-subtle);
+
+  --icon-on-error: var(--text-on-error);
+  --icon-on-error-muted: var(--text-on-error-muted);
+  --icon-on-error-subtle: var(--text-on-error-subtle);
 
   /* Surface Colors */
   --surface: var(--color-neutral-50);
@@ -40,26 +113,55 @@
 
   /* Background Colors */
   --bg-neutral: var(--color-neutral-800);
-  --bg-neutral-soft: var(--color-neutral-100);
+  --bg-neutral-muted: var(--color-neutral-600); /* TODO: Update */
+  --bg-neutral-subtle: var(--color-neutral-200);
+
   --bg-brand: var(--color-violet-500);
-  --bg-brand-soft: var(--color-violet-100);
+  --bg-brand-muted: var(--color-violet-100); /* TODO: Update */
+  --bg-brand-subtle: var(--color-violet-200);
+
   --bg-info: var(--color-aqua-500);
-  --bg-info-soft: var(--color-aqua-100);
-  --bg-success: var(--color-emerald-600);
-  --bg-success-soft: var(--color-emerald-100);
-  --bg-warning: var(--color-tangerine-400);
-  --bg-warning-soft: var(--color-tangerine-100);
-  --bg-error: var(--color-red-600);
-  --bg-error-soft: var(--color-red-100);
+  --bg-info-muted: var(--color-aqua-100); /* TODO: Update */
+  --bg-info-subtle: var(--color-aqua-100);
+
+  --bg-success: var(--color-emerald-700);
+  --bg-success-muted: var(--color-emerald-100); /* TODO: Update */
+  --bg-success-subtle: var(--color-emerald-300);
+
+  --bg-warning: var(--color-tangerine-500);
+  --bg-warning-muted: var(--color-tangerine-100); /* TODO: Update */
+  --bg-warning-subtle: var(--color-tangerine-200);
+
+  --bg-error: var(--color-red-700);
+  --bg-error-muted: var(--color-red-100); /* TODO: Update */
+  --bg-error-subtle: var(--color-red-200);
 
   /* Border Colors */
   --border-primary: var(--color-neutral-100);
+
   --border-neutral: var(--color-neutral-500);
+  --border-neutral-muted: var(--color-neutral-300);
+  --border-neutral-subtle: var(--color-neutral-100);
+
   --border-brand: var(--color-violet-500);
+  --border-brand-muted: var(--color-violet-300);
+  --border-brand-subtle: var(--color-violet-100);
+
   --border-info: var(--color-aqua-500);
+  --border-info-muted: var(--color-aqua-300);
+  --border-info-subtle: var(--color-aqua-100);
+
   --border-success: var(--color-emerald-500);
+  --border-success-muted: var(--color-emerald-300);
+  --border-success-subtle: var(--color-emerald-100);
+
   --border-warning: var(--color-tangerine-500);
+  --border-warning-muted: var(--color-tangerine-300);
+  --border-warning-subtle: var(--color-tangerine-100);
+
   --border-error: var(--color-red-500);
+  --border-error-muted: var(--color-red-300);
+  --border-error-subtle: var(--color-red-100);
 
   /* Focus Colors */
   --focus-ring: var(--color-violet-500);
@@ -70,29 +172,102 @@
 
 [data-brand="pmi"][data-theme="dark"] {
   /* Type Colors */
-  --text-primary: var(--color-neutral-50);
-  --text-secondary: var(--color-neutral-100);
   --text-neutral: var(--color-neutral-200);
-  --text-on-neutral: var(--color-neutral-900);
-  --text-on-neutral-soft: var(--color-neutral-100);
+  --text-neutral-muted: var(--color-neutral-100); /* TODO: Update */
+  --text-neutral-subtle: var(--color-neutral-100); /* TODO: Update */
+
   --text-brand: var(--color-violet-200);
-  --text-on-brand: var(--color-violet-50);
-  --text-on-brand-soft: var(--color-violet-100);
+  --text-brand-muted: var(--color-white); /* TODO: Update */
+  --text-brand-subtle: var(--color-white); /* TODO: Update */
+
   --text-info: var(--color-aqua-200);
-  --text-on-info: var(--color-aqua-900);
-  --text-on-info-soft: var(--color-aqua-100);
+  --text-info-muted: var(--color-aqua-100); /* TODO: Update */
+  --text-info-subtle: var(--color-aqua-100); /* TODO: Update */
+
   --text-success: var(--color-emerald-200);
-  --text-on-success: var(--color-emerald-900);
-  --text-on-success-soft: var(--color-emerald-100);
+  --text-success-muted: var(--color-emerald-300); /* TODO: Update */
+  --text-success-subtle: var(--color-emerald-100); /* TODO: Update */
+
   --text-warning: var(--color-tangerine-200);
-  --text-on-warning: var(--color-tangerine-900);
-  --text-on-warning-soft: var(--color-tangerine-100);
+  --text-warning-muted: var(--color-tangerine-200); /* TODO: Update */
+  --text-warning-subtle: var(--color-tangerine-200); /* TODO: Update */
+
   --text-error: var(--color-red-200);
+  --text-error-muted: var(--color-red-200); /* TODO: Update */
+  --text-error-subtle: var(--color-red-200); /* TODO: Update */
+
+  --text-on-neutral: var(--color-neutral-900);
+  --text-on-neutral-muted: var(--color-neutral-100); /* TODO: Update */
+  --text-on-neutral-subtle: var(--color-neutral-100); /* TODO: Update */
+
+  --text-on-brand: var(--color-violet-50);
+  --text-on-brand-muted: var(--color-violet-100); /* TODO: Update */
+  --text-on-brand-subtle: var(--color-violet-100); /* TODO: Update */
+
+  --text-on-info: var(--color-aqua-900);
+  --text-on-info-muted: var(--color-aqua-100); /* TODO: Update */
+  --text-on-info-subtle: var(--color-aqua-100); /* TODO: Update */
+
+  --text-on-success: var(--color-emerald-900);
+  --text-on-success-muted: var(--color-emerald-100); /* TODO: Update */
+  --text-on-success-subtle: var(--color-emerald-100); /* TODO: Update */
+
+  --text-on-warning: var(--color-tangerine-900);
+  --text-on-warning-muted: var(--color-tangerine-100); /* TODO: Update */
+  --text-on-warning-subtle: var(--color-tangerine-100); /* TODO: Update */
+
   --text-on-error: var(--color-red-950);
-  --text-on-error-soft: var(--color-red-50);
+  --text-on-error-muted: var(--color-red-50); /* TODO: Update */
+  --text-on-error-subtle: var(--color-red-100); /* TODO: Update */
 
   /* Icon Colors*/
-  --icon-primary: var(--text-primary);
+  --icon-neutral: var(--text-neutral);
+  --icon-neutral-muted: var(--text-neutral-muted);
+  --icon-neutral-subtle: var(--text-neutral-subtle);
+
+  --icon-brand: var(--text-brand);
+  --icon-brand-muted: var(--text-brand-muted);
+  --icon-brand-subtle: var(--text-brand-subtle);
+
+  --icon-info: var(--text-info);
+  --icon-info-muted: var(--text-info-muted);
+  --icon-info-subtle: var(--text-info-subtle);
+
+  --icon-success: var(--text-success);
+  --icon-success-muted: var(--text-success-muted);
+  --icon-success-subtle: var(--text-success-subtle);
+
+  --icon-warning: var(--text-warning);
+  --icon-warning-muted: var(--text-warning-muted);
+  --icon-warning-subtle: var(--text-warning-subtle);
+
+  --icon-error: var(--text-error);
+  --icon-error-muted: var(--text-error-muted);
+  --icon-error-subtle: var(--text-error-subtle);
+
+  --icon-on-neutral: var(--text-on-neutral);
+  --icon-on-neutral-muted: var(--text-on-neutral-muted);
+  --icon-on-neutral-subtle: var(--text-on-neutral-subtle);
+
+  --icon-on-brand: var(--text-on-brand);
+  --icon-on-brand-muted: var(--text-on-brand-muted);
+  --icon-on-brand-subtle: var(--text-on-brand-subtle);
+
+  --icon-on-info: var(--text-on-info);
+  --icon-on-info-muted: var(--text-on-info-muted);
+  --icon-on-info-subtle: var(--text-on-info-subtle);
+
+  --icon-on-success: var(--text-on-success);
+  --icon-on-success-muted: var(--text-on-success-muted);
+  --icon-on-success-subtle: var(--text-on-success-subtle);
+
+  --icon-on-warning: var(--text-on-warning);
+  --icon-on-warning-muted: var(--text-on-warning-muted);
+  --icon-on-warning-subtle: var(--text-on-warning-subtle);
+
+  --icon-on-error: var(--text-on-error);
+  --icon-on-error-muted: var(--text-on-error-muted);
+  --icon-on-error-subtle: var(--text-on-error-subtle);
 
   /* Surface Colors */
   --surface: var(--color-neutral-950);
@@ -102,26 +277,53 @@
 
   /* Background Colors */
   --bg-neutral: var(--color-neutral-300);
-  --bg-neutral-soft: var(--color-neutral-600);
+  --bg-neutral-muted: var(--color-neutral-600);
+  --bg-neutral-subtle: var(--color-neutral-800); /* TODO: Update */
+
   --bg-brand: var(--color-violet-400);
-  --bg-brand-soft: var(--color-violet-500);
+  --bg-brand-muted: var(--color-violet-500); /* TODO: Update */
+  --bg-brand-subtle: var(--color-violet-500); /* TODO: Update */
+
   --bg-info: var(--color-aqua-300);
-  --bg-info-soft: var(--color-aqua-600);
+  --bg-info-muted: var(--color-aqua-600); /* TODO: Update */
+  --bg-info-subtle: var(--color-aqua-100); /* TODO: Update */
+
   --bg-success: var(--color-emerald-400);
-  --bg-success-soft: var(--color-emerald-700);
+  --bg-success-muted: var(--color-emerald-700); /* TODO: Update */
+  --bg-success-subtle: var(--color-emerald-900); /* TODO: Update */
+
   --bg-warning: var(--color-tangerine-300);
-  --bg-warning-soft: var(--color-tangerine-600);
+  --bg-warning-muted: var(--color-tangerine-600); /* TODO: Update */
+  --bg-warning-subtle: var(--color-tangerine-900); /* TODO: Update */
+
   --bg-error: var(--color-red-400);
-  --bg-error-soft: var(--color-red-700);
+  --bg-error-muted: var(--color-red-700); /* TODO: Update */
+  --bg-error-subtle: var(--color-red-900); /* TODO: Update */
 
   /*  Border Colors */
-  --border-primary: var(--color-neutral-800);
   --border-neutral: var(--color-neutral-400);
+  --border-neutral-muted: var(--color-neutral-600); /* TODO: Update */
+  --border-neutral-subtle: var(--color-neutral-700);
+
   --border-brand: var(--color-violet-400);
+  --border-brand-muted: var(--color-neutral-100); /* TODO: Update */
+  --border-brand-subtle: var(--color-neutral-100); /* TODO: Update */
+
   --border-info: var(--color-aqua-400);
+  --border-info-muted: var(--color-aqua-600); /* TODO: Update */
+  --border-info-subtle: var(--color-aqua-100); /* TODO: Update */
+
   --border-success: var(--color-emerald-500);
+  --border-success-muted: var(--color-emerald-700); /* TODO: Update */
+  --border-success-subtle: var(--color-emerald-900); /* TODO: Update */
+
   --border-warning: var(--color-tangerine-500);
+  --border-warning-muted: var(--color-tangerine-500); /* TODO: Update */
+  --border-warning-subtle: var(--color-tangerine-500); /* TODO: Update */
+
   --border-error: var(--color-red-700);
+  --border-error-muted: var(--color-tangerine-500); /* TODO: Update */
+  --border-error-subtle: var(--color-tangerine-500); /* TODO: Update */
 
   /* Focus Colors */
   --focus-ring: var(--color-violet-300);
