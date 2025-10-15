@@ -120,7 +120,7 @@
 
 a.active {
   background-color: var(--on-surface-selected);
-  color: var(--text-primary);
+  color: var(--text-neutral);
 }
 
 @media (min-width: 640px) {

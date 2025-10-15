@@ -56,6 +56,8 @@
   --text-on-error-muted: var(--color-red-300); /* TODO: Update */
   --text-on-error-subtle: var(--color-red-800);
 
+  --text-on-selection: var(--color-violet-800);
+
   /* Icon Colors */
   --icon-neutral: var(--text-neutral);
   --icon-neutral-muted: var(--text-neutral-muted);
@@ -136,6 +138,8 @@
   --bg-error-muted: var(--color-red-100); /* TODO: Update */
   --bg-error-subtle: var(--color-red-200);
 
+  --bg-selection: var(--color-violet-100);
+
   /* Border Colors */
   --border-primary: var(--color-neutral-100);
 
@@ -178,7 +182,7 @@
 
   --text-brand: var(--color-violet-200);
   --text-brand-muted: var(--color-white); /* TODO: Update */
-  --text-brand-subtle: var(--color-white); /* TODO: Update */
+  --text-brand-subtle: var(--color-violet-50); /* TODO: Update */
 
   --text-info: var(--color-aqua-200);
   --text-info-muted: var(--color-aqua-100); /* TODO: Update */
@@ -219,6 +223,8 @@
   --text-on-error: var(--color-red-950);
   --text-on-error-muted: var(--color-red-50); /* TODO: Update */
   --text-on-error-subtle: var(--color-red-100); /* TODO: Update */
+
+  --text-on-selection: var(--color-violet-50);
 
   /* Icon Colors*/
   --icon-neutral: var(--text-neutral);
@@ -278,27 +284,29 @@
   /* Background Colors */
   --bg-neutral: var(--color-neutral-300);
   --bg-neutral-muted: var(--color-neutral-600);
-  --bg-neutral-subtle: var(--color-neutral-800); /* TODO: Update */
+  --bg-neutral-subtle: var(--color-neutral-800);
 
   --bg-brand: var(--color-violet-400);
   --bg-brand-muted: var(--color-violet-500); /* TODO: Update */
-  --bg-brand-subtle: var(--color-violet-500); /* TODO: Update */
+  --bg-brand-subtle: var(--color-violet-600);
 
   --bg-info: var(--color-aqua-300);
   --bg-info-muted: var(--color-aqua-600); /* TODO: Update */
-  --bg-info-subtle: var(--color-aqua-100); /* TODO: Update */
+  --bg-info-subtle: var(--color-aqua-700);
 
   --bg-success: var(--color-emerald-400);
   --bg-success-muted: var(--color-emerald-700); /* TODO: Update */
-  --bg-success-subtle: var(--color-emerald-900); /* TODO: Update */
+  --bg-success-subtle: var(--color-emerald-900);
 
   --bg-warning: var(--color-tangerine-300);
   --bg-warning-muted: var(--color-tangerine-600); /* TODO: Update */
-  --bg-warning-subtle: var(--color-tangerine-900); /* TODO: Update */
+  --bg-warning-subtle: var(--color-tangerine-700);
 
   --bg-error: var(--color-red-400);
   --bg-error-muted: var(--color-red-700); /* TODO: Update */
-  --bg-error-subtle: var(--color-red-900); /* TODO: Update */
+  --bg-error-subtle: var(--color-red-900);
+
+  --bg-selection: var(--color-violet-500);
 
   /*  Border Colors */
   --border-neutral: var(--color-neutral-400);

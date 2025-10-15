@@ -55,6 +55,8 @@
   --text-on-error-muted: var(--text-on-error-muted);
   --text-on-error-subtle: var(--text-on-error-subtle);
 
+  --text-on-selection: var(--text-on-selection);
+
   /* Icon Colors */
   --icon-neutral: var(--icon-neutral);
   --icon-neutral-muted: var(--icon-neutral-muted);
@@ -135,6 +137,8 @@
   --bg-error: var(--bg-error);
   --bg-error-muted: var(--bg-error-muted);
   --bg-error-subtle: var(--bg-error-subtle);
+
+  --bg-selection: var(--bg-selection);
 
   /* Borders */
   --border-primary: var(--border-primary);
