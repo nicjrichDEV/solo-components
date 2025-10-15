@@ -16,9 +16,9 @@ export default function DemoBadge() {
         <div className="demo-section">
           <h3>Variants</h3>
           <p>
-            The badge comes in three variants solid, soft, and outline. Solid is
-            primarily the most used with soft and outline used in more specific
-            scenarios. Solid is the components default variant.
+            The badge comes in three variants solid, subtle, and outline. Solid
+            is primarily the most used with subtle and outline used in more
+            specific scenarios. Solid is the components default variant.
           </p>
           <div className="demo-horizontal-container">
             <Badge>Solid</Badge>

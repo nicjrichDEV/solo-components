@@ -8,53 +8,53 @@
 
 [data-brand="pmi"][data-theme="light"] {
   /* Text Colors */
-  --text-neutral: var(--color-neutral-800);
-  --text-neutral-muted: var(--color-neutral-700); /* TODO: Update */
+  --text-neutral: var(--color-neutral-900);
+  --text-neutral-muted: var(--color-neutral-700);
   --text-neutral-subtle: var(--color-neutral-500);
 
   --text-brand: var(--color-violet-700);
-  --text-brand-muted: var(--color-violet-500); /* TODO: Update */
-  --text-brand-subtle: var(--color-violet-300);
+  --text-brand-muted: var(--color-violet-600);
+  --text-brand-subtle: var(--color-violet-400);
 
   --text-info: var(--color-aqua-700);
-  --text-info-muted: var(--color-aqua-500); /* TODO: Update */
-  --text-info-subtle: var(--color-aqua-300);
+  --text-info-muted: var(--color-aqua-600);
+  --text-info-subtle: var(--color-aqua-400);
 
   --text-success: var(--color-emerald-800);
-  --text-success-muted: var(--color-emerald-600); /* TODO: Update */
+  --text-success-muted: var(--color-emerald-700);
   --text-success-subtle: var(--color-emerald-400);
 
   --text-warning: var(--color-tangerine-600);
-  --text-warning-muted: var(--color-tangerine-400); /* TODO: Update */
+  --text-warning-muted: var(--color-tangerine-500);
   --text-warning-subtle: var(--color-tangerine-300);
 
   --text-error: var(--color-red-700);
-  --text-error-muted: var(--color-red-500); /* TODO: Update */
-  --text-error-subtle: var(--color-red-300);
+  --text-error-muted: var(--color-red-600);
+  --text-error-subtle: var(--color-red-400);
 
   --text-on-neutral: var(--color-neutral-50);
-  --text-on-neutral-muted: var(--color-neutral-300); /* TODO: Update */
+  --text-on-neutral-muted: var(--color-neutral-600);
   --text-on-neutral-subtle: var(--color-neutral-800);
 
   --text-on-brand: var(--color-violet-50);
-  --text-on-brand-muted: var(--color-violet-300); /* TODO: Update */
+  --text-on-brand-muted: var(--color-violet-500);
   --text-on-brand-subtle: var(--color-violet-800);
 
   --text-on-info: var(--color-aqua-50);
-  --text-on-info-muted: var(--color-aqua-300); /* TODO: Update */
+  --text-on-info-muted: var(--color-aqua-600);
   --text-on-info-subtle: var(--color-aqua-800);
 
   --text-on-success: var(--color-emerald-50);
-  --text-on-success-muted: var(--color-emerald-300); /* TODO: Update */
-  --text-on-success-subtle: var(--color-emerald-800);
+  --text-on-success-muted: var(--color-emerald-800);
+  --text-on-success-subtle: var(--color-emerald-950);
 
   --text-on-warning: var(--color-tangerine-50);
-  --text-on-warning-muted: var(--color-tangerine-300); /* TODO: Update */
+  --text-on-warning-muted: var(--color-tangerine-600);
   --text-on-warning-subtle: var(--color-tangerine-800);
 
   --text-on-error: var(--color-red-50);
-  --text-on-error-muted: var(--color-red-300); /* TODO: Update */
-  --text-on-error-subtle: var(--color-red-800);
+  --text-on-error-muted: var(--color-red-800);
+  --text-on-error-subtle: var(--color-red-900);
 
   --text-on-selection: var(--color-violet-800);
 

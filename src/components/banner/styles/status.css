@@ -4,15 +4,15 @@
   background-color: var(--bg-neutral-subtle);
 
   h4 {
-    color: var(--text-neutral);
+    color: var(--text-on-neutral-subtle);
   }
 
   p {
-    color: var(--text-neutral-muted);
+    color: var(--text-on-neutral-muted);
   }
 
   svg {
-    stroke: var(--icon-neutral);
+    stroke: var(--icon-on-neutral-subtle);
   }
 }
 
@@ -20,15 +20,15 @@
   background-color: var(--bg-brand-subtle);
 
   h4 {
-    color: var(--text-brand);
+    color: var(--text-on-brand-subtle);
   }
 
   p {
-    color: var(--text-brand-muted);
+    color: var(--text-on-brand-muted);
   }
 
   svg {
-    stroke: var(--icon-brand);
+    stroke: var(--icon-on-brand-subtle);
   }
 }
 
@@ -36,15 +36,15 @@
   background-color: var(--bg-info-subtle);
 
   h4 {
-    color: var(--text-info);
+    color: var(--text-on-info-subtle);
   }
 
   p {
-    color: var(--text-info-muted);
+    color: var(--text-on-info-muted);
   }
 
   svg {
-    stroke: var(--icon-info);
+    stroke: var(--icon-on-info-subtle);
   }
 }
 
@@ -52,15 +52,15 @@
   background-color: var(--bg-success-subtle);
 
   h4 {
-    color: var(--text-success);
+    color: var(--text-on-success-subtle);
   }
 
   p {
-    color: var(--text-success-muted);
+    color: var(--text-on-success-muted);
   }
 
   svg {
-    stroke: var(--icon-success);
+    stroke: var(--icon-on-success-subtle);
   }
 }
 
@@ -68,15 +68,15 @@
   background-color: var(--bg-warning-subtle);
 
   h4 {
-    color: var(--text-warning);
+    color: var(--text-on-warning-subtle);
   }
 
   p {
-    color: var(--text-warning-muted);
+    color: var(--text-on-warning-muted);
   }
 
   svg {
-    stroke: var(--icon-warning);
+    stroke: var(--icon-on-warning-subtle);
   }
 }
 
@@ -84,15 +84,15 @@
   background-color: var(--bg-error-subtle);
 
   h4 {
-    color: var(--text-error);
+    color: var(--text-on-error-subtle);
   }
 
   p {
-    color: var(--text-error-muted);
+    color: var(--text-on-error-muted);
   }
 
   svg {
-    stroke: var(--icon-error);
+    stroke: var(--icon-on-error-subtle);
   }
 }
 
@@ -102,7 +102,7 @@
   border: 1px solid var(--border-neutral-muted);
 
   svg {
-    stroke: var(--icon-neutral);
+    stroke: var(--icon-on-neutral-subtle);
   }
 }
 
@@ -112,7 +112,7 @@
   border: 1px solid var(--border-brand-muted);
 
   svg {
-    stroke: var(--icon-brand);
+    stroke: var(--icon-on-brand-subtle);
   }
 }
 
@@ -121,7 +121,7 @@
   border: 1px solid var(--border-info-muted);
 
   svg {
-    stroke: var(--icon-info);
+    stroke: var(--icon-on-info-subtle);
   }
 }
 
@@ -130,7 +130,7 @@
   border: 1px solid var(--border-success-muted);
 
   svg {
-    stroke: var(--icon-success);
+    stroke: var(--icon-on-success-subtle);
   }
 }
 
@@ -139,7 +139,7 @@
   border: 1px solid var(--border-warning-muted);
 
   svg {
-    stroke: var(--icon-warning);
+    stroke: var(--icon-on-warning-subtle);
   }
 }
 
@@ -148,6 +148,6 @@
   border: 1px solid var(--border-error-muted);
 
   svg {
-    stroke: var(--icon-error);
+    stroke: var(--icon-on-error-subtle);
   }
 }
