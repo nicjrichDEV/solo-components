@@ -1,6 +1,6 @@
 /* TODO: Add solid, subtle, and outlines as variants options for Banner component */
 
-.banner.neutral {
+.banner.subtle.neutral {
   background-color: var(--bg-neutral-subtle);
 
   h4 {
@@ -16,7 +16,7 @@
   }
 }
 
-.banner.brand {
+.banner.subtle.brand {
   background-color: var(--bg-brand-subtle);
 
   h4 {
@@ -32,7 +32,7 @@
   }
 }
 
-.banner.info {
+.banner.subtle.info {
   background-color: var(--bg-info-subtle);
 
   h4 {
@@ -48,7 +48,7 @@
   }
 }
 
-.banner.success {
+.banner.subtle.success {
   background-color: var(--bg-success-subtle);
 
   h4 {
@@ -64,7 +64,7 @@
   }
 }
 
-.banner.warning {
+.banner.subtle.warning {
   background-color: var(--bg-warning-subtle);
 
   h4 {
@@ -80,7 +80,7 @@
   }
 }
 
-.banner.error {
+.banner.subtle.error {
   background-color: var(--bg-error-subtle);
 
   h4 {
