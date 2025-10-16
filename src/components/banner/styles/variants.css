@@ -1,5 +1,37 @@
-/* TODO: Add solid, subtle, and outlines as variants options for Banner component */
+/* Solid */
+.banner.solid.neutral {
+  background-color: var(--bg-neutral);
 
+  h4 {
+    color: var(--text-on-neutral);
+  }
+
+  p {
+    color: var(--text-on-neutral-muted);
+  }
+
+  svg {
+    stroke: var(--icon-on-neutral);
+  }
+}
+
+.banner.solid.brand {
+  background-color: var(--bg-brand);
+
+  h4 {
+    color: var(--text-on-brand);
+  }
+
+  p {
+    color: var(--text-on-brand-muted);
+  }
+
+  svg {
+    stroke: var(--icon-on-brand);
+  }
+}
+
+/* Subtle */
 .banner.subtle.neutral {
   background-color: var(--bg-neutral-subtle);
 
@@ -93,6 +125,23 @@
 
   svg {
     stroke: var(--icon-on-error-subtle);
+  }
+}
+
+/* Outline */
+.banner.outline.neutral {
+  border: 1px solid var(--border-neutral);
+
+  h4 {
+    color: var(--text-neutral);
+  }
+
+  p {
+    color: var(--text-neutral-muted);
+  }
+
+  svg {
+    stroke: var(--icon-neutral);
   }
 }
 

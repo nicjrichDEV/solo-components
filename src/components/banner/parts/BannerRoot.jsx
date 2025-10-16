@@ -13,6 +13,7 @@ import { BannerContext } from "./BannerContext";
 
 export default function BannerRoot({
   children,
+    variant = "solid",
   status = "neutral",
   icon = true,
   dismissible,
@@ -26,7 +27,7 @@ export default function BannerRoot({
   }
 
   const bannerClasses = cn(
-    `banner ${status}`,
+    `banner ${variant} ${status}`,
     `${dismissed && "hideBanner"}`,
     className
   );

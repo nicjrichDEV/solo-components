@@ -33,11 +33,11 @@
   --text-error-subtle: var(--color-red-400);
 
   --text-on-neutral: var(--color-neutral-50);
-  --text-on-neutral-muted: var(--color-neutral-600);
+  --text-on-neutral-muted: var(--color-neutral-200); /* Needed to change for solid banner */
   --text-on-neutral-subtle: var(--color-neutral-800);
 
   --text-on-brand: var(--color-violet-50);
-  --text-on-brand-muted: var(--color-violet-500);
+  --text-on-brand-muted: var(--color-violet-200);  /* Needed to change for solid banner */
   --text-on-brand-subtle: var(--color-violet-800);
 
   --text-on-info: var(--color-aqua-50);
@@ -156,11 +156,11 @@
   --border-info-subtle: var(--color-aqua-100);
 
   --border-success: var(--color-emerald-500);
-  --border-success-muted: var(--color-emerald-300);
+  --border-success-muted: var(--color-emerald-400);
   --border-success-subtle: var(--color-emerald-100);
 
   --border-warning: var(--color-tangerine-500);
-  --border-warning-muted: var(--color-tangerine-300);
+  --border-warning-muted: var(--color-tangerine-200);
   --border-warning-subtle: var(--color-tangerine-100);
 
   --border-error: var(--color-red-500);
@@ -176,9 +176,9 @@
 
 [data-brand="pmi"][data-theme="dark"] {
   /* Type Colors */
-  --text-neutral: var(--color-neutral-200);
-  --text-neutral-muted: var(--color-neutral-100); /* TODO: Update */
-  --text-neutral-subtle: var(--color-neutral-100); /* TODO: Update */
+  --text-neutral: var(--color-neutral-100);
+  --text-neutral-muted: var(--color-neutral-300); /* TODO: Update */
+  --text-neutral-subtle: var(--color-neutral-500); /* TODO: Update */
 
   --text-brand: var(--color-violet-200);
   --text-brand-muted: var(--color-white); /* TODO: Update */
@@ -201,27 +201,27 @@
   --text-error-subtle: var(--color-red-200); /* TODO: Update */
 
   --text-on-neutral: var(--color-neutral-900);
-  --text-on-neutral-muted: var(--color-neutral-100); /* TODO: Update */
+  --text-on-neutral-muted: var(--color-neutral-300); /* TODO: Update */
   --text-on-neutral-subtle: var(--color-neutral-100); /* TODO: Update */
 
   --text-on-brand: var(--color-violet-50);
-  --text-on-brand-muted: var(--color-violet-100); /* TODO: Update */
+  --text-on-brand-muted: var(--color-violet-200); /* TODO: Update */
   --text-on-brand-subtle: var(--color-violet-100); /* TODO: Update */
 
   --text-on-info: var(--color-aqua-900);
-  --text-on-info-muted: var(--color-aqua-100); /* TODO: Update */
+  --text-on-info-muted: var(--color-aqua-200); /* TODO: Update */
   --text-on-info-subtle: var(--color-aqua-100); /* TODO: Update */
 
   --text-on-success: var(--color-emerald-900);
-  --text-on-success-muted: var(--color-emerald-100); /* TODO: Update */
+  --text-on-success-muted: var(--color-emerald-200); /* TODO: Update */
   --text-on-success-subtle: var(--color-emerald-100); /* TODO: Update */
 
   --text-on-warning: var(--color-tangerine-900);
-  --text-on-warning-muted: var(--color-tangerine-100); /* TODO: Update */
+  --text-on-warning-muted: var(--color-tangerine-200); /* TODO: Update */
   --text-on-warning-subtle: var(--color-tangerine-100); /* TODO: Update */
 
   --text-on-error: var(--color-red-950);
-  --text-on-error-muted: var(--color-red-50); /* TODO: Update */
+  --text-on-error-muted: var(--color-red-200); /* TODO: Update */
   --text-on-error-subtle: var(--color-red-100); /* TODO: Update */
 
   --text-on-selection: var(--color-violet-50);
@@ -314,7 +314,7 @@
   --border-neutral-subtle: var(--color-neutral-700);
 
   --border-brand: var(--color-violet-400);
-  --border-brand-muted: var(--color-neutral-100); /* TODO: Update */
+  --border-brand-muted: var(--color-violet-500); /* TODO: Update */
   --border-brand-subtle: var(--color-neutral-100); /* TODO: Update */
 
   --border-info: var(--color-aqua-400);

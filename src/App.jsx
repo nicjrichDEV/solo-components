@@ -3,7 +3,7 @@ import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import { Route, Routes } from "react-router";
 import HomePage from "./pages/home/HomePage.jsx";
 import BadgePage from "./pages/BadgePage.jsx";
-import BannerPage from "./pages/BannerPage.jsx";
+import BannerPage from "./pages/banner/BannerPage.jsx";
 import CardPage from "./pages/CardPage.jsx";
 import LinkPage from "./pages/LinkPage.jsx";
 import TestimonialPage from "./pages/TestimonialPage.jsx";
