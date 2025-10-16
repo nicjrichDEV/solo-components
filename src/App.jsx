@@ -2,13 +2,12 @@ import MainLayout from "./layouts/MainLayout/MainLayout";
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import { Route, Routes } from "react-router";
 import HomePage from "./pages/home/HomePage.jsx";
-import BadgePage from "./pages/BadgePage.jsx";
+import BadgePage from "./pages/badge/BadgePage.jsx";
 import BannerPage from "./pages/banner/BannerPage.jsx";
-import CardPage from "./pages/CardPage.jsx";
-import LinkPage from "./pages/LinkPage.jsx";
-import TestimonialPage from "./pages/TestimonialPage.jsx";
-import ToastPage from "./pages/ToastPage.jsx";
-import TooltipPage from "./pages/TooltipPage.jsx";
+import CardPage from "./pages/card/CardPage.jsx";
+import TestimonialPage from "./pages/testimonial/TestimonialPage.jsx";
+import ToastPage from "./pages/toast/ToastPage.jsx";
+import TooltipPage from "./pages/tooltip/TooltipPage.jsx";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path="badge" element={<BadgePage />} />
           <Route path="banner" element={<BannerPage />} />
           <Route path="card" element={<CardPage />} />
-          <Route path="link" element={<LinkPage />} />
           <Route path="testimonial" element={<TestimonialPage />} />
           <Route path="toast" element={<ToastPage />} />
           <Route path="tooltip" element={<TooltipPage />} />

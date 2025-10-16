@@ -3,7 +3,6 @@ const componentNames = [
   { name: "badge", path: "/badge" },
   { name: "banner", path: "/banner" },
   { name: "card", path: "/card" },
-  { name: "link", path: "/link" },
   { name: "testimonial", path: "/testimonial" },
   { name: "toast", path: "/toast" },
   { name: "tooltip", path: "/tooltip" },

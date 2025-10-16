@@ -1,5 +1,6 @@
 import "./TestimonialPage.css";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 export default function TestimonialPage() {
-  return <h1>TESTIMONIAL PAGE</h1>;
+  return <Testimonial>test</Testimonial>;
 }
